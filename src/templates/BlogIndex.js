@@ -65,8 +65,11 @@ export const BlogIndexTemplate = ({
 
           {!!postCategories.length && (
             <section className="section thin">
+            <div>
               <div className="container">
                 <PostCategoriesNav enableSearch categories={postCategories} />
+              </div>
+
               </div>
             </section>
           )}
@@ -76,6 +79,7 @@ export const BlogIndexTemplate = ({
               <div className="container">
                 <PostSection posts={filteredPosts} />
               </div>
+              
             </section>
           )}
         </main>

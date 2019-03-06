@@ -3,9 +3,10 @@ import { Location } from '@reach/router'
 import { Link } from 'gatsby'
 import { Menu, X } from 'react-feather'
 import Logo from './Logo'
+import BlogSearch from '../components/BlogSearch';
 
 import './Nav.css'
-import BlogSearch from './BlogSearch';
+
 
 export class Navigation extends Component {
   state = {
@@ -49,9 +50,11 @@ export class Navigation extends Component {
           <Link to="/" onClick={this.handleLinkClick}>
             <Logo />
           </Link>
-        <span>
-            <BlogSearch/>
+          
+          <span className="searchingBlog">
+                <BlogSearch />
           </span>
+
           <div className="Nav--Links">
             <NavLink to="/">Home</NavLink>
             <NavLink to="/components/">Components</NavLink>
@@ -60,6 +63,8 @@ export class Navigation extends Component {
                 this.state.activeSubNav === 'posts' ? 'active' : ''
               }`}
             >
+
+
               <span
                 className={`NavLink Nav--GroupParent ${
                   this.props.location.pathname.includes('posts') ||
@@ -72,6 +77,7 @@ export class Navigation extends Component {
               >
                 Blog
               </span>
+
               <div className="Nav--GroupLinks">
                 <NavLink to="/blog/" className="Nav--GroupLink">
                   All Posts

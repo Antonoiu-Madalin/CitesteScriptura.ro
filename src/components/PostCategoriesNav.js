@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Collapsible from 'react-collapsible';
-import BlogSearch from './BlogSearch'
+
 import './PostCategoriesNav.css'
+
 
 const PostCategoriesNav = ({ categories, enableSearch }) => (
   <Collapsible trigger="$;" className="collapSible">
@@ -21,7 +22,6 @@ const PostCategoriesNav = ({ categories, enableSearch }) => (
         </Link>
       ))}
 
-      {enableSearch && <BlogSearch />}
     </div>
     </Collapsible>
 )
