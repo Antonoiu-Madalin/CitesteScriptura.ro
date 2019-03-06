@@ -4,8 +4,6 @@ import { Link } from 'gatsby'
 import { Menu, X } from 'react-feather'
 import Logo from './Logo'
 
-import FontAwesome from '@fortawesome/react-fontawesome'
-
 import './Nav.css'
 import BlogSearch from './BlogSearch';
 
@@ -51,15 +49,7 @@ export class Navigation extends Component {
           <Link to="/" onClick={this.handleLinkClick}>
             <Logo />
           </Link>
-
-          <span>
-          <FontAwesome
-        className='fa-fa-search'
-      />
-
-
-
-
+        <span>
             <BlogSearch/>
           </span>
           <div className="Nav--Links">
