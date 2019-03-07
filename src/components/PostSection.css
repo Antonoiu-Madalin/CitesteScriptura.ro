@@ -1,4 +1,6 @@
-.PostSection {
+
+section.section{
+  padding-top: 0px;
 }
 
 .PostSection--Grid {

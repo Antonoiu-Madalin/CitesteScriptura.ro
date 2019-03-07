@@ -7,7 +7,7 @@ import './PostCategoriesNav.css'
 
 const PostCategoriesNav = ({ categories, enableSearch }) => (
   <div id="collapsibleContainer">
-  <Collapsible trigger="$;" className="collapSible">
+  <Collapsible trigger="" className="collapSible"><i class="arrow up"></i>
     <div className="PostCategoriesNav">
       <Link className="NavLink" exact="true" to={`/blog/`}>
         All
