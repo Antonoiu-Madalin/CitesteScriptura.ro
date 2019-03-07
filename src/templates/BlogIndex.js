@@ -69,9 +69,11 @@ export const BlogIndexTemplate = ({
             <section className="section thin">
                         
             <div id="ContainerCollapse">
-
+            
               <div className="container">
+                
                 <PostCategoriesNav enableSearch categories={postCategories} />
+                
               </div>
 
               </div>
