@@ -1,0 +1,23 @@
+section.section.thin{
+    padding: 0;
+    border: 0;
+  }
+
+  section.section{
+      padding-top: 1rem;
+  }
+
+  #ContainerCollapse{
+      text-align: center;
+      margin-top: -10px;
+  }
+
+  .search{
+      float:right;
+      margin-top: 9px;
+      padding-right: 6.4rem;
+  }
+
+  #ContainerCollapse{
+      padding: 0px;
+  }

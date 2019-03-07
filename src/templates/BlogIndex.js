@@ -2,10 +2,11 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { Location } from '@reach/router'
 import qs from 'qs'
-
+import './BlogIndex.css'
 import PostSection from '../components/PostSection'
 import PostCategoriesNav from '../components/PostCategoriesNav'
 import Layout from '../components/Layout'
+import BlogSearch from '../components/BlogSearch'
 
 /**
  * Filter posts by date. Feature dates will be fitered
@@ -65,7 +66,8 @@ export const BlogIndexTemplate = ({
 
           {!!postCategories.length && (
             <section className="section thin">
-            <div>
+            <div id="ContainerCollapse">
+            <BlogSearch />
               <div className="container">
                 <PostCategoriesNav enableSearch categories={postCategories} />
               </div>
@@ -75,7 +77,8 @@ export const BlogIndexTemplate = ({
           )}
 
           {!!posts.length && (
-            <section className="section">
+            <section className="section aici">
+            
               <div className="container">
                 <PostSection posts={filteredPosts} />
               </div>

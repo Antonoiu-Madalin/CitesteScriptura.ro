@@ -6,6 +6,7 @@ import './PostCategoriesNav.css'
 
 
 const PostCategoriesNav = ({ categories, enableSearch }) => (
+  <div id="collapsibleContainer">
   <Collapsible trigger="$;" className="collapSible">
     <div className="PostCategoriesNav">
       <Link className="NavLink" exact="true" to={`/blog/`}>
@@ -24,6 +25,7 @@ const PostCategoriesNav = ({ categories, enableSearch }) => (
 
     </div>
     </Collapsible>
+    </div>
 )
 
 export default PostCategoriesNav
