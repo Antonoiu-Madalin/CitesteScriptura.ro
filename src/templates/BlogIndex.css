@@ -75,3 +75,16 @@ section.section.thin{
     font-size: 12px;
     background-color: #CBB700;
     color: black; }
+
+
+    #collapsibleContainer{
+      width: 100%;
+      text-align: center;
+    }
+
+    #innerCollapsible{
+      
+      display:table-cell;
+      vertical-align:middle;
+      text-align:center;
+    }

@@ -3,7 +3,8 @@
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
-  position: relative;
+  
+  
 }
 
 .PostCategoriesNav > * + * {
@@ -35,3 +36,8 @@
     width: 100%;
   }
 }
+
+#innerCollapsible{
+  margin: 0 auto;
+}
+
