@@ -2,7 +2,7 @@ import React from 'react'
 
 import PostCard from '../components/PostCard'
 import './PostSection.css'
-import BlogSearch from '../components/BlogSearch'
+
 
 class PostSection extends React.Component {
   static defaultProps = {
@@ -32,7 +32,7 @@ class PostSection extends React.Component {
       
       <div className="PostSection">
       <div>
-      <BlogSearch/>
+      
       </div>
         {title && <h2 className="PostSection--Title">{title}</h2>}
         {!!visiblePosts.length && (

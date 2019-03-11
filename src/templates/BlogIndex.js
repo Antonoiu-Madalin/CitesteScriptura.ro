@@ -6,7 +6,7 @@ import './BlogIndex.css'
 import PostSection from '../components/PostSection'
 import PostCategoriesNav from '../components/PostCategoriesNav'
 import Layout from '../components/Layout'
-
+import BlogSearch from '../components/BlogSearch'
 
 /**
  * Filter posts by date. Feature dates will be fitered
@@ -70,7 +70,8 @@ export const BlogIndexTemplate = ({
                         
             <div id="ContainerCollapse">
             
-              <div className="container">
+              <div className="container descuvraMe">
+                <BlogSearch />
                 
                 <PostCategoriesNav enableSearch categories={postCategories} />
                 
