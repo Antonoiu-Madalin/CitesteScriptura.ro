@@ -1,8 +1,8 @@
 .Nav {
   background: #343a40;
-  position: sticky;
+  position: static;
   top: 0;
-  z-index: 1;
+  z-index: 99999;
   border-bottom: 1px solid var(--lightGrey);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
 }
