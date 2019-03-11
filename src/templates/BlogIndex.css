@@ -28,7 +28,7 @@ section.section{
 
 .Collapsible__trigger { /* asta misca toata bara de trigger */
     /* display: block; */
-    
+   
     font-weight: 400;
     text-decoration: none;
     color: blue;
@@ -47,12 +47,13 @@ section.section{
 
 .Collapsible__trigger.is-open:after {
   transform: rotateZ(180deg); 
-  margin-top: -25px;  
+  
+  margin-bottom: 35px;  
 }
 
 .Collapsible__trigger.is-closed:after {
+  margin-bottom: 35px;  
  
-  margin-top: -25px;  
 }
 
 
@@ -62,8 +63,6 @@ section.section{
   
 }
 
-    
-.PostCategoriesNav{
- 
-  margin-top: -10px;
+.Collapsible {
+  margin-top: -55px;
 }
