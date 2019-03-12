@@ -3,7 +3,7 @@ import { navigate } from 'gatsby'
 import { Location } from '@reach/router'
 import qs from 'qs'
 import "./BlogSearch.css"
-{/* import { FaSearch } from 'react-icons/fa'; */}
+/* import { FaSearch } from 'react-icons/fa'; */
 
 export default ({ pageCount }) => {
   return (

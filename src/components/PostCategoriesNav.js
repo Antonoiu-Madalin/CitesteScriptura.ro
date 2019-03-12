@@ -3,12 +3,12 @@ import { Link } from 'gatsby'
 import Collapsible from 'react-collapsible';
 
 import './PostCategoriesNav.css'
-
+import { FaArrowCircleDown } from 'react-icons/fa';
 
 const PostCategoriesNav = ({ categories, enableSearch }) => (
   <div id="collapsibleContainer">
     <div id="innerCollapsible">
-    <Collapsible trigger="" className="collapSible" >
+    <Collapsible trigger={<FaArrowCircleDown/>} className="collapSible" >
     
       <div className="PostCategoriesNav">
         <Link className="NavLink" exact="true" to={`/blog/`}>

@@ -32,13 +32,11 @@ section.section{
     font-weight: 400;
     text-decoration: none;
     color: blue;
-    background: purple; /*add transparent */
-    color: red; 
+    background: transparent; /*add transparent */
+    color: orangered; 
 }
   
 .Collapsible__trigger:after {
-  font-family: 'FontAwesome';
-  content: '\f107';
   right: 10px;
   display: block;
   text-align: center;
@@ -64,7 +62,7 @@ section.section{
 
 .Collapsible {
   margin-top: -55px;
- 
+ text-align: center;
   
 
 }
