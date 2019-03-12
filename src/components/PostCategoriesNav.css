@@ -3,8 +3,7 @@
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
-
-  
+  padding-top: 12px;
 }
 
 .PostCategoriesNav > * + * {
@@ -35,9 +34,23 @@
     position: relative;
     width: 100%;
   }
+
+  .PostCategoriesNav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+
 }
 
 #innerCollapsible{
   margin: 0 auto;
 }
 
+.zeIcon{
+width: 21px;
+height: 21px;
+color: grey;
+}
