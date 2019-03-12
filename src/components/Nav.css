@@ -1,6 +1,6 @@
 .Nav {
   background: #343a40;
-  position: sticky;
+  position: static;
   top: 0;
   z-index: 999999;
   border-bottom: 1px solid var(--lightGrey);
@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   height: 6rem;
+  
 }
 
 .Nav--Links {
@@ -19,6 +20,7 @@
   justify-content: center;
   flex-direction: row;
   color:rgba(255, 255, 255, 0.5);
+  z-index: 999999;
 }
 
 .Nav--Links > * + * {
@@ -28,6 +30,7 @@
 .Nav .Logo {
   margin-right: 3rem;
   position: relative;
+  z-index: 999999;
 }
 
 .Nav--MenuButton {
@@ -43,6 +46,7 @@
   text-decoration: none;
   border-bottom: 2px solid;
   border-bottom-color: transparent;
+  
 }
 
 .NavLink:hover,
@@ -55,6 +59,7 @@
 .Nav--Group {
   position: relative;
   cursor: pointer;
+  
 }
 
 .Nav--GroupParent {
@@ -112,10 +117,10 @@
   .Nav--MenuButton {
     display: block !important;
     margin-left: auto;
-    z-index: 1;
+    z-index: 999999;
   }
   .Nav .Logo {
-    z-index: 1;
+    z-index: 999999;
   }
 
   .Nav--Links {
