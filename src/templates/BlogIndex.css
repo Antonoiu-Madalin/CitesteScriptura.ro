@@ -67,8 +67,21 @@ section.section{
   cursor: pointer;
 }
 
+.zeIcon:hover{
+  background-color: #fff;
+}
+
 /* The proper Search! */
 .properSearch{ 
   margin-right: 72px;
   margin-top: -70px;
+}
+
+.Nav--MenuButton svg:hover{
+  color: #fff;
+}
+
+svg.zeIcon:hover{
+  background-color: #fff;
+
 }

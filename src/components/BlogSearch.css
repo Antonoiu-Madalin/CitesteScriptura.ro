@@ -18,9 +18,9 @@ input::-webkit-search-cancel-button {
 
 
 input[type=search] {
-	background: #ededed url(../../static/images/search-icon.png) no-repeat 9px center;
-	border: solid 1px #ccc;
-	width: 55px;
+	background: grey url(../../static/images/search-icon.png) no-repeat 9px center;
+	border: solid 1px grey;
+	width: 50px;
 	
 	-webkit-border-radius: 10em;
 	-moz-border-radius: 10em;
