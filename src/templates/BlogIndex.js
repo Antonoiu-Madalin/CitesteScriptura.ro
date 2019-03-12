@@ -71,7 +71,10 @@ export const BlogIndexTemplate = ({
             <div id="ContainerCollapse">
             
               <div className="container descuvraMe">
-                <BlogSearch />
+                
+              <div >
+            <BlogSearch />
+            </div>
                 
                 <PostCategoriesNav enableSearch categories={postCategories} />
                 

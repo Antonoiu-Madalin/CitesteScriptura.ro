@@ -35,6 +35,8 @@
 
 .Nav--MenuButton {
   display: none !important;
+  
+  color: grey;
 }
 
 .NavLink {

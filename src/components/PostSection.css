@@ -8,6 +8,7 @@ section.section{
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: stretch;
+  padding-top: 15px;
 }
 
 .PostSection button {
@@ -66,3 +67,4 @@ section.section{
     }
   }
 }
+

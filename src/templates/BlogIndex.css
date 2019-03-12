@@ -60,9 +60,13 @@ section.section{
 }
 
 .Collapsible {
-  margin-top: -68px;
+  margin-top: -38px;
  text-align: right; /* this puts it right in the middle */
   margin-right: 42px;
   cursor: pointer;
 }
 
+.properSearch{ /* The proper Search! */
+  margin-right: 70px;
+  margin-top: -55px;
+}

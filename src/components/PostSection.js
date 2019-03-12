@@ -3,7 +3,6 @@ import React from 'react'
 import PostCard from '../components/PostCard'
 import './PostSection.css'
 
-
 class PostSection extends React.Component {
   static defaultProps = {
     posts: [],
@@ -31,8 +30,9 @@ class PostSection extends React.Component {
     return (
       
       <div className="PostSection">
+    
       <div>
-      
+        
       </div>
         {title && <h2 className="PostSection--Title">{title}</h2>}
         {!!visiblePosts.length && (
@@ -49,7 +49,8 @@ class PostSection extends React.Component {
             </button>
           </div>
         )}
-      </div>
+        </div>
+      
     )
   }
 }
