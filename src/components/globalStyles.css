@@ -26,6 +26,12 @@
   background: rgba(0, 194, 189, 0.6);
 }
 
+/* Should remove the annoying blue feedback box on mobile */
+* { 
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
