@@ -59,14 +59,16 @@ section.section{
  
 }
 
+/* this is the Plus icon it , right */
 .Collapsible {
-  margin-top: -38px;
- text-align: right; /* this puts it right in the middle */
+  margin-top: -23px;
+  text-align: right; 
   margin-right: 42px;
   cursor: pointer;
 }
 
-.properSearch{ /* The proper Search! */
-  margin-right: 70px;
-  margin-top: -55px;
+/* The proper Search! */
+.properSearch{ 
+  margin-right: 72px;
+  margin-top: -70px;
 }
