@@ -59,9 +59,13 @@ section.section{
 .Collapsible__trigger.is-disabled {
   opacity: 0.5;
   background-color: grey; 
-  
+ 
 }
 
 .Collapsible {
   margin-top: -55px;
+ 
+  
+
 }
+
