@@ -45,7 +45,7 @@ export class Navigation extends Component {
     return (
       <nav className={`Nav ${active ? 'Nav-active' : ''}`}>
  
-        <div className="Nav--Container container">
+        <div className="Nav--Container container"> {/*Remove this to make navbar full screen only */}
           
        
           <Link to="/" className="logoMover" onClick={this.handleLinkClick}>
