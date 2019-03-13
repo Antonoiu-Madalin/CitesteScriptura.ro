@@ -1,11 +1,11 @@
 {
-  "name": "yellowcake",
-  "HomePage": "https://yellowcake.netlify.com/",
-  "description": "An opinionated starter project for creating lightning-fast websites with Gatsby v2 and Netlify CMS v2",
-  "version": "2.0.0",
+  "name": "project--ethan",
+  "HomePage": "https://project-ethan.netlify.com/",
+  "description": "Project Ethan is a starter project meant to serve as a base for creating any kind of website lightening fast, using Gatsby and Netlify CMS.",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thriveweb/yellowcake"
+    "url": ""
   },
   "dependencies": {
     "@reach/router": "^1.2.1",

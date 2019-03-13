@@ -53,7 +53,7 @@ export class Navigation extends Component {
 
           <Link to="/" onClick={this.handleLinkClick}>
             <a href="/" className="logoTextA">
-              HackerMan
+              p.Ethan
             </a>
           </Link>
 
