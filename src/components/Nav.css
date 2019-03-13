@@ -3,7 +3,7 @@
   position: static;
   top: 0;
   z-index: 999999;
-  border-bottom: 1px solid var(--lightGrey);
+  /* border-bottom: 1px solid var(--lightGrey); */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
 }
 
@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   height: 6rem;
+  
   
 }
 
@@ -215,3 +216,21 @@
 .faBars{
 color: grey;
 }
+
+/* Nav logo & text*/
+
+
+
+a{
+  text-decoration: none;
+}
+
+.logoTextA {
+  font-size: 150%;
+  padding-left: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+  
+ 
