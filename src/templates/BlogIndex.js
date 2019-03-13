@@ -37,8 +37,6 @@ export const byCategory = (posts, title, contentType) => {
 // Export Template for use in CMS preview
 export const BlogIndexTemplate = ({
   title,
-  subtitle,
-  featuredImage,
   posts = [],
   postCategories = [],
   enableSearch = true,
@@ -67,21 +65,19 @@ export const BlogIndexTemplate = ({
         <main className="Blog">
           {!!postCategories.length && (
             <section className="section thin">
-                        
-            <div id="ContainerCollapse">
             
-              <div className="container descuvraMe">
-                
+            {/* Post categories*/}            
+            <div id="ContainerCollapse">
 
-                
+              <div className="container descuvraMe">
                 <PostCategoriesNav enableSearch categories={postCategories} />
-                
               </div>
 
               </div>
             </section>
           )}
 
+          {/* Posts themselves*/}
           {!!posts.length && (
             <section className="section aici">
             
@@ -92,10 +88,8 @@ export const BlogIndexTemplate = ({
             </section>
           )}
         </main>
-       
       )
     }}
-    
   </Location>
 )
 
