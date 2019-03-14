@@ -46,15 +46,18 @@ export class Navigation extends Component {
  
         <div className="Nav--Container container"> {/*Remove this to make navbar full screen only */}
           
-       
+          
           <Link to="/" className="logoMover" onClick={this.handleLinkClick}>
             <Logo />
           </Link>
 
           <Link to="/" onClick={this.handleLinkClick}>
             <a href="/" className="logoTextA">
-              <p>Citește Scriptura</p>
-              
+              <div className="logoTextContainer">
+                <div className="logoText">
+                <p>Citește Scriptura</p>
+                </div>
+              </div>
             </a>
           </Link>
 
