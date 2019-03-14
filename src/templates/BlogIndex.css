@@ -77,14 +77,14 @@ section.section{
   margin-right: 72px;
   margin-top: -63px;
   margin-bottom: 18px;
- 
+ color: #D3E0B5;
 }
 
 .zeIcon{
   width: 21px;
   height: 21px;
-  color: grey;
-  background-color: #343A40;
+  color: #D3E0B5;
+ 
   border: 0px;
   }
 

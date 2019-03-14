@@ -2,8 +2,11 @@
   background: var(--lightGrey);
   margin-top: -25px;
   padding-top: 1rem;
+  
 }
-
+body{
+  height: 100vm;
+}
 .SinglePost--BackButton {
   color: white;
   position: relative;

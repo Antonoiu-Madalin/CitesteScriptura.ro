@@ -58,7 +58,7 @@ export default () => (
 
 
       <div className="credit-text"> 
-        <span> ©  {new Date().getFullYear()} {' '} <a href="https://citestescriptura.netlify.com">Citeste Scriptura</a>. Toate drepturile rezervate.</span>
+        <span> ©  {new Date().getFullYear()} {' '} <a href="https://citestescriptura.netlify.com">Citește Scriptura</a>. Toate drepturile rezervate.</span>
       </div>
 
     </section> 

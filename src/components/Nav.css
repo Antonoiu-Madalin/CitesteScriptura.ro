@@ -1,5 +1,5 @@
 .Nav {
-  background: #343a40;
+  background: #459C98;
   position: static;
   top: 0;
   z-index: 999999;
@@ -124,6 +124,7 @@
     display: block !important;
     margin-left: auto;
     z-index: 999999;
+    color: #D3E0B5;
   }
   .Nav .Logo {
     z-index: 999999;
@@ -231,12 +232,19 @@ a{
 }
 
 .logoTextA {
-  font-size: 150%;
+  font-size: 130%;
   padding-left: 5px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: relative;
+  color: white;
 }
 
+p{
+margin-top: 0;
+margin-bottom: 30px;
+width: 100px;
+line-height: 0.8;
+}
 
   
  
