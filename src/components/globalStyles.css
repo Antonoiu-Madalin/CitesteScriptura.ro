@@ -275,3 +275,7 @@ blockquote {
   font-weight: 400;
  
 }
+
+p:blank {
+  display: none;
+}
