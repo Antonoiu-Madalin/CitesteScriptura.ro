@@ -64,7 +64,7 @@ section.section{
   margin-top: -42px;
   text-align: right; 
   margin-right: 42px;
-  cursor: pointer;
+
   padding-bottom: 10px;
 }
 
@@ -74,7 +74,7 @@ section.section{
 
 /* The proper Search! */
 .properSearch{ 
-  margin-right: 72px;
+  margin-right: 85px;
   margin-top: -63px;
   margin-bottom: 18px;
  color: #D3E0B5;
@@ -83,15 +83,17 @@ section.section{
 .zeIcon{
   width: 21px;
   height: 21px;
-  color: #D3E0B5;
- 
+  color: white;
+  margin-right: 5px;
   border: 0px;
+  cursor: pointer;
   }
 
 
-.zeIcon:hover{
+/*
+  .zeIcon:hover{
   background-color: #fff;
-}
+} 
 
 .Nav--MenuButton svg:hover{
   color: #fff;
@@ -101,4 +103,5 @@ svg.zeIcon:hover{
   background-color: #fff;
 
 }
+*/
 

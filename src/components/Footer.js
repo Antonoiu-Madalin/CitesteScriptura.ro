@@ -16,8 +16,9 @@ export default () => (
         notificare pe email atunci cand apar articole noi !
         </span>
     <form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=CitesteScripturanetlifycom', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
-      <p><input type="text" name="email" placeholder="Adresa de email"/></p><input type="hidden" value="CitesteScripturanetlifycom" 
-      name="uri"/><input type="hidden" name="loc" value="en_US"/><input type="submit" value="Subscribe" />
+      <p><input className="FormInput" type="text" name="email" placeholder="Adresa de email"/></p><input type="hidden" value="CitesteScripturanetlifycom" 
+      name="uri"/><input type="hidden" name="loc" value="en_US"/>
+      <input className="Button" type="submit" value="Subscribe" />
      
     </form>
     </div>

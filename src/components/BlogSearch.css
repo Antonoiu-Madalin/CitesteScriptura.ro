@@ -18,7 +18,7 @@ input::-webkit-search-cancel-button {
 
 
 input[type=search] {
-	background: #D3E0B5 url(../../static/images/search-icon.png) no-repeat 9px center;
+	background: white url(../../static/images/search-icon.png) no-repeat 9px center;
 	border: 0px;
 	width: 50px;
 	
@@ -33,7 +33,7 @@ input[type=search] {
 
 input[type=search]:focus {
 	width: 130px;
-	background-color: #D3E0B5;
+	background-color: white;
 	border-color: #D3E0B5;
 	
 	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
@@ -55,17 +55,20 @@ input::-webkit-input-placeholder {
     padding-right: 10px;
 	color: transparent;
 	cursor: pointer;
+	
 }
 #demo-2 input[type=search]:hover {
-	background-color: #fff;
+	/* background-color: #fff; */
 }
 #demo-2 input[type=search]:focus {
 	width: 90px;
 	padding-left: 32px;
-	color: #000;
+	color: black;
 	background-color: #fff;
 	cursor: auto;
+	font-weight: 700;
 }
+
 #demo-2 input:-moz-placeholder {
 	color: transparent;
 }

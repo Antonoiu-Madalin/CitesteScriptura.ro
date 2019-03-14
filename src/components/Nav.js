@@ -53,11 +53,10 @@ export class Navigation extends Component {
 
           <Link to="/" onClick={this.handleLinkClick}>
             <a href="/" className="logoTextA">
-              <div className="logoTextContainer">
-                <div className="logoText">
-                <p>Citește Scriptura</p>
-                </div>
-              </div>
+              
+                <p>Citește <span>Scriptura</span> </p>
+               
+              
             </a>
           </Link>
 
