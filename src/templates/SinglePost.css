@@ -81,3 +81,15 @@ body{
 .SinglePost--Pagination--Link.next {
   margin-left: auto;
 }
+
+.SinglePost--Meta--Category{
+  font-size: 1.2rem;
+  min-height: 1.2em;
+  line-height: 1;
+  margin: 0.5em 0;
+  border: solid 1px #42B2A4;
+  display: inline-block; /* Wraps div around the text only */
+  background:#86CBD1;
+  color: white;
+  font-weight: 700;
+}
