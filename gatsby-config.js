@@ -38,7 +38,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'Citeste Scriptura',
-        short_name: 'Citeste Scriptura',
+        short_name: 'C.Scriptura',
         start_url: '/',
         background_color: '#459C98',
         theme_color: '#459C98',
