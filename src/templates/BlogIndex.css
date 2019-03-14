@@ -61,19 +61,34 @@ section.section{
 
 /* this is the Plus icon it , right */
 .Collapsible {
-  margin-top: -23px;
+  margin-top: -42px;
   text-align: right; 
   margin-right: 42px;
   cursor: pointer;
+  padding-bottom: 10px;
 }
 
+
+ 
 
 
 /* The proper Search! */
 .properSearch{ 
   margin-right: 72px;
-  margin-top: -45px;
+  margin-top: -63px;
+  margin-bottom: 18px;
+ 
 }
+
+.zeIcon{
+  width: 21px;
+  height: 21px;
+  color: grey;
+  background-color: #343A40;
+  border: 0px;
+  }
+
+
 .zeIcon:hover{
   background-color: #fff;
 }
@@ -86,5 +101,4 @@ svg.zeIcon:hover{
   background-color: #fff;
 
 }
-
 
