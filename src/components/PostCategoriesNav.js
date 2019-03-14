@@ -8,7 +8,7 @@ import BlogSearch from './BlogSearch';
 
 const activeStyles  = {
   bacgkround: 'black',
-  color: '#00C2BD',
+  color: '#459C98',      /* #00C2BD */
   fontWeight: 'bold'
 }
 

@@ -204,8 +204,8 @@ blockquote {
 /* Buttons */
 
 .Button {
-  background: #D3E0B5;             /* var(--primary); */
-  color: #459C98;
+  background: var(--primary); 
+  color: white;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;

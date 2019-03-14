@@ -13,7 +13,7 @@
 }
 
 h2{
-  color:  #d3e0b5;
+  color:  #459C98;
 }
 
 
@@ -31,7 +31,7 @@ h2{
 
 .footy{
   padding-top: 2rem;
-  background-color: #459C98;
+  background-color: #343a40;
   color: #FFFFFF;
 }
 
@@ -55,11 +55,12 @@ h2{
   }
 
   .Gallery--Item{
-    font-size: 2.35rem;
+    font-size: 2rem;
+    height: 100%;
   }
 
   .footerColored{
-    color: #d3e0b5;
+    color: #459C98;
   }
 
   #socialMedia ul{
@@ -117,6 +118,3 @@ h2{
   font-size: 27px;
 }
 
-.footerButton{
-color:green;
-}

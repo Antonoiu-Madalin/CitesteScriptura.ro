@@ -61,12 +61,12 @@ input::-webkit-input-placeholder {
 	/* background-color: #fff; */
 }
 #demo-2 input[type=search]:focus {
-	width: 90px;
+	width: 75px;
 	padding-left: 32px;
 	color: black;
 	background-color: #fff;
 	cursor: auto;
-	font-weight: 700;
+	font-weight: 500;
 }
 
 #demo-2 input:-moz-placeholder {
