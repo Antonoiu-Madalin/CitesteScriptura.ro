@@ -37,7 +37,9 @@ html {
   font-size: 62.5%;
   min-height: 100%;
   background: var(--lightGrey);
+
 }
+
 
 body {
   font-family: var(--font-system);
@@ -50,6 +52,7 @@ body {
   letter-spacing: 0.01em;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+
 }
 
 a {

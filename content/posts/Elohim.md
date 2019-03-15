@@ -1,8 +1,9 @@
 ---
 template: SinglePost
-title: 2. El Elyon - Cel Preaînalt
+title: Elohim - Creatorul
+slug: numele-domnului/elohim-creatorul
 status: Published
-date: '2019-03-11'
+date: '2019-03-12'
 featuredImage: 'https://ucarecdn.com/f540281a-41cf-4bfa-8181-b172e2655fba/-/crop/1632x1777/0,672/-/preview/'
 excerpt: This is an excerpt of Post Two
 categories:

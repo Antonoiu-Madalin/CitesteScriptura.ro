@@ -39,7 +39,7 @@ export const SinglePostTemplate = ({
             )}
             {categories && (
               <Fragment>
-                <span>|</span>
+                <span>| </span>
                 {categories.map((cat, index) => (
                   <span
                     key={cat.category}
