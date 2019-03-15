@@ -1,6 +1,7 @@
 ---
 template: BlogIndex
 title: Noul Testament
+slug: 'https://scriptura.netlify.com/noul-testament/'
 subtitle: ''
 featuredImage: 'https://ucarecdn.com/83a3c73d-f234-4086-9fad-cee3a9626230/'
 ---
