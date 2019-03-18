@@ -15,12 +15,15 @@ export default () => (
         Abonează-te la buletinul nostru informativ si vei primii 
         notificare pe email atunci cand apar articole noi !
         </span>
-    <form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=CitesteScripturanetlifycom', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
-      <p><input className="FormInput" type="text" name="email" placeholder="Adresa de email"/></p><input type="hidden" value="CitesteScripturanetlifycom" 
-      name="uri"/><input type="hidden" name="loc" value="en_US"/>
+    <form action="https://app.moosend.com/subscribe/5525d9b3-89f9-4595-af9e-45a37fdaca1a" method="post">
+      <p><input className="FormInput" type="email" name="ms-email" placeholder="Adresa de email"/></p>
+      <input type="hidden" value="CitesteScripturaro" name="uri"/>
+      <input type="hidden" name="loc" value="en_US"/>
       <input className="Button" type="submit" value="Subscribe" />
      
     </form>
+
+
     </div>
    
     <section className="section taLeft" id="clearAll">
