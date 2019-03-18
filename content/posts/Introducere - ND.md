@@ -1,9 +1,9 @@
 ---
 template: SinglePost
-title: Introducere - Vreau sa il cunosc pe Dumnezeu
+title: Introducere - Studiu biblic al Numelui Domnului
 slug: numele-domnului/vreau-sa-il-cunosc-pe-dumnezeu
 status: Published
-date: '2019-03-13'
+date: '2019-03-14'
 featuredImage: 'https://ucarecdn.com/57002902-e8b3-4315-9995-beb637b29128/'
 excerpt: This is an excerpt of Post Two
 categories:

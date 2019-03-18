@@ -1,9 +1,9 @@
 ---
 template: SinglePost
-title: Dumnezeu CEL PREAÎNALT - El Elyon
-slug: numele-domnului/dumnezeu-cel-preainalt-el-elyon
+title: Dumnezeu CARE VEDE - El Roi
+slug: numele-domnului/dumnezeu-care-vede-el-roi
 status: Published
-date: '2019-03-12'
+date: '2019-03-11'
 featuredImage: 'https://ucarecdn.com/f540281a-41cf-4bfa-8181-b172e2655fba/-/crop/1632x1777/0,672/-/preview/'
 excerpt: This is an excerpt of Post Two
 categories:
@@ -13,4 +13,4 @@ meta:
   title: test meta title
 ---
 
-Partea intai , partea a doua si partea a treia.
+Partea intai si partea a doua.

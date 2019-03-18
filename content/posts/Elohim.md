@@ -1,9 +1,9 @@
 ---
 template: SinglePost
-title: Elohim - Creatorul
-slug: numele-domnului/elohim-creatorul
+title: Dumnezeu CREATORUL - Elohim
+slug: numele-domnului/dumnezeu-creatorul-elohim
 status: Published
-date: '2019-03-12'
+date: '2019-03-13'
 featuredImage: 'https://ucarecdn.com/f540281a-41cf-4bfa-8181-b172e2655fba/-/crop/1632x1777/0,672/-/preview/'
 excerpt: This is an excerpt of Post Two
 categories:
