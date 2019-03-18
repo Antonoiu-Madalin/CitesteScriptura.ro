@@ -62,9 +62,10 @@ export class Navigation extends Component {
 
           <div className="Nav--Links">
             <NavLink to="/">Acasă</NavLink>
-            <NavLink to="/components/">Components</NavLink>
-            <NavLink to="/about/" >About</NavLink>
-            <NavLink to="/default/">Default</NavLink>
+            <NavLink to="/ce-este-scriptura/">Ce este Scriptura?</NavLink>
+            <NavLink to="/stiinta-si-credinta/">Stiinta si credinta</NavLink>
+            <NavLink to="/versete-biblice">Versete biblice</NavLink>
+            <NavLink to="/despre/" >Despre</NavLink>
             <NavLink to="/contact/">Contact</NavLink>
           </div>
           <button
