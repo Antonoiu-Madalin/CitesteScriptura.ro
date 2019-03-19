@@ -1,5 +1,5 @@
 ---
-template: BlogIndex
+template: HomePage
 title: Vechiul Testament
 slug: vechiul-testament
 subtitle: ''

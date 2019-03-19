@@ -1,5 +1,5 @@
 ---
-template: BlogIndex
+template: HomePage
 title: Deo et hominibus
 slug: deo-et-hominibus
 subtitle: ''

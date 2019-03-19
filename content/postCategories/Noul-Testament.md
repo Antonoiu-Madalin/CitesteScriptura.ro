@@ -1,5 +1,5 @@
 ---
-template: BlogIndex
+template: HomePage
 title: Noul Testament
 slug: noul-testament
 subtitle: ''
