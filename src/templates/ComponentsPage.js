@@ -5,7 +5,6 @@ import PageHeader from '../components/PageHeader'
 import Content from '../components/Content.js'
 import Layout from '../components/Layout.js'
 import Accordion from '../components/Accordion'
-import BackgroundVideo from '../components/BackgroundVideo'
 import Gallery from '../components/Gallery'
 
 // Export Template for use in CMS preview
@@ -15,8 +14,7 @@ export const ComponentsPageTemplate = ({
   featuredImage,
   section1,
   section2,
-  videoPoster,
-  video,
+
   accordion,
   body,
   gallery
@@ -80,8 +78,6 @@ export const pageQuery = graphql`
         featuredImage
         section1
         section2
-        videoPoster
-        video
         accordion {
           title
           description
