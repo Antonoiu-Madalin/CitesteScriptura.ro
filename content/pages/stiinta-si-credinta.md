@@ -1,22 +1,11 @@
 ---
 template: ComponentsPage
 slug: stiinta-si-credinta
-title: Stiinta si credinta
-featuredImage: 'https://ucarecdn.com/df0dc650-6938-412f-aefb-2019d2349e13/'
-subtitle: This is the components page subtitle.
-section1: >-
-  ## This is a container component
-
-  A sem vel nec sodales mi vivamus senectus sed potenti a parturient nascetur
-  tincidunt nisi pulvinar rhoncus a. Risus imperdiet taciti suspendisse facilisi
-  a per metus cubilia varius a nostra adipiscing amet ultrices quisque ac mi a.
+title: Știință și credință
+featuredImage: 'https://images.unsplash.com/photo-1462332420958-a05d1e002413?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1940&q=80'
+subtitle: Verdictul științei asupra credinței creștine.
 
 
-  [Dictumst a ultrices mi]() a dignissim ad fermentum eget a nam et a blandit
-  scelerisque. Taciti lorem tempor quam vestibulum dis habitasse vestibulum diam
-  vel est ut proin dis auctor. Suscipit sceler isque orci magna interdum vel
-  bibendum duis netus a consectetur dui magnis ac aliquet sem posuere tincidunt
-  vestibulum.
 section2: |-
   ## You can use videos, images and text.
 
@@ -24,9 +13,7 @@ section2: |-
   src="https://www.youtube.com/embed/Js00yn142ic" frameborder="0"
   allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-  ## Also background videos, with poster image support.
-video: 'https://ucarecdn.com/e6979298-66d6-4245-b496-6e5a5d507135/'
-videoPoster: 'https://ucarecdn.com/69ba14a8-6481-4671-abb6-0e6f0d9c3e46/'
+  
 accordion:
   - description: Taciti lorem tempor quam vestibulum dis habitasse
     title: Taciti lorem
@@ -38,14 +25,34 @@ accordion:
     title: Taciti lorem
 gallery:
   - alt: yellow rope image
-    image: 'https://ucarecdn.com/277cdf82-24aa-4d80-8169-bb46f4cd319d/'
-    title: Yellow Rope
+    image: 'https://images.unsplash.com/photo-1541265313101-7043fb302244?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'
+    title: Daca Isus Hristos nu a existat,
   - alt: umbrellas
-    image: 'https://ucarecdn.com/5da63204-4ff0-4235-aac3-852921d7c632/'
-    title: a bunch of umbrellas
+    image: 'https://images.unsplash.com/photo-1494870703355-d05125562171?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'
+    title: ...nu a murit pe cruce,
   - alt: yellow ice cream
-    image: 'https://ucarecdn.com/83485d70-1552-4c97-b237-22330fb56a1e/'
-    title: Yellow Ice Cream
+    image: 'https://images.unsplash.com/photo-1506516493400-bb5e8347bf0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80'
+    title: ...si nu a inviat, atunci crestinismul este o minciuna.
+
+section1: >-
+  Dar daca Isus Hristos a existat, a murit pe cruce si a inviat, atunci el este Dumnezeu si Biblia este intr-adevar Cuvantul lui Dumnezeu.
+
+  Haideti sa le luam pe rand:
+
+  ### I) Avem dovezi ca Isus Hristos a existat?
+
+  Cu siguranta! Avem atat de multe incat chiar si cei mai mari sceptici gasesc cu greu a nu crede.
+
+
+  [Dictumst a ultrices mi]() a dignissim ad fermentum eget a nam et a blandit
+  scelerisque. Taciti lorem tempor quam vestibulum dis habitasse vestibulum diam
+  vel est ut proin dis auctor. Suscipit sceler isque orci magna interdum vel
+  bibendum duis netus a consectetur dui magnis ac aliquet sem posuere tincidunt
+  vestibulum.
+
+
+
+
 meta:
   description: This is a meta description.
   title: Components Page

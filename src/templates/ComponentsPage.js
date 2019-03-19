@@ -27,29 +27,25 @@ export const ComponentsPageTemplate = ({
       subtitle={subtitle}
       backgroundImage={featuredImage}
     />
-    <section className="section">
+        <section className="section">
       <div className="container">
-        <Content source={section1} />
-      </div>
-    </section>
-
-    <section className="section">
-      <div className="container">
-        <h2>Our gallery component</h2>
+        <h2 className="fundamentCrestin">Fundamentul crestinismului</h2>
         <Gallery images={gallery} />
       </div>
     </section>
 
     <section className="section">
       <div className="container">
-        <Content source={section2} />
+        <Content source={section1} />
       </div>
     </section>
 
-    <section className="BackgroundVideo-section section">
-      <BackgroundVideo poster={videoPoster}>
-        {video && <source src={video} type="video/mp4" />}
-      </BackgroundVideo>
+
+
+    <section className="section">
+      <div className="container">
+        <Content source={section2} />
+      </div>
     </section>
 
     <section className="section">

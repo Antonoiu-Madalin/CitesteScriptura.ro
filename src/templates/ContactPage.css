@@ -36,3 +36,8 @@
     width: calc(50% - 2rem);
   }
 }
+
+h2{
+  text-align: center;
+  padding-top: 20px;
+}
