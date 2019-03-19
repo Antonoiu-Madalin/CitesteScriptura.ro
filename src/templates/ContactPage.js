@@ -2,7 +2,6 @@ import React from 'react'
 import { Mail } from 'react-feather'
 import { graphql } from 'gatsby'
 
-import PageHeader from '../components/PageHeader'
 import FormSimpleAjax from '../components/FormSimpleAjax'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
@@ -12,16 +11,10 @@ import './ContactPage.css'
 export const ContactPageTemplate = ({
   body,
   title,
-  subtitle,
-  featuredImage,
   email,
 }) => (
   <main className="Contact">
-    <PageHeader
-      title={title}
-      subtitle={subtitle}
-      backgroundImage={featuredImage}
-    />
+   
     <section className="section Contact--Section1">
       <div className="container Contact--Section1--Container">
         <div>
@@ -63,16 +56,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         template
-        subtitle
-        featuredImage
-        address
-        phone
         email
-        locations {
-          mapLink
-          lat
-          lng
-        }
+
       }
     }
   }

@@ -9,28 +9,24 @@ meta:
   description: 'Informatii despre noi.'
   title: Despre CiteșteScriptura.ro
 ---
-[CiteșteScriptura.ro](https://citestescriptura.netlify.com) este o platforma dedicata tuturor celor ce vor sa descopere, sa cunoasca si mai apoi sa aplice adevarul despre Cuvantul lui Dumnezeu, Biblia. Presupun ca ai multe intrebari si nelamuriri, nu numai in ceea ce priveste divinitatea, dar si in privinta traiului de zi cu zi. Te provoc sa ramai curios si vei descoperii **singura carte neschimbata de oameni, care schimba oameni!** O data cu studierea ei, vei afla si vei implinii voia lui Dumnezeu,  vei vedea cat este de simplu defapt, vei dobandii un stil de viata curat, plin de gratia si harul Sau deplin pentru totdeauna!
+[CiteșteScriptura.ro](https://citestescriptura.netlify.com) este o platforma dedicata tuturor celor ce vor sa descopere, sa cunoasca si apoi sa aplice adevarul in ceea ce priveste Cuvantul lui Dumnezeu, Biblia. Presupun ca ai multe intrebari si nelamuriri, despre tine, oamenii din jur, divinitate, univers etc. E foarte bine ca ai aceste intrebari, fiecare om  ar trebui sa si le puna! Te provoc sa ramai curios si vei afla raspunsul acestor intrebari, vei descoperii **singura carte neschimbata de oameni, care schimba oameni!** O data cu studierea ei, vei afla si vei implinii voia lui Dumnezeu,  vei vedea cat este de simplu defapt, vei dobandii un stil de viata curat, plin de gratia si harul Sau deplin pentru totdeauna!
 
 ### Punem la dispozitia ta:
-* Un mediu **100% neutru**, lipsit de influenta vreunui cult religios.
+* Un mediu **100% neutru**, lipsit de influenta oricarui cult religios.
 * Posibilitatea de a [descoperii singur](http://localhost:8000/post-categories/descopera-singur/) adevarul, doar cu o Biblie.
 * [Trimiteri in Biblie](http://localhost:8000/post-categories/descopera-singur/), organizate pe subiecte si teme de interes.
 * [Explicatii si comentarii](http://localhost:8000/post-categories/descopera-singur/) pe baza Bibliei pentru **situatii din zilele noastre**!
 
 ### Te bucuri de:
 
-* **Navigare instant**, fara a reimprospata pagina, cu sau **fara conexiune la internet**! *
-* **Cautare instant**, cu sau **fara conexiune la internet**! *
-* **Performanta maxima** indiferent de dispozitiv, zona geografica sau conditii de internet.
+
+* **Navigare instant**, fara a reimprospata pagina, chiar si **fara conexiune la internet**! *
+* **Cautare instant**, chiar si **fara conexiune la internet**! *
 * **Design receptiv** si optimizat pentru dispozitive mobile!
-* **Aplicatie mobila** - Deschide browserul telefonului tau, mergi in Setari si *Adauga pe ecran pornire*. 
-Aplicatia se va instala si se va updata automat in fundal. Nu este doar un shortcut, este o aplicatie de tip PWA de sine statatoare ce nu are nevoie de browser pentru a fi deschisa, astfel ruland mult mai repede si cu design optimizat!
-* *Aplicatie in * Google Play / App Store in curand!
+* **Comentarii in timp real**, pentru fiecare postare de pe site. 
+* **Aplicatie mobila PWA** - Tot ce trebuie sa faci este sa deschizi browserul telefonului tau, sa acceseazi site-ul nostru si sa mergi in Setari > 
+*Adauga pe ecran pornire*. Nu este o scurtatura, este o aplicatie de sine statatoare!
+* *Aplicatie in Google Play/App Store in curand*!
 
 _*_*Daca site-ul a fost accesat cel putin o data, avand conexiune la internet in acel moment.*
 
-## Vrei sa cunosti adevarul?
-
-Vino pe blog. Esti la un click distanta!
-
-[![Vreau adevarul](.\static\images\capture.jpg)]('/')
