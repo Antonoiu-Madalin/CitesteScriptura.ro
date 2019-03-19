@@ -35,13 +35,17 @@ gallery:
     title: ...si nu a inviat, atunci crestinismul este o minciuna.
 
 section1: >-
-  Dar daca Isus Hristos a existat, a murit pe cruce si a inviat, atunci el este Dumnezeu si Biblia este intr-adevar Cuvantul lui Dumnezeu.
+  Dar daca avem dovezi incontestabile ca Isus Hristos a existat, a murit pe cruce si a inviat, atunci el este Fiul lui Dumnezeu si Biblia este intr-adevar Cuvantul lui Dumnezeu, dupa cum scrie. Haideti sa le luam pe rand:
 
-  Haideti sa le luam pe rand:
-
-  ### I) Avem dovezi ca Isus Hristos a existat?
+  ### I) Existenta pe pamant a lui Hristos
 
   Cu siguranta! Avem atat de multe incat chiar si cei mai mari sceptici gasesc cu greu a nu crede.
+  
+  ### II) Moartea pe cruce
+
+  ### III) Invierea lui Hristos
+
+  
 
 
   [Dictumst a ultrices mi]() a dignissim ad fermentum eget a nam et a blandit
