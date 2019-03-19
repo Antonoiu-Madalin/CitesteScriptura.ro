@@ -2,6 +2,7 @@
   background-color: var(--darkGrey);
   color: white;
   padding: 15rem 0;
+  margin-top: -30px;
 }
 
 .PageHeader .BackgroundImage {
