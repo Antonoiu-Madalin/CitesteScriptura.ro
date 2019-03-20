@@ -50,7 +50,7 @@ section1: >-
   Cu alte cuvinte:
   
 
-  1. Daca Isus Hristos nu a trait pe pamant, nu avea cine sa moara pe cruce si nici sa invieze din mormant.
+  1. Daca Isus Hristos nu a trait pe pamant, nu putea sa moara pe cruce si nici sa invieze din mormant.
 
 
   2. Daca Isus Hristos a trait pe pamant, dar nu a murit pe cruce, invierea nu este posibila.
