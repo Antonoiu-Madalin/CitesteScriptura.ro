@@ -27,7 +27,7 @@ export const ComponentsPageTemplate = ({
     />
         <section className="section">
       <div className="container">
-        <h2 className="fundamentCrestin">Fundamentul crestinismului</h2>
+        <h2 className="fundamentCrestin">Fundamentul crestin</h2>
         <Gallery images={gallery} />
       </div>
     </section>
