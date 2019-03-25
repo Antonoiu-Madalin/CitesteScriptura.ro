@@ -84,7 +84,10 @@ section1: >-
   ## I) Viata  - A trait sau nu Isus Hristos pe pamant?
 
  
-  
+Un alt factor extrem de important este felul in care, din punct de vedere istoric si actual, ne referim la anul in care suntem. Te-ai gândit vreodată de ce numărăm anii așa, de ce spunem ca suntem in anul 2019? Înainte de Hristos se numărau înapoi, acum spunem 2019 ani după nașterea lui Hristos. Aproape intreg globul numara anii asa. Recunoscând cu toții acest moment unic in istoria noastra este o buna dovada că Isus Hristos s-a nascut si a trait pe pamant.
+
+Deasemenea, adaugă harta cu locația unde s-au născut, unde a murit.
+
   ## II) Moartea - A murit sau nu Isus Hristos pe cruce?
 
   ## III) Invierea - A inviat sau nu din mormant?
