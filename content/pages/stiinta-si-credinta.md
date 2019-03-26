@@ -37,13 +37,13 @@ accordion:
     
 gallery:
   - alt: Isus traieste
-    image: 'https://images.unsplash.com/photo-1541265313101-7043fb302244?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'
+    image: 'https://ucarecdn.com/63c28a69-7136-4b4c-abd0-127968169440/'
     title: Daca Isus Hristos nu a existat pe pamant,
   - alt: Isus moare pe cruce
-    image: 'https://images.unsplash.com/photo-1494870703355-d05125562171?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'
+    image: 'https://ucarecdn.com/8b061331-7d7a-43bb-acf5-ba0b5b2c9ef4/'
     title: ...nu a murit pe cruce,
   - alt: Isus a inviat din mormant
-    image: 'https://images.unsplash.com/photo-1506516493400-bb5e8347bf0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80'
+    image: 'https://ucarecdn.com/77869414-c2ad-4789-84e3-0b651c5a84f8/'
     title: ...si nu a inviat din mormant, atunci crestinismul este o minciuna.
 
 section1: >-

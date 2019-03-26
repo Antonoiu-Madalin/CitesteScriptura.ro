@@ -19,7 +19,7 @@
     text-align: left;
     background-color:  red;
     color: white;
-    width: 35%;
+    width: 34%;
   }
   
   #customers .nuCrestinReferinta{
@@ -27,7 +27,7 @@
     padding-bottom: 12px;
     text-align: left;
     background-color:  grey;
-    width: 65%;
+    width: 64%;
   }
   
 
@@ -57,3 +57,15 @@ hr{
 span .exPlanation{
   font-size: 10px;
 }
+
+@media (max-width: 560px) {
+  html body{
+    width:100%;
+  }
+
+}
+
+.container{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
