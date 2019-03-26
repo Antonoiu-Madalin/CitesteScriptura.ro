@@ -54,60 +54,59 @@ export const ComponentsPageTemplate = ({
           </tr>
 
           <tr>
-            <td><span className="nameFancy"><b>Flavius Josephus</b></span><span>(37 – c. 100 d.Hr)</span><span><i>istoric romano-evreu al sec. I</i></span></td>
+            <td><span className="nameFancy"><b>Flavius Josephus</b></span>
+            <span>(37 – c. 100 d.Hr)</span><span><i>istoric romano-evreu, sec. I</i></span></td>
             <td>
               <span><i>"Ananus...assembled the Sanhedrin of judges... 
               and brought before them the brother of Jesus who was called Christ, 
-              whose name was James..." [<a href="http://penelope.uchicago.edu/josephus/ant-20.html" 
-              target="_blank" rel="noopener noreferrer"><u>Antiquities XX:9-26</u></a>]</i></span>
-              <span><i>"Ananus...assembled the Sanhedrin of judges... 
-              and brought before them the brother of Jesus who was called Christ, 
-              whose name was James..." [<a href="http://penelope.uchicago.edu/josephus/ant-20.html" 
-              target="_blank" rel="noopener noreferrer"><u>Antiquities XX:9-26</u></a>]</i></span>
-              </td>
+              whose name was James..." <a href="http://penelope.uchicago.edu/josephus/ant-20.html" 
+              target="_blank" rel="noopener noreferrer"><u>[Antiquities XX:9-26]</u></a></i></span>
+              <hr />
+              <span><i>"About this time there lived Jesus...For he ... wrought surprising feats
+              .... He was the Christ. When Pilate ...condemned him to be crucified. 
+              <a href="https://www.quora.com/What-did-Josephus-really-write-about-Jesus-in-the-first-century" 
+              target="_blank" rel="noopener noreferrer"><u>[Testimonium Flavianum]</u></a></i></span>
+            </td>
           </tr>
 
+          <tr>
+            <td><span className="nameFancy"><b>Pliniu cel Tanar</b></span><span>(61 – c. 113 d.Hr)</span>
+            <span><i>avocat, autor si magistrat roman, sec. I</i></span></td>
+            <td>
+              <span><i>"...when they sang in alternate verses a hymn to Christ, as to a god, 
+                and bound themselves by a solemn oath..." <a href="http://www.vroma.org/~hwalker/Pliny/Pliny10-096-E.html" 
+              target="_blank" rel="noopener noreferrer"><u>[Letter 10.96, To the Emperor Trajan]</u></a></i></span>
+            </td>
+          </tr>
 
+          
 
           <tr>
-            <td>Centro comercial</td>
-            <td>Francisco Chang</td>
+            <td><span className="nameFancy"><b>Talmudul Babilonian</b></span>
+           </td>
+            <td>
+              <span><i>"On the eve of the Passover Yeshu  was hanged. For forty days before the execution 
+                took place, a herald went forth and cried, 'He is going forth to be stoned because he has practised 
+                sorcery.... he was hanged on the eve of the Passover..." 
+                <a href="http://www.come-and-hear.com/sanhedrin/sanhedrin_43.html" 
+              target="_blank" rel="noopener noreferrer"><u>[Tractate Sanhedrin, Folio 43a]</u></a></i></span>
+           <span className="exPlanation">*Actually, "Yeshu" (or "Yeshua") is how Jesus' name is pronounced in Hebrew. the term "hanged" 
+                can function as a synonym for "crucified." For instance, Galatians 3:13 declares that Christ was "hanged", and Luke 23:39 applies this term to the criminals who were crucified with Jesus.</span>
+            </td>
+          </tr>
 
-          </tr>
+          
           <tr>
-            <td>Ernst Handel</td>
-            <td>Roland Mendel</td>
-       
-          </tr>
-          <tr>
-            <td>Island Trading</td>
-            <td>Helen Bennett</td>
-           
-          </tr>
-          <tr>
-            <td>Königlich Essen</td>
-            <td>Philip Cramer</td>
-            
-          </tr>
-          <tr>
-            <td>Laughing Bacchus</td>
-            <td>Yoshi Tannamuri</td>
-           
-          </tr>
-          <tr>
-            <td>Magazzini Alimen</td>
-            <td>Giovanni Rovelli</td>
-         
-          </tr>
-          <tr>
-            <td>North/South</td>
-            <td>Simon Crowther</td>
-           
-          </tr>
-          <tr>
-            <td>Paris spécialités</td>
-            <td>Marie Bertrand</td>
-           
+          <td><span className="nameFancy"><b>Lucian din Samosata</b></span>
+          <span>(c. 125 – after 180 d.Hr)</span><span><i>retoric si satirist sirian, sec. II</i></span></td>
+          
+            <td>
+              <span><i>"The Christians ... worship a man to this day...who introduced their novel...and was crucified on that account.
+              ...they are all brothers, from the moment that they are converted, and deny the gods of Greece, and worship the crucified 
+              sage, and live after his laws." 
+                <a href="https://en.wikipedia.org/wiki/Passing_of_Peregrinus" 
+              target="_blank" rel="noopener noreferrer"><u>[Passing_of_Peregrinus]</u></a></i></span>
+            </td>
           </tr>
   </table>
 

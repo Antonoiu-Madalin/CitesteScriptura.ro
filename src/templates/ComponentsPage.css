@@ -26,8 +26,7 @@
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color:  red;
-    color: white;
+    background-color:  grey;
     width: 65%;
   }
   
@@ -49,4 +48,12 @@
 .nameFancy{
     font-weight: 700;
     font-size: 120%;
+}
+
+hr{
+  opacity: 0.5;
+}
+
+span .exPlanation{
+  font-size: 10px;
 }
