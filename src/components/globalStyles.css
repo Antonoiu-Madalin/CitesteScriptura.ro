@@ -32,6 +32,10 @@
   -moz-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+html, body {
+  max-width: 100%;
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
