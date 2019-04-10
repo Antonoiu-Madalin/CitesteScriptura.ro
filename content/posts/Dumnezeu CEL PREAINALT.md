@@ -1,9 +1,9 @@
 ---
 template: SinglePost
-title: Dumnezeu CREATORUL - Elohim
-slug: numele-domnului/dumnezeu-creatorul-elohim
+title: Dumnezeu CEL PREAÎNALT
+slug: numele-domnului/dumnezeu-cel-preainalt
 status: Published
-date: '2019-03-13'
+date: '2019-03-12'
 featuredImage: 'https://ucarecdn.com/f540281a-41cf-4bfa-8181-b172e2655fba/-/crop/1632x1777/0,672/-/preview/'
 excerpt: This is an excerpt of Post Two
 categories:
@@ -13,4 +13,4 @@ meta:
   title: test meta title
 ---
 
-Partea intai si partea a doua.
+Partea intai , partea a doua si partea a treia.
