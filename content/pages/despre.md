@@ -12,7 +12,7 @@ meta:
  
  Portalul **[CiteșteScriptura.ro](/)** isi propune urmatoarele:
   * Sa ofere un mediu neutru, lipsit de influenta oricarui cult religios, prin intermediul caruia fiecare om sa poata creste spiritual.
-  * Sa puna in lumina verdictul stiintei asupra autenticitatii si veridicitatii Scripturii (Biblia) si a intregului Crestinism. Vezi [Știință și credință](/stiinta-si-credinta)
+  * Sa puna in lumina verdictul stiintei asupra autenticitatii si veridicitatii Scripturii (Biblia) si a intregului Crestinism. Vezi categoria [Apologetica crestina](/apologetica-crestina)
   * Sa foloseasca copii dupa traducerile originale din Ebraica si Greaca ale Vechiului si Noului Testament in realizarea studiului biblic pentru o deplina intelegere a lor
 
  Utilizand site-ul nostru te vei bucura de:

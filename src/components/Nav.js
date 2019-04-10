@@ -62,9 +62,6 @@ export class Navigation extends Component {
 
           <div className="Nav--Links">
             <NavLink to="/">Acasă</NavLink>
-            <NavLink to="/stiinta-si-credinta/">Știință și credință</NavLink>
-             {/*<NavLink to="/ce-este-scriptura/">Ce este Scriptura?</NavLink>
-            <NavLink to="/versete-biblice">Versete biblice*in lucru</NavLink> */}
             <NavLink to="/despre/" >Despre</NavLink>
             <NavLink to="/contact/">Contact</NavLink>
           </div>
