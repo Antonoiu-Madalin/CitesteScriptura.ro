@@ -56,7 +56,8 @@ body{
 }
 
 .SinglePost--InnerContent {
-  padding: 0 8rem;
+  padding: 0 4rem;
+  padding-top: 3rem;
 }
 
 @media screen and (max-width: 750px) {
