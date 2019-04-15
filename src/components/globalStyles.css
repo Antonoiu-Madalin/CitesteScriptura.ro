@@ -59,7 +59,7 @@ body {
   box-sizing: border-box;
   width: 100%;
   margin: 0;
-padding:0;
+ padding:0;
 }
 
 body *, body *:before, body *:after { box-sizing: inherit; }
@@ -85,6 +85,7 @@ h5,
 h6 {
   margin: 0;
   margin-bottom: 0.5em;
+
 }
 
 pre {
