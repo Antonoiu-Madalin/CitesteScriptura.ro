@@ -40,15 +40,21 @@ export const SinglePostTemplate = ({
             {categories && (
               <Fragment>
                 <span>| </span>
+
                 {categories.map((cat, index) => (
-                  <span
-                    key={cat.category}
-                    className="SinglePost--Meta--Category"
-                  >
-                    {cat.category}
-                    {/* Add a comma on all but last category */}
-                    {index !== categories.length - 1 ? ',' : ''}
-                  </span>
+
+                  <Link to={cat.category.split(" ").join("-").toLowerCase() + "/"}>
+                 
+                    <span
+                      key={cat.category}
+                      className="SinglePost--Meta--Category"
+                    >
+                      {cat.category}
+                      {/* Add a comma on all but last category */}
+                      {index !== categories.length - 1 ? ',' : ''}
+                    </span>
+                  </Link>
+
                 ))}
               </Fragment>
             )}

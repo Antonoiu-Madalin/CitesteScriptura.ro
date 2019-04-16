@@ -88,16 +88,13 @@ body{
 }
 
 .SinglePost--Meta--Category{
-  padding-left: 5px;
-  font-size: 1.2rem;
-  min-height: 1.2em;
-  line-height: 1;
-  margin: 0.5em 0;
-  border: solid 1px #42B2A4;
-  display: inline-block; /* Wraps div around the text only */
-  background:#86CBD1;
-  color: white;
-  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: lightblue;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin:0;
 }
 
 h1{
