@@ -1,6 +1,5 @@
 .PostCategoriesNav {
   display: flex;
-  align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
   padding-top: 12px;
@@ -37,10 +36,10 @@
 
   .PostCategoriesNav {
     display: flex;
-    align-items: center;
+  
     justify-content: flex-start;
     flex-wrap: wrap;
-    padding-top: 30px;
+    padding-top: 12px;
   }
 
 }
@@ -49,3 +48,13 @@
   margin: 0 auto;
 }
 
+a.NavLink{
+  padding-left:0px;
+  padding-right:0px;
+  margin-right:10px;
+  margin-left:10px;
+}
+
+.PostCategoriesNav{
+  max-width: 95%;
+}
