@@ -54,4 +54,5 @@ const PostCategoriesNav = ({ categories}) => (
     </div>
 )
 
+
 export default PostCategoriesNav
