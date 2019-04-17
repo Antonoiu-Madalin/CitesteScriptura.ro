@@ -2,13 +2,14 @@
 section.section{
   padding-top: 0px;
 }
-
+.PostSection{
+  margin-top: 18px;
+}
 .PostSection--Grid {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: stretch;
-  padding-top: 15px;
 }
 
 .PostSection button {

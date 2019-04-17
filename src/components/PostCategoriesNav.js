@@ -7,15 +7,8 @@ import BlogSearch from './BlogSearch';
 
 
 const activeStyles  = {
-  fontSize: '1.2rem',
-  minHeight: '1.2em',
-  lineHeight:' 1',
-  margin: '0.5em 0',
-  border: 'solid 1px #42B2A4',
-  display: 'inline-block', /* Wraps div around the text only */
-  background:'#86CBD1',
   color: 'white',
-  fontWeight: '700'
+  background:'#459c98',
 }
 
 const PostCategoriesNav = ({ categories}) => (
