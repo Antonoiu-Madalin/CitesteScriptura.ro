@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Collapsible from 'react-collapsible';
+import Collapsible from './Collapsible';
 import './PostCategoriesNav.css'
 import { FaPlusSquare } from 'react-icons/fa';
 import BlogSearch from './BlogSearch';
@@ -9,7 +9,7 @@ import BlogSearch from './BlogSearch';
 const activeStyles  = {
   fontSize: '1.2rem',
   minHeight: '1.2em',
-  lineGeight:' 1',
+  lineHeight:' 1',
   margin: '0.5em 0',
   border: 'solid 1px #42B2A4',
   display: 'inline-block', /* Wraps div around the text only */
