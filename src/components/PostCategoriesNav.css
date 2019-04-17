@@ -1,7 +1,6 @@
 .NavLink {
-  font-size: 1.2rem;
-  min-height: 1.2em;
-  line-height: 1;
+  font-size: 1.6rem;
+  line-height:1;
   margin: 0.5em 0;
   /* border: solid 1px #E07F5D; */
   display: inline-block; /* Wraps div around the text only */
@@ -12,10 +11,10 @@
 
 
 .NavLink:hover,
-.NavLink.active,
+.NavLink:active,
 .NavLink:focus {
   color: white;
-  background:#459c98;
+  background-color: #459c98;
   border-bottom-color: #E27D5F;
 }
 
@@ -26,14 +25,28 @@ a.NavLink{
   margin-left:1.5px;
 }
 
+.NavLink.undefined{
+  background: none;
+  color: grey;
+ 
+}
 
+.NavLink.active.undefined{
+  border-bottom-color: none;
+}
 
+.NavLink.undefined:active,
+.NavLink.undefined:hover,
+.NavLink.active.undefined{
+  color: #459c98;
+}
 
 .PostCategoriesNav {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  padding-top: 12px;
+  padding-top: 13px;
+  
 }
 
 .PostCategoriesNav > * + * {
@@ -72,6 +85,12 @@ a.NavLink{
     justify-content: flex-start;
     flex-wrap: wrap;
     padding-top: 12px;
+  }
+
+  a.NavLink{
+    padding-left:5px;
+    padding-right:5px;
+    margin: 1.5px;
   }
 
 }

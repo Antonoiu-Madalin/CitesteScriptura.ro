@@ -15,8 +15,8 @@ export const AboutPageTemplate = ({ title, subtitle, featuredImage, body }) => (
       backgroundImage={featuredImage}
     />
 
-    <section className="section">
-      <div className="container">
+    <section className="section Despre">
+      <div className="container deSpre">
         <Content source={body} />
       </div>
     </section>
