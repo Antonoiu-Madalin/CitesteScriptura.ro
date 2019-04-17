@@ -9,6 +9,10 @@
   overflow: hidden;
 }
 
+a.PostCard:visited{
+  color:#4e5560;
+}
+
 .PostCard:hover,
 .PostCard:focus {
   transform: translateY(-1px);
@@ -21,11 +25,13 @@
   height: 15rem;
 }
 
+
 .PostCard--Title {
   margin: 0;
   margin-bottom: 10px;
   font-size: 2rem;
   line-height: 1.15;
+  
 }
 
 .PostCard--Content {

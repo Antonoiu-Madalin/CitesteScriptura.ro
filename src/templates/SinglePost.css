@@ -53,7 +53,7 @@ body{
 .SinglePost--Title {
   text-align: center;
   line-height: 1.15;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
 
 }
@@ -92,7 +92,7 @@ body{
   line-height: 1.15;
   text-transform: uppercase;
   color: #26A8ED;
-  font-weight: 400;
+  font-weight: 700;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin:0;
 }
