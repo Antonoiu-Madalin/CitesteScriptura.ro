@@ -10,21 +10,20 @@ meta:
   title: Despre CiteșteScriptura.ro
 ---
  
- Portalul **[CiteșteScriptura.ro](/)** isi propune urmatoarele:
-  * Sa ofere un mediu lipsit de influenta cultelor religioase, prin care orice om sa creasca spiritual.
-  * Sa faca cunoscuta stransa legatura dintre stiinta si credinta, vezi [Apologetica](/apologetica/)
-  * Sa consulte versiunea originala a Biliei (scrisa in Ebraica si Greaca) in realizarea studiului biblic.
+ Portalul **[CiteșteScriptura.ro](/)** își propune următoarele:
+  * Să ofere un mediu lipsit de influența oricărui cult religios, prin care orice om să crească spiritual.
+  * Să promoveze strânsa legătură dintre știință și credință, click pe [Apologetică](/apologetica/). 
+  * Să consulte versiunea originală a Bibliei (scrisă în Ebraică și Greacă) în realizarea studiului biblic.
 
- Utilizand site-ul nostru te vei bucura de:
+ Utilizând site-ul nostru te vei bucura de:
 
-* **Navigare si cautare instant**, fara reimprospatarea paginii, chiar si **fara conexiune la internet ***
-* **Design receptiv** si optimizat pentru experienta de tip desktop si mobil, folosind cele mai noi tehnologii.
-* **Access securizat** la informatie, conexiune criptata prin HTTPS/ SSL.
-* **Comentarii in timp real** pentru fiecare articol de pe site. 
-* **Aplicatie mobila PWA** - Tot ce trebuie sa faci este sa deschizi browserul telefonului tau, sa accesezi site-ul nostru si sa mergi in Setari > 
-*Adauga pe ecran pornire*. Nu este doar o scurtatura, este o aplicatie de sine statatoare.
-* **Notificare pe mail atunci cand postam** daca te abonezi la Newsletter-ul de mai jos. Astfel ramai la curent cu tot ceea ce apare nou!
+* **Navigare și căutare instant**, fără a reîmprospăta pagina, chiar și **fără conexiune la internet ***
+* **Design receptiv** și optimizat pentru fiecare device, folosind cele mai noi tehnologii.
+* **Acces securizat** la informație, conexiune criptată prin HTTPS/ SSL.
+* **Comentarii în timp real** pentru fiecare articol de pe site. 
+* **Aplicație mobila PWA** - Mergi în setările browserului și selectează *Adaugă pe ecran pornire*. Nu este doar o scurtătură, ci o aplicație de sine stătătoare.
+* **Notificare pe email** atunci când postăm, dacă te abonezi la newsletter-ul de mai jos.
 
 
-###### * **Daca in prealabil continutul a fost accesat cel putin o data**
+###### * **Dacă în prealabil conținutul a fost accesat cel puțin o dată.**
 

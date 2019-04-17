@@ -48,6 +48,10 @@ section.section{
   margin-bottom: 35px;  
 }
 
+.Collapsible__trigger.is-open::after{
+  color: red;
+}
+
 .Collapsible__trigger.is-closed:after {
   margin-bottom: 35px;  
 }
@@ -83,6 +87,10 @@ section.section{
   border: 0px;
   cursor: pointer;
   margin-right:44px;
+  }
+
+  .zeIcon:after{
+    color: red;
   }
 
 
