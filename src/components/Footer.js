@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import { Link } from 'gatsby'
 import './Gallery.css'
 import { SocialIcon } from 'react-social-icons'
 
@@ -31,18 +32,19 @@ export default () => (
        
        <div id="footerColumnsBox1" className="Gallery--Item footerColored"><b>Vezi</b>
         <ul className="clearUl">
-          <li><a href="/">Studiu biblic</a></li>
-          <li><a href="/values">Stiinţă şi credinţă</a></li>
-          <li><a href="/products">Ce este Biblia?</a></li>
-          <li><a href="/products">Versete</a></li>
+        
+          <li><Link to="/">Acasă</Link></li>
+          <li><Link to="/apologetica/">Apologetică</Link></li>
+          <li><Link to="/numele-domnului/">Numele Domnului</Link></li>
+          <li><Link to="/versete/">Versete</Link></li>
         </ul>
        </div> 
 
        <div id="footerColumnsBox2" className="Gallery--Item footerColored"><b>Mai multe</b>
           <ul className="clearUl">
 
-              <li><a href="/despre">Despre noi</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><Link to="/despre/">Despre noi</Link></li>
+              <li><Link to="/contact/">Contact</Link></li>
               <li><a href="/contact">Lasă o sugestie!</a></li>
               <li><a href="/contact">Live chat (Beta)</a></li>
           </ul>
@@ -62,7 +64,7 @@ export default () => (
 
 
       <div className="credit-text"> 
-        <span> ©  {new Date().getFullYear()} {' '} <a href="https://scriptura.netlify.com">Citește Scriptura</a>. Toate drepturile rezervate.</span>
+        <span> ©  {new Date().getFullYear()} {' '} <Link to="/">Citește Scriptura</Link>. Toate drepturile rezervate.</span>
       </div>
 
     </section> 
