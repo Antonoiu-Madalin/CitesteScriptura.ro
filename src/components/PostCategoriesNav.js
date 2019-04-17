@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Collapsible from './Collapsible';
 import './PostCategoriesNav.css'
-import { FaPlusSquare } from 'react-icons/fa';
+import { FaTags } from 'react-icons/fa';
 import BlogSearch from './BlogSearch';
 
 
@@ -22,7 +22,7 @@ const PostCategoriesNav = ({ categories}) => (
     </div>
 
     <div id="innerCollapsible">
-    <Collapsible trigger={<FaPlusSquare className="zeIcon"/>} className="collapSible" >
+    <Collapsible trigger={<FaTags className="zeIcon"/>} className="collapSible" >
     
       <div className="PostCategoriesNav">
         <Link className="NavLink" exact="true" to={`/`} activeStyle={activeStyles}>
