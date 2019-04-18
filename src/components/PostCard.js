@@ -16,6 +16,7 @@ const PostCard = ({
   className = '',
   date,
   time,
+  readingTime,
 }) => (
   <Link to={slug} className={`PostCard ${className}`}>
     {featuredImage && (
@@ -71,7 +72,13 @@ const PostCard = ({
                       </time>
                     )}
           </span>  
-                
+              {/* Don't know yet how to put display the reading time here, i got it in GraphQL tho 
+          <span>
+          <time>
+            {readingTime}
+           </time>
+          </span>
+             */}   
           </div>
         </div>
       </div>

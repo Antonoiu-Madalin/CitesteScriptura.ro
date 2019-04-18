@@ -77,7 +77,9 @@ module.exports = {
         plugins: [
           // gatsby-remark-relative-images must
           // go before gatsby-remark-images
+          `gatsby-remark-reading-time`,
           'gatsby-remark-relative-images',
+          
           {
             resolve: 'gatsby-remark-images',
             options: {
