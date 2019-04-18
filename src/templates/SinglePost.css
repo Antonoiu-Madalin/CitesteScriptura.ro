@@ -115,3 +115,12 @@ p{
   font-size: 2rem; 
   font-family: Georgia, 'Times New Roman', Times, serif
 }
+
+/* Not working yet
+@media screen and (max-width: 440px) {
+  .SinglePost--Title {
+    font-size: 3rem;
+  }
+}
+
+ */
