@@ -2,11 +2,12 @@ import React, { Fragment } from 'react'
 import _get from 'lodash/get'
 import _format from 'date-fns/format'
 import { Link, graphql } from 'gatsby'
-import { ChevronLeft } from 'react-feather'
-
+import { ChevronLeft, ChevronRight } from 'react-feather'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 import './SinglePost.css'
+
+const roLocale = require('date-fns/locale/ro');
 
 export const SinglePostTemplate = ({
   title,
@@ -14,8 +15,9 @@ export const SinglePostTemplate = ({
   body,
   nextPostURL,
   prevPostURL,
-  categories = []
+  categories = [],
 }) => (
+ 
   <main>
     <article
       className="SinglePost section light"
@@ -24,18 +26,21 @@ export const SinglePostTemplate = ({
     >
       <div className="container skinny">
         <Link className="SinglePost--BackButton" to="/">
-          <ChevronLeft /> BACK
+          <ChevronLeft /> înapoi
         </Link>
         <div className="SinglePost--Content relative">
           
           <div className="SinglePost--Meta">
+          
             {date && (
               <time
                 className="SinglePost--Meta--Date"
                 itemProp="dateCreated pubdate datePublished"
                 date={date}
               >
-                {_format(date, 'MMMM Do, YYYY')}
+                
+                {_format(date, 'Do MMMM, YYYY', { locale: roLocale })  
+                }
               </time>
             )}
             {categories && (
@@ -72,20 +77,25 @@ export const SinglePostTemplate = ({
           </div>
 
           <div className="SinglePost--Pagination">
+             
             {prevPostURL && (
               <Link
-                className="SinglePost--Pagination--Link prev"
+                className="SinglePost--BackButton"
                 to={prevPostURL}
               >
-                Previous Post
+              <ChevronLeft /> 
+                Anteriorul articol
               </Link>
             )}
+             
+
+
             {nextPostURL && (
               <Link
-                className="SinglePost--Pagination--Link next"
+                className="SinglePost--NextButton"
                 to={nextPostURL}
               >
-                Next Post
+                Următorul articol <ChevronRight /> 
               </Link>
             )}
           </div>

@@ -8,7 +8,7 @@ body{
   height: 100vm;
 }
 .SinglePost--BackButton {
-  color: white;
+  color: green;
   position: relative;
   display: flex;
   align-items: center;
@@ -27,6 +27,28 @@ body{
 .SinglePost--BackButton:focus svg {
   transform: translateX(-0.25em);
 }
+
+.SinglePost--NextButton {
+  color: green;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+}
+
+.SinglePost--NextButton svg {
+  transition: transform 0.2s ease-out;
+  transform: translateX(0);
+  height: 1.2em;
+}
+
+.SinglePost--NextButton:hover svg,
+.SinglePost--NextButton:focus svg {
+  transform: translateX(0.25em);
+}
+
 
 .SinglePost--Content {
   background: white;
