@@ -4,6 +4,9 @@ import Image from './Image'
 import './PostCard.css'
 import _format from 'date-fns/format'
 
+/* Adaugi asta pentru data (1) */
+const roLocale = require('date-fns/locale/ro');
+
 const PostCard = ({
   featuredImage,
   title,
@@ -53,8 +56,8 @@ const PostCard = ({
           </div>
            
         <div className="nameAndDate">
-          <span>Mădălin Antonoiu</span> 
-          <br/>
+          {/* <span>Mădălin Antonoiu</span>  <br/> */}
+         
 
           <span>
               {date && (
@@ -63,7 +66,8 @@ const PostCard = ({
                         itemProp="dateCreated pubdate datePublished"
                         date={date}
                       >
-                        {_format(date, 'Do MMMM , YYYY')}
+                      {/* Adaugi asta pentru data (2) -  , { locale: roLocale })  */}
+                        {_format(date, 'Do MMMM, YYYY', { locale: roLocale }) }
                       </time>
                     )}
           </span>  

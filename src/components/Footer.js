@@ -45,8 +45,8 @@ export default () => (
 
               <li><Link to="/despre/">Despre noi</Link></li>
               <li><Link to="/contact/">Contact</Link></li>
-              <li><a href="/contact">Lasă o sugestie!</a></li>
-              <li><a href="/contact">Live chat (Beta)</a></li>
+              <li><a href="/contact/">Lasă o sugestie!</a></li>
+              <li><a href="/contact/">Live chat (Beta)</a></li>
           </ul>
         </div>
 
