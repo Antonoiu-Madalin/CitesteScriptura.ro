@@ -4,6 +4,7 @@ import Image from './Image'
 import './PostCard.css'
 import _format from 'date-fns/format'
 
+
 /* Adaugi asta pentru data (1) */
 const roLocale = require('date-fns/locale/ro');
 
@@ -70,15 +71,15 @@ const PostCard = ({
                       {/* Adaugi asta pentru data (2) -  , { locale: roLocale })  */}
                         {_format(date, 'Do MMMM, YYYY', { locale: roLocale }) }
                       </time>
-                    )}
+                )}
+
+                {/* Estimated time to read */}        
+              <span className="estimateReadingTime">
+                  {readingTime.text}
+              </span>
+              
           </span>  
-              {/* Don't know yet how to put display the reading time here, i got it in GraphQL tho 
-          <span>
-          <time>
-            {readingTime}
-           </time>
-          </span>
-             */}   
+   
           </div>
         </div>
       </div>

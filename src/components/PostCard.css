@@ -15,6 +15,10 @@
 } */
 
 
+.estimateReadingTime{
+ float: right;
+}
+
 
 .author-profile-image{
   width: 30px;

@@ -106,7 +106,7 @@ const HomePage = ({ data: { page, posts, postCategories } }) => (
       posts={posts.edges.map(post => ({
         ...post.node,
         ...post.node.frontmatter,
-        ...post.node.fields
+        ...post.node.fields,
       }))}
       postCategories={postCategories.edges.map(post => ({
         ...post.node,
