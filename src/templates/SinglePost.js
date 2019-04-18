@@ -27,6 +27,7 @@ export const SinglePostTemplate = ({
           <ChevronLeft /> BACK
         </Link>
         <div className="SinglePost--Content relative">
+          
           <div className="SinglePost--Meta">
             {date && (
               <time
