@@ -49,7 +49,7 @@ export const SinglePostTemplate = ({
 
                 {categories.map((cat, index) => (
 
-                  <Link to={cat.category.split(" ").join("-").toLowerCase() + "/"}>
+                  <Link to={cat.category.split(" ").join("-").toLowerCase().replace("ă","a") + "/"}>
                  
                     <span
                       key={cat.category}

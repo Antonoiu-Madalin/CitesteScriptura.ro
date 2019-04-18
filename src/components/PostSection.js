@@ -30,10 +30,9 @@ class PostSection extends React.Component {
     return (
       
       <div className="PostSection">
-    
-      <div>
-        
-      </div>
+      
+        <div class="not-found">Not Found</div>
+ 
         {title && <h2 className="PostSection--Title">{title}</h2>}
         {!!visiblePosts.length && (
           <div className="PostSection--Grid">

@@ -5,11 +5,11 @@ import qs from 'qs'
 import "./BlogSearch.css"
 /* import { FaSearch } from 'react-icons/fa'; */
 
-export default ({ pageCount }) => {
+export default () => {
   return (
     <Location>
       {({ location }) => {
-        let search = qs.parse(location.search.replace('?', ''))
+        let search = qs.parse(location.search.replace('?', '', )) /* Gets rid of ? mark if present */
 
         return (
          
@@ -28,9 +28,10 @@ export default ({ pageCount }) => {
                   const url = location.href
                     .replace(location.origin, '')
                     .replace(location.search, '')
-
-                  navigate(`${url}?${search}`)
+                   
+                    navigate(`${url}?${search}`)
                 }}
+
               />
              {/* <i className="searchIcon"> < FaSearch /> </i> */}
               

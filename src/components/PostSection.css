@@ -2,6 +2,19 @@
 section.section{
   padding-top: 0px;
 }
+
+/* This sets post area height to match the screen size */
+section.section.aici{
+  height: 100vh;
+  overflow: none;
+ 
+}
+
+.not-found{
+  display:none;
+}
+
+
 .PostSection{
   margin-top: 18px;
 }
