@@ -24,10 +24,17 @@ export const SinglePostTemplate = ({
       itemScope
       itemType="http://schema.org/BlogPosting"
     >
-      <div className="container skinny">
+      <div className="container skinny manyMan">
+        {/* No longer needed 
         <Link className="SinglePost--InapoiButton" to="/">
           <ChevronLeft /> înapoi
         </Link>
+        */}
+        
+  
+
+        <a href="javascript:history.back()"> <ChevronLeft /> înapoi</a>
+
         <div className="SinglePost--Content relative">
           
           <div className="SinglePost--Meta">
