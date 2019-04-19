@@ -25,7 +25,7 @@ export const SinglePostTemplate = ({
       itemType="http://schema.org/BlogPosting"
     >
       <div className="container skinny">
-        <Link className="SinglePost--BackButton" to="/">
+        <Link className="SinglePost--InapoiButton" to="/">
           <ChevronLeft /> înapoi
         </Link>
         <div className="SinglePost--Content relative">
@@ -84,7 +84,7 @@ export const SinglePostTemplate = ({
                 to={prevPostURL}
               >
               <ChevronLeft /> 
-                Anteriorul articol
+                Articolul anterior
               </Link>
             )}
              
@@ -95,7 +95,7 @@ export const SinglePostTemplate = ({
                 className="SinglePost--NextButton"
                 to={nextPostURL}
               >
-                Următorul articol <ChevronRight /> 
+                Articolul următor  <ChevronRight /> 
               </Link>
             )}
           </div>

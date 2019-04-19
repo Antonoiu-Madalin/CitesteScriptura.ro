@@ -7,14 +7,28 @@
 body{
   height: 100vm;
 }
-.SinglePost--BackButton {
+
+.SinglePost--InapoiButton {
   color: green;
-  position: relative;
   display: flex;
   align-items: center;
   font-weight: 600;
   text-decoration: none;
   letter-spacing: 0.1em;
+  bottom:0;
+  left: 0;
+}
+
+.SinglePost--BackButton {
+  color: green;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  bottom:10px;
+  left: 30px;
+ position: absolute;
 }
 
 .SinglePost--BackButton svg {
@@ -30,23 +44,31 @@ body{
 
 .SinglePost--NextButton {
   color: green;
-  position: relative;
   display: flex;
-  align-items: center;
   font-weight: 600;
+  align-items: center;
   text-decoration: none;
   letter-spacing: 0.1em;
+  bottom:0;
+  right: 30px;
+  bottom: 10px;
+  position: absolute;
+  float: right;
 }
 
 .SinglePost--NextButton svg {
   transition: transform 0.2s ease-out;
   transform: translateX(0);
+  
+
   height: 1.2em;
 }
 
 .SinglePost--NextButton:hover svg,
 .SinglePost--NextButton:focus svg {
   transform: translateX(0.25em);
+ 
+ 
 }
 
 
