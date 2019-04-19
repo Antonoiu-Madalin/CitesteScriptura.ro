@@ -34,7 +34,7 @@ export const SinglePostTemplate = ({
           
             {date && (
               <time
-                className="SinglePost--Meta--Date"
+                className="SinglePost--Meta--DateFx"
                 itemProp="dateCreated pubdate datePublished"
                 date={date}
               >

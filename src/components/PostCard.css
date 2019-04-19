@@ -9,15 +9,33 @@
   overflow: hidden;
 }
 
-/* 
-.SinglePost--Meta--Date{
-   float: left;   
-} */
 
+/* Fixing to the bottom*/
+
+.SinglePost--Meta--Date{
+  float: left;   
+  bottom:0;
+  padding-bottom: 5px;
+  position: absolute;
+}
+
+.avatarPhoto{
+  float: left;   
+  bottom:0;
+  position: absolute;
+ 
+}
 
 .estimateReadingTime{
  float: right;
+ bottom:0;
+ padding-bottom: 5px;
+ position: absolute;
+ right:0;
+ padding-right: 5px;
 }
+/* end of*/
+
 
 
 .author-profile-image{
