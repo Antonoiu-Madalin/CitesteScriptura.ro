@@ -3,16 +3,27 @@ section.section{
   padding-top: 0px;
 }
 
-/* This sets post area height to match the screen size */
+
 section.section.aici{
-  height: 100vh;
+  min-height: 100vh; /* min-height only! careful. This sets post area height to match the screen size */
   overflow: none;
- 
+}
+
+.SinglePost--Content.relative{
+  min-height: 100vh;
+  overflow: none;
+}
+
+
+section.section.aici[data-state="null"]{
+  content: 'This div is empty';
+  font-size: 40px;
 }
 
 .not-found{
   display:none;
 }
+
 
 
 .PostSection{

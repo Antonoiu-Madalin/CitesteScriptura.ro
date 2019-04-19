@@ -32,6 +32,13 @@
   -moz-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+/* Maybe not needed but heh */
+.___gatsby{
+  min-height:100%;
+	position:relative;
+}
+
+
 html, body {
   max-width: 100%;
 }
