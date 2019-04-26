@@ -1,8 +1,8 @@
 ---
-template: HomePage
+template: VersetePage
 title: Versete
 slug: versete
 subtitle: ''
-featuredImage: 'https://ucarecdn.com/83a3c73d-f234-4086-9fad-cee3a9626230/'
+featuredImage: 'https://ucarecdn.com/e3e892d6-ec28-494e-88b0-adf9df1a1328/-/progressive/yes/-/format/auto/-/resize/2000x/'
 ---
 

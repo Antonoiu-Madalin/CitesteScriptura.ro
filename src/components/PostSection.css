@@ -9,6 +9,11 @@ section.section.aici{
   overflow: none;
 }
 
+.Defaultio{
+  min-height: 100vh;
+}
+
+
 .SinglePost--Content.relative{
   min-height: 100vh;
   overflow: none;

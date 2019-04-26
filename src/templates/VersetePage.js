@@ -1,102 +1,54 @@
 import React from 'react'
-import { graphql } from 'gatsby'
-import { Location } from '@reach/router'
-import qs from 'qs'
+import { Link, graphql } from 'gatsby'
 import './BlogIndex.css'
-import PostSection from '../components/PostSection'
 import PostCategoriesNav from '../components/PostCategoriesNav'
 import Layout from '../components/Layout'
 
 
-/**
- * Filter posts by date. Feature dates will be fitered
- * When used, make sure you run a cronejob each day to show schaduled content. See docs
- *
- * @param {posts} object
- */
-export const byDate = posts => {
-  const now = Date.now()
-  return posts.filter(post => Date.parse(post.date) <= now)
-}
 
-/**
- * filter posts by category.
- *
- * @param {posts} object
- * @param {title} string
- * @param {contentType} string
- */
-export const byCategory = (posts, title, contentType) => {
-  const isCategory = contentType === 'postCategories'
-  const byCategory = post =>
-    post.categories &&
-    post.categories.filter(cat => cat.category === title).length
-  return isCategory ? posts.filter(byCategory) : posts
-}
 
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({
-  title,
-  posts = [],
+
   postCategories = [],
-  enableSearch = true,
-  contentType
+
 }) => (
-  <Location>
-    {({ location }) => {
-      let filteredPosts =
-        posts && !!posts.length
-          ? byCategory(byDate(posts), title, contentType)
-          : []
-
-      let queryObj = location.search.replace('?', '')
-      queryObj = qs.parse(queryObj)
-
-      if (enableSearch && queryObj.s) {
-        const searchTerm = queryObj.s.toLowerCase()
-        filteredPosts = filteredPosts.filter(post =>
-          post.frontmatter.title.toLowerCase().includes(searchTerm)
-        )
-      }
-
-      return (
-     
+ 
           
         <main className="Blog">
-
-          {/* Post categories*/}   
           {!!postCategories.length && (
             <section className="section thin">
             
-                     
+            {/* Post categories*/}            
             <div id="ContainerCollapse">
 
               <div className="container descuvraMe">
                 <PostCategoriesNav enableSearch categories={postCategories} />
               </div>
 
+              <div className="container Defaultio">
+                <div class="Content ">
+                <blockquote></blockquote>
+                <h3>1. <Link to="versete/credinta">Credinta</Link></h3>
+           
+                <h3>2. <a href="pacat">Pacat</a> (ciot)</h3>
+                <h3>3. <a href="mantuire">Mantuire</a> (ciot)</h3>
+                </div>
+              
+              </div>
+
               </div>
             </section>
+
+
           )}
 
-          {/* Posts themselves*/}
-          {!!posts.length && (
-            <section className="section aici">
-            
-              <div className="container">
-                <PostSection posts={filteredPosts} />
-              </div>
-              
-            </section>
-          )}
+          
         </main>
       )
-    }}
-  </Location>
-)
 
-// Export Default HomePage for front-end
-const HomePage = ({ data: { page, posts, postCategories } }) => (
+// Export Default VersetePage for front-end
+const VersetePage = ({ data: { page, posts, postCategories } }) => (
   <Layout
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
@@ -105,11 +57,7 @@ const HomePage = ({ data: { page, posts, postCategories } }) => (
       {...page}
       {...page.fields}
       {...page.frontmatter}
-      posts={posts.edges.map(post => ({
-        ...post.node,
-        ...post.node.frontmatter,
-        ...post.node.fields,
-      }))}
+
       postCategories={postCategories.edges.map(post => ({
         ...post.node,
         ...post.node.frontmatter,
@@ -119,14 +67,14 @@ const HomePage = ({ data: { page, posts, postCategories } }) => (
   </Layout>
 )
 
-export default HomePage
+export default VersetePage
 
 export const pageQuery = graphql`
-  ## Query for HomePage data
+  ## Query for VersetePage data
   ## Use GraphiQL interface (http://localhost:8000/___graphql)
   ## $id is processed via gatsby-node.js
   ## query name must be unique to this file
-  query HomePage($id: String!) {
+  query VersetePage($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
       ...Meta
       fields {
