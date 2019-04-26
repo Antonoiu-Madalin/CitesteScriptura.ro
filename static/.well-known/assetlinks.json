@@ -4,7 +4,7 @@
     "target": {
       "namespace": "android_app",
       "package_name": "xyz.appmaker.kmtupz",
-      "sha256_cert_fingerprints": ["0F:24:6C:65:55:D8:14:7D:A1:16:D6:E5:8E:77:6C:5D:52:27:76:69:CE:41:A7:7C:C7:4A:C6:A1:55:23:AC:5C","SHA256: 0F:AA:D8:54:EC:BC:8E:E2:34:8E:EF:E5:97:E1:5D:66:5E:B3:09:86:2F:BA:B4:C7:6F:08:F4:E8:91:8D:80:38"]
+      "sha256_cert_fingerprints": ["0F:24:6C:65:55:D8:14:7D:A1:16:D6:E5:8E:77:6C:5D:52:27:76:69:CE:41:A7:7C:C7:4A:C6:A1:55:23:AC:5C","0F:AA:D8:54:EC:BC:8E:E2:34:8E:EF:E5:97:E1:5D:66:5E:B3:09:86:2F:BA:B4:C7:6F:08:F4:E8:91:8D:80:38"]
     }
   }
 ]
