@@ -8,3 +8,17 @@
   align-items: center;
   justify-content: center;
 }
+
+
+
+/* This happens for Android Play Store */
+
+@media (max-width: 720px) {
+  .Logo {
+    display: none;
+  }
+} 
+  
+
+
+

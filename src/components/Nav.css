@@ -37,10 +37,54 @@
   z-index: 999999;
 }
 
-.Nav--MenuButton {
-  display: none !important;
- 
+@keyframes Nav--Link {
+  from {
+    transform: translate(0rem, 1rem);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
+
+@keyframes Nav--Links {
+  from {
+    opacity: 0;
+  }
+}
+
+
+.faBars{
+color: grey;
+}
+
+/* Nav logo & text*/
+
+
+
+a{
+  text-decoration: none;
+  position: relative;
+}
+
+.logoTextA p{
+  font-size: 130%;
+  padding-left: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+  color: white;
+  width: 100px;
+  line-height: 0.8;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-bottom: 0;
+  z-index: 999999;
+}
+
+
+
+
 
 .NavLink {
   padding: 0.5rem 1rem;
@@ -119,14 +163,7 @@
     display: flex;
   }
 
-  .Nav--MenuButton {
-    display: block !important;
-    margin-left: auto;
-    z-index: 999999;
-    color: white; /* culoare hamburger*/
-    padding-right: 5px;
-    padding-left: 5px;
-  }
+
   .Nav .Logo {
     z-index: 999999;
   }
@@ -200,37 +237,15 @@
     font-size: 1.5rem;
     width: auto;
   }
-}
 
-@keyframes Nav--Link {
-  from {
-    transform: translate(0rem, 1rem);
-    opacity: 0;
+  .Nav--MenuButton {
+    display: block !important;
+    margin-left: auto;
+    z-index: 999999;
+    color: white; /* culoare hamburger*/
+    padding-right: 5px;
+    padding-left: 5px;
   }
-  to {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes Nav--Links {
-  from {
-    opacity: 0;
-  }
-}
-
-
-.faBars{
-color: grey;
-}
-
-/* Nav logo & text*/
-
-
-
-a{
-  text-decoration: none;
-  position: relative;
 }
 
 .logoTextA p{
@@ -247,17 +262,21 @@ a{
   z-index: 999999;
 }
 
+
 /* This happens for Android Play Store */
 
 @media (max-width: 720px) {
-.Nav--MenuButton{
+  .Nav--MenuButton{
   color: red;
-}
+  margin-left: -100px;
+  float:left;
+  position: relative;
+  }
 
-
-
-
-
+  .logoTextA p{
+    float: left;
+    padding-left: 50px;
+  }
 
 
 }
