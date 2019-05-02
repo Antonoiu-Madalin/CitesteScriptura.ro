@@ -1,7 +1,7 @@
 ---
 template: HomePage
-title: Apologetică
-slug: apologetica
+title: Categorie2
+slug: categorie2
 subtitle: ''
 featuredImage: 'https://ucarecdn.com/83a3c73d-f234-4086-9fad-cee3a9626230/'
 ---

@@ -29,10 +29,10 @@ export const HomePageTemplate = ({
               <div className="container Defaultio">
                 <div class="Content ">
                 <blockquote></blockquote>
-                <h3>1. <Link to="versete/credinta">Credinta</Link></h3>
+                <h3>1. <Link to="quotes/quote1">Quote1</Link></h3>
            
-                <h3>2. <a href="pacat">Pacat</a> (ciot)</h3>
-                <h3>3. <a href="mantuire">Mantuire</a> (ciot)</h3>
+                <h3>2. <a href="pacat">Quote2</a> (ciot)</h3>
+                <h3>3. <a href="mantuire">Quote3</a> (ciot)</h3>
                 </div>
               
               </div>

@@ -247,3 +247,17 @@ a{
   z-index: 999999;
 }
 
+/* This happens for Android Play Store */
+
+@media (max-width: 720px) {
+.Nav--MenuButton{
+  color: red;
+}
+
+
+
+
+
+
+
+}

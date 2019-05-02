@@ -54,7 +54,7 @@ export class Navigation extends Component {
           <Link to="/" onClick={this.handleLinkClick}>
             <a href="/" className="logoTextA">
               
-                <p>Citește <span>Scriptura</span> </p>
+                <p>MyFuture <span>Application</span> </p>
                
               
             </a>
@@ -65,6 +65,8 @@ export class Navigation extends Component {
             <NavLink to="/despre/" >Despre</NavLink>
             <NavLink to="/contact/">Contact</NavLink>
           </div>
+          
+          {/* Butonul Hamburger */}
           <button
             className="Button-blank Nav--MenuButton"
             onClick={this.handleMenuToggle}
