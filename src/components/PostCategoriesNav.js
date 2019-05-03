@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Collapsible from './Collapsible';
 import './PostCategoriesNav.css'
-import { FaTags } from 'react-icons/fa';
 import BlogSearch from './BlogSearch';
 
 
@@ -13,7 +11,6 @@ const activeStyles  = {
 
 const PostCategoriesNav = ({ categories}) => (
   
-
   <div id="collapsibleContainer">
   
     {/*The proper search! Do not remove */}
@@ -21,10 +18,6 @@ const PostCategoriesNav = ({ categories}) => (
         <BlogSearch />
       </div>
  
-
-    <div id="innerCollapsible">
-    
-    
       <div className="PostCategoriesNav">
         <Link className="NavLink" exact="true" to={`/`} activeStyle={activeStyles}>
           Toate
@@ -44,7 +37,7 @@ const PostCategoriesNav = ({ categories}) => (
 
       </div>
       </div>
-      </div>
+    
    
 )
 

@@ -36,7 +36,7 @@ export const byDate = posts => {
 export const byCategory = (posts, title, contentType) => {
 
   {/* Aici adaugam folderele MetaCategoriilor pentru Toate default */}
-  const isCategory = contentType === 'postCategories metaCategories' 
+  const isCategory = contentType === 'metacategoryStudiuBiblic' 
   const byCategory = post =>
     post.categories &&
     post.categories.filter(cat => cat.category === title).length
@@ -50,7 +50,7 @@ export const byCategory = (posts, title, contentType) => {
 export const HomePageTemplate = ({
   title,
   posts = [],
-  postCategories = [],
+  metacategoryStudiuBiblic = [],
   enableSearch = true,
   contentType
 }) => (
@@ -100,14 +100,14 @@ export const HomePageTemplate = ({
 
 
           {/* Post categories*/}   
-          {!!postCategories.length && (
+          {!!metacategoryStudiuBiblic.length && (
             <section className="section thin">
             
                      
             <div id="ContainerCollapse">
 
               <div className="container descuvraMe">
-                <PostCategoriesNav enableSearch categories={postCategories} />
+                <PostCategoriesNav enableSearch categories={metacategoryStudiuBiblic} />
               </div>
 
               </div>
@@ -130,8 +130,8 @@ export const HomePageTemplate = ({
   </Location>
 )
 
-// Export Default HomePage for front-end
-const HomePage = ({ data: { page, posts, postCategories } }) => (
+// Export Default StudiuBiblic for front-end
+const StudiuBiblic = ({ data: { page, posts, metacategoryStudiuBiblic } }) => (
   <Layout
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
@@ -145,7 +145,7 @@ const HomePage = ({ data: { page, posts, postCategories } }) => (
         ...post.node.frontmatter,
         ...post.node.fields,
       }))}
-      postCategories={postCategories.edges.map(post => ({
+      metacategoryStudiuBiblic={metacategoryStudiuBiblic.edges.map(post => ({
         ...post.node,
         ...post.node.frontmatter,
         ...post.node.fields
@@ -154,14 +154,14 @@ const HomePage = ({ data: { page, posts, postCategories } }) => (
   </Layout>
 )
 
-export default HomePage
+export default StudiuBiblic
 
 export const pageQuery = graphql`
-  ## Query for HomePage data
+  ## Query for StudiuBiblic data
   ## Use GraphiQL interface (http://localhost:8000/___graphql)
   ## $id is processed via gatsby-node.js
   ## query name must be unique to this file
-  query HomePage($id: String!) {
+  query StudiuBiblic($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
       ...Meta
       fields {
@@ -200,8 +200,8 @@ export const pageQuery = graphql`
         }
       }
     }
-    postCategories: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "postCategories" } } }
+    metacategoryStudiuBiblic: allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "metacategoryStudiuBiblic" } } }
       sort: { order: ASC, fields: [frontmatter___title] }
     ) {
       edges {
