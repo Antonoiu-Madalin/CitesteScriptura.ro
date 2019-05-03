@@ -16,10 +16,11 @@ const PostCategoriesNav = ({ categories}) => (
 
   <div id="collapsibleContainer">
   
-  {/*The proper search! Do not remove */}
-    <div className="properSearch"> 
-      <BlogSearch />
-    </div>
+    {/*The proper search! Do not remove */}
+      <div className="properSearch"> 
+        <BlogSearch />
+      </div>
+ 
 
     <div id="innerCollapsible">
     
@@ -42,9 +43,9 @@ const PostCategoriesNav = ({ categories}) => (
         ))}
 
       </div>
-     
       </div>
-    </div>
+      </div>
+   
 )
 
 

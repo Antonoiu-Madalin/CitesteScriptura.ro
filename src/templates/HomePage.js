@@ -8,6 +8,12 @@ import PostCategoriesNav from '../components/PostCategoriesNav'
 import Layout from '../components/Layout'
 
 
+const activeStyles  = {
+  color: 'white',
+  background:'#459c98',
+}
+
+
 /**
  * Filter posts by date. Feature dates will be fitered
  * When used, make sure you run a cronejob each day to show schaduled content. See docs
@@ -33,6 +39,9 @@ export const byCategory = (posts, title, contentType) => {
     post.categories.filter(cat => cat.category === title).length
   return isCategory ? posts.filter(byCategory) : posts
 }
+
+
+
 
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({
@@ -64,14 +73,23 @@ export const HomePageTemplate = ({
           
         <main className="Blog">
 
+        <div className="PostCategoriesNav">
+        {/* making Raspunsuri Rapide main default */}
+        
+    
+          <Link className="NavLink" exact="true" to={`/`} activeStyle={activeStyles}>
+            MetaCat 1
+          </Link> 
 
-              <div className="container metaCats">
-                <Link to="/raspunsuri/">Meta-cat1</Link>
-                <Link to="/studiu-biblic/"> Meta-cat2</Link>
-                <Link to="/versete/"> Meta-cat3</Link>
-              </div>
+          <Link className="NavLink" exact="true" to={`/studiu-biblic/`} activeStyle={activeStyles}>
+            MetaCat 2
+          </Link>
 
+          <Link className="NavLink" exact="true" to={`/versete/`} activeStyle={activeStyles}>
+            MetaCat 3
+          </Link>
 
+        </div>
 
 
           {/* Post categories*/}   

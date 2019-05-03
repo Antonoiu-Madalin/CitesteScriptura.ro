@@ -119,11 +119,17 @@ svg.zeIcon:hover{
   color: #D3E0B5;
 }
 
-.metaCats{
+.metaCats {
   background-color: black;
+  
 }
 
-
+.container::before{
+  background-color: black;
+}
+.container::after{
+  background-color: black;
+}
 
 /* This happens for Android Play Store */
 

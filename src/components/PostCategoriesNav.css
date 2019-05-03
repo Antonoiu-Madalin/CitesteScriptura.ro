@@ -50,7 +50,7 @@ border-bottom-color: #E27D5F;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  padding-top: 53px;
+  padding-top: 5px;
   
 }
 
@@ -103,6 +103,4 @@ border-bottom-color: #E27D5F;
 #innerCollapsible{
   margin: 0 auto;
 }
-
-
 

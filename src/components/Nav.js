@@ -54,8 +54,8 @@ export class Navigation extends Component {
           <Link to="/" onClick={this.handleLinkClick}>
             <a href="/" className="logoTextA">
               
-                <p>MyFuture <span>Application</span> </p>
-               
+                <p>AlphaStage App0.1</p>
+                   
               
             </a>
           </Link>
@@ -75,6 +75,8 @@ export class Navigation extends Component {
           </button>
         </div>
       </nav>
+
+      
     )
   }
 }

@@ -83,7 +83,9 @@ a{
 }
 
 
-
+.metaCats{
+  display: none;
+}
 
 
 .NavLink {
@@ -297,6 +299,8 @@ a{
     margin-bottom: 25px;
   }
   
-
+  .metaCats{
+    display: block;
+  }
 
 }
