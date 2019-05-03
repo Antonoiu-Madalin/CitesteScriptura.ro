@@ -54,7 +54,7 @@ export class Navigation extends Component {
           <Link to="/" onClick={this.handleLinkClick}>
             <a href="/" className="logoTextA">
               
-                <p>MyFuture <span>Application</span> </p>
+                <p>MyFuture Applicats</p>
                
               
             </a>

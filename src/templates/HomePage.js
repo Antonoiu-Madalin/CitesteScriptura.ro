@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import { Location } from '@reach/router'
 import qs from 'qs'
 import './BlogIndex.css'
@@ -38,6 +38,7 @@ export const byCategory = (posts, title, contentType) => {
 export const HomePageTemplate = ({
   title,
   posts = [],
+  metaCategories = [],
   postCategories = [],
   enableSearch = true,
   contentType
@@ -64,16 +65,25 @@ export const HomePageTemplate = ({
           
         <main className="Blog">
 
+              <div className="container metaCats">
+                <Link to="/raspunsuri/">Raspunsuri rapide</Link>
+                <Link to="/studiu-biblic/"> Studiu biblic</Link>
+                <Link to="/versete/"> Versete</Link>
+              </div>
+              
           {/* Post categories*/}   
           {!!postCategories.length && (
             <section className="section thin">
-            
+
+
                      
             <div id="ContainerCollapse">
-
+              
               <div className="container descuvraMe">
                 <PostCategoriesNav enableSearch categories={postCategories} />
               </div>
+
+
 
               </div>
             </section>
@@ -96,7 +106,7 @@ export const HomePageTemplate = ({
 )
 
 // Export Default HomePage for front-end
-const HomePage = ({ data: { page, posts, postCategories } }) => (
+const HomePage = ({ data: { page, posts, postCategories, metaCategories } }) => (
   <Layout
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
@@ -181,4 +191,5 @@ export const pageQuery = graphql`
       }
     }
   }
+
 `
