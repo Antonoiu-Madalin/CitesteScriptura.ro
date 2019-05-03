@@ -77,15 +77,15 @@ export const HomePageTemplate = ({
         {/* making Raspunsuri Rapide main default */}
         
     
-          <Link className="NavLink" exact="true" to={`/`} activeStyle={activeStyles}>
+          <Link className="NavLink" partiallyActive={true} exact="true" to={`/`} activeStyle={activeStyles}>
             MetaCat 1
           </Link> 
-
-          <Link className="NavLink" exact="true" to={`/studiu-biblic/`} activeStyle={activeStyles}>
+          
+          <Link className="NavLink" exact="true" partiallyActive={true} to={`/studiu-biblic/`} activeStyle={activeStyles}>
             MetaCat 2
           </Link>
 
-          <Link className="NavLink" exact="true" to={`/versete/`} activeStyle={activeStyles}>
+          <Link className="NavLink" exact="true" partiallyActive={true} to={`/versete/`} activeStyle={activeStyles}>
             MetaCat 3
           </Link>
 
