@@ -1,10 +1,4 @@
 
-.search{  
-	text-align: right;
-  }
-  
-
-
 input {
 	outline: none;
 }
@@ -80,26 +74,4 @@ input::-webkit-input-placeholder {
 }
 #demo-2 input::-webkit-input-placeholder {
 	color: transparent;
-}
-
-
-.search{
-	margin-right: 40px;
-	margin-top: -65px;
-	margin-bottom: 20px;
-  }
-
-
-
-/* Google Play Store */
-
-@media (max-width: 720px) {
-
-	  .search{
-		margin-right: -10px;
-		margin-top: -80px;
-		margin-bottom: 50px;
-	  }
-
-
 }

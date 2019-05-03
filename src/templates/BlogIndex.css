@@ -10,6 +10,9 @@ section.section{
   padding-top: 1rem;
 }
 
+.search{  
+  text-align: right;
+}
 
 /* Collapsible starts here */
 
@@ -68,8 +71,13 @@ section.section{
   /* margin-right: 42px; Old, to make + sign appear where it should */
 }
 
-
-
+/* The proper Search! */
+.properSearch{ 
+  margin-right: 85px;
+  margin-top: -63px;
+  margin-bottom: 18px;
+  color: #D3E0B5;
+}
 
 .zeIcon{
   width: 21px;
@@ -101,19 +109,4 @@ svg.zeIcon:hover{
 
 }
 */
-
-
-/* The proper Search! */
-.properSearch{ 
-  margin-right: 85px;
-  margin-top: -63px;
-  margin-bottom: 18px;
-  color: #D3E0B5;
-}
-
-.metaCats{
-  background-color: black;
-}
-/* This happens for Android Play Store */
-
 
