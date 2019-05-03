@@ -74,4 +74,29 @@ input::-webkit-input-placeholder {
 }
 #demo-2 input::-webkit-input-placeholder {
 	color: transparent;
+<<<<<<< HEAD
+=======
+}
+
+
+.search{
+	margin-right: 40px;
+	margin-top: -65px;
+	margin-bottom: 20px;
+  }
+
+
+
+/* Google Play Store */
+
+@media (max-width: 720px) {
+
+	  .search{
+		margin-right: -5px;
+		margin-top: -65px;
+		margin-bottom: 20px;
+	  }
+
+
+>>>>>>> parent of 59eca46... metaCats
 }
