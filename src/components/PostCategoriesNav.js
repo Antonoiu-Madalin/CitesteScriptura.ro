@@ -22,7 +22,7 @@ const PostCategoriesNav = ({ categories}) => (
     </div>
 
     <div id="innerCollapsible">
-    <Collapsible trigger={<FaTags className="zeIcon"/>} className="collapSible" >
+    
     
       <div className="PostCategoriesNav">
         <Link className="NavLink" exact="true" to={`/`} activeStyle={activeStyles}>
@@ -42,7 +42,7 @@ const PostCategoriesNav = ({ categories}) => (
         ))}
 
       </div>
-      </Collapsible>
+     
       </div>
     </div>
 )

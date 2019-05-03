@@ -88,6 +88,7 @@ a{
 
 .NavLink {
   padding: 0.5rem 1rem;
+  
   display: block;
   font-weight: 500;
   transition: color 0.2s, border-bottom-color 0.2s;
@@ -267,16 +268,35 @@ a{
 
 @media (max-width: 720px) {
   .Nav--MenuButton{
-  color: red;
-  margin-left: -100px;
+  color:white;
+  margin-left: -255px;
   float:left;
   position: relative;
   }
 
   .logoTextA p{
     float: left;
-    padding-left: 50px;
+    padding-left: 45px;
+    width: 250px;
+    font-weight: 400;
   }
+
+  .Nav--Container {
+    display: flex;
+    align-items: center;
+    height: 3.2rem;
+  }
+
+  .Nav {
+    background:  black;
+    position: static;
+    top: 0;
+    z-index: 999999;
+    /* border-bottom: 1px solid var(--lightGrey); */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
+    margin-bottom: 25px;
+  }
+  
 
 
 }

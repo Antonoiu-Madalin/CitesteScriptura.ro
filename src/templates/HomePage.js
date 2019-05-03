@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import { Location } from '@reach/router'
 import qs from 'qs'
 import './BlogIndex.css'
@@ -63,6 +63,16 @@ export const HomePageTemplate = ({
      
           
         <main className="Blog">
+
+
+              <div className="container metaCats">
+                <Link to="/raspunsuri/">Meta-cat1</Link>
+                <Link to="/studiu-biblic/"> Meta-cat2</Link>
+                <Link to="/versete/"> Meta-cat3</Link>
+              </div>
+
+
+
 
           {/* Post categories*/}   
           {!!postCategories.length && (
