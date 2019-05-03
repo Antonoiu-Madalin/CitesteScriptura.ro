@@ -80,7 +80,7 @@ export const HomePageTemplate = ({
         {/* making Raspunsuri Rapide main default */}
         
     
-          <Link className="NavLink" partiallyActive={true} exact="true" to={`/`} activeStyle={activeStyles}>
+          <Link className="NavLink"  to={`/`} >
             HomeMetaC
           </Link> 
 
