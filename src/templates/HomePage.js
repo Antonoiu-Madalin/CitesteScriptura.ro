@@ -4,9 +4,9 @@ import { Location } from '@reach/router'
 import qs from 'qs'
 import './BlogIndex.css'
 import PostSection from '../components/PostSection'
-import PostCategoriesNav from '../components/PostCategoriesNav'
 import Layout from '../components/Layout'
 import FaHome from 'react-icons/lib/fa/home';
+import BlogSearch from '../components/BlogSearch';
 
 const activeStyles  = {
   color: 'white',
@@ -80,40 +80,31 @@ export const HomePageTemplate = ({
         {/* making Raspunsuri Rapide main default */}
         
     
-          <Link className="NavLink" exact="true" to={`/`} activeStyle={activeStyles}>
+          <Link className="NavLinkMetaCategory" exact="true" to={`/`} activeStyle={activeStyles}>
           <FaHome />
           </Link> 
 
-          <Link className="NavLink" exact="true" partiallyActive={true} to={`/studiu-biblic/`} activeStyle={activeStyles}>
+          <Link className="NavLinkMetaCategory" exact="true" partiallyActive={true} to={`/studiu-biblic/`} activeStyle={activeStyles}>
             MetaCat1
           </Link>
 
-          <Link className="NavLink" exact="true" partiallyActive={true} to={`/raspunsuri/`} activeStyle={activeStyles}>
+          <Link className="NavLinkMetaCategory" exact="true" partiallyActive={true} to={`/raspunsuri/`} activeStyle={activeStyles}>
             MetaCat2
           </Link>
 
-          <Link className="NavLink" exact="true" partiallyActive={true} to={`/versete/`} activeStyle={activeStyles}>
+          <Link className="NavLinkMetaCategory" exact="true" partiallyActive={true} to={`/versete/`} activeStyle={activeStyles}>
             MetaCat3
           </Link>
 
         </div>
-
-
-          {/* Post categories*/}   
-          {!!postCategories.length && (
-            <section className="section thin">
-            
-                     
-            <div id="ContainerCollapse">
-
+                {/* Search bonanza*/}
               <div className="container descuvraMe">
-                <PostCategoriesNav enableSearch categories={postCategories} />
+                <div className="properSearch"> 
+                  <BlogSearch />
+                </div>
               </div>
 
-              </div>
-            </section>
-          )}
-
+  
           {/* Posts themselves*/}
           {!!posts.length && (
             <section className="section aici">
@@ -177,7 +168,7 @@ export const pageQuery = graphql`
     }
 
     posts: allMarkdownRemark(
-      filter: { fields: { contentType: { in: ["posts", "metacat1posts"] }  } }
+      filter: { fields: { contentType: { in: ["metacat1posts", "metacat2posts" ] }  } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
@@ -200,6 +191,7 @@ export const pageQuery = graphql`
         }
       }
     }
+    
     postCategories: allMarkdownRemark(
       filter: { fields: { contentType: { eq: "postCategories" } } }
       sort: { order: ASC, fields: [frontmatter___title] }

@@ -1,13 +1,13 @@
 ---
 template: SinglePost
-title: Question5
-slug: categories/question5
+title: Question1
+slug: raspunsuri/categorie1/question1
 status: Published
-date: '2019-03-10'
+date: '2019-04-11'
 featuredImage: 'https://ucarecdn.com/f540281a-41cf-4bfa-8181-b172e2655fba/-/crop/1632x1777/0,672/-/preview/'
 excerpt: This is an excerpt of Post Two
 categories:
-  - category: Categorie1
+  - category: raspunsuri/Categorie1
 meta:
   description: test meta description
   title: test meta title

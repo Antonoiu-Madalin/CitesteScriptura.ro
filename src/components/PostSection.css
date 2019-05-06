@@ -7,6 +7,7 @@ section.section{
 section.section.aici{
   min-height: 100vh; /* min-height only! careful. This sets post area height to match the screen size */
   overflow: none;
+  padding-top: 40px;
 }
 
 .Defaultio{

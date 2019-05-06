@@ -131,8 +131,8 @@ export const HomePageTemplate = ({
   </Location>
 )
 
-// Export Default StudiuBiblic for front-end
-const StudiuBiblic = ({ data: { page, posts, metacategoryStudiuBiblic } }) => (
+// Export Default RaspunsuriCat for front-end
+const RaspunsuriCat = ({ data: { page, posts, metacategoryStudiuBiblic } }) => (
   <Layout
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
@@ -155,14 +155,14 @@ const StudiuBiblic = ({ data: { page, posts, metacategoryStudiuBiblic } }) => (
   </Layout>
 )
 
-export default StudiuBiblic
+export default RaspunsuriCat
 
 export const pageQuery = graphql`
-  ## Query for StudiuBiblic data
+  ## Query for RaspunsuriCat data
   ## Use GraphiQL interface (http://localhost:8000/___graphql)
   ## $id is processed via gatsby-node.js
   ## query name must be unique to this file
-  query StudiuBiblic($id: String!) {
+  query RaspunsuriCat($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
       ...Meta
       fields {
@@ -178,7 +178,7 @@ export const pageQuery = graphql`
     }
 
     posts: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "metacat1posts" } } }
+      filter: { fields: { contentType: { in: "metacat2posts" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
@@ -202,7 +202,7 @@ export const pageQuery = graphql`
       }
     }
     metacategoryStudiuBiblic: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "metacategoryStudiuBiblic" } } }
+      filter: { fields: { contentType: { eq: "metacategoryRaspunsuri" } } }
       sort: { order: ASC, fields: [frontmatter___title] }
     ) {
       edges {

@@ -5,6 +5,8 @@ import './PostCard.css'
 import _format from 'date-fns/format'
 
 
+
+
 /* Adaugi asta pentru data (1) */
 const roLocale = require('date-fns/locale/ro');
 
@@ -16,21 +18,29 @@ const PostCard = ({
   categories = [],
   className = '',
   date,
+  url = '',
   time,
   readingTime,
 }) => (
+
+
+
   <Link to={slug} className={`PostCard ${className}`}>
     {featuredImage && (
       <div className="PostCard--Image relative">
         <Image background src={featuredImage} alt={title} />
       </div>
     )}
+
+
+
     <div className="PostCard--Content">
       
       <p className="PostCard--Category">
         {categories.map((cat, index) => (
 
-          <Link to={cat.category.split(" ").join("-").toLowerCase().replace("ă","a") + "/"}>
+            /* Aici pui slug pentru blue category */
+        <Link to= { slug.split('/', [0]) } >
 
             <span
               key={cat.category}
@@ -88,3 +98,4 @@ const PostCard = ({
 )
 
 export default PostCard
+

@@ -278,6 +278,7 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Noindex, name: noindex, widget: boolean, required: false }
 
+#Duplicate this for metacat1post. etc
   - name: posts
     label: Post
     editor:

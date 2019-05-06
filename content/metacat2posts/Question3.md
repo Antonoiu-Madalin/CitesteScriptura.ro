@@ -1,12 +1,12 @@
 ---
 template: SinglePost
 title: Question3
-slug: categorie1/question3
+slug: raspunsuri/categorie2/question3
 date: '2019-03-11'
 featuredImage: 'https://ucarecdn.com/f540281a-41cf-4bfa-8181-b172e2655fba/-/crop/1632x1777/0,672/-/preview/'
 excerpt: This is an excerpt of Post Two
 categories:
-  - category: Categorie1
+  - category: raspunsuri/Categorie2
 meta:
   description: test meta description
   title: test meta title
