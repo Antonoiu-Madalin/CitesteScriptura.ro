@@ -7,6 +7,8 @@ import Content from '../components/Content'
 import Layout from '../components/Layout'
 import './SinglePost.css'
 
+
+
 const roLocale = require('date-fns/locale/ro');
 
 export const SinglePostTemplate = ({
@@ -15,6 +17,7 @@ export const SinglePostTemplate = ({
   body,
   nextPostURL,
   prevPostURL,
+  location,
   categories = [],
 }) => (
  
@@ -56,14 +59,13 @@ export const SinglePostTemplate = ({
 
                 {categories.map((cat, index) => (
 
-            /* THIS IS IT. Ia prima parte +/ + a doua parte + din slug url si merge - PENTRU POST CARD ;) */
+            /* THIS IS IT. Ia prima parte +/ + a doua parte + din slug url si merge - PENTRU POSTARI ;) 
             <Link to= {window.location.pathname.split("/")[1] + "/" + window.location.pathname.split("/")[2] + "/"} > 
-            {/* Pana aici*/}
+            
+            NOT WORKING YET*/
 
+            <Link to= {cat.category} >
 
-
-             
-                 
                     <span
                       key={cat.category}
                       className="SinglePost--Meta--Category"
@@ -72,7 +74,7 @@ export const SinglePostTemplate = ({
                       {/* Add a comma on all but last category */}
                       {index !== categories.length - 1 ? ',' : ''}
                     </span>
-                  </Link>
+              </Link>
 
                 ))}
               </Fragment>
