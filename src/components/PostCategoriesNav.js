@@ -19,9 +19,7 @@ const PostCategoriesNav = ({ categories}) => (
       </div>
  
       <div className="PostCategoriesNav">
-        <Link className="NavLink" exact="true" to={`/`} activeStyle={activeStyles}>
-          Toate
-        </Link>
+        
 
         {categories.map((category, index) => (
           <Link

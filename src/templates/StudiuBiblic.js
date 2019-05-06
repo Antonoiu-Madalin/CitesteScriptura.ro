@@ -6,6 +6,7 @@ import './BlogIndex.css'
 import PostSection from '../components/PostSection'
 import PostCategoriesNav from '../components/PostCategoriesNav'
 import Layout from '../components/Layout'
+import FaHome from 'react-icons/lib/fa/home';
 
 
 const activeStyles  = {
@@ -80,8 +81,8 @@ export const HomePageTemplate = ({
         {/* making Raspunsuri Rapide main default */}
         
     
-          <Link className="NavLink"  to={`/`} >
-            HomeMetaC
+          <Link className="NavLink"  exact="true" to={`/`} activeStyle={activeStyles}>
+          <FaHome />
           </Link> 
 
           <Link className="NavLink" exact="true" partiallyActive={true} to={`/studiu-biblic/`} activeStyle={activeStyles}>
@@ -177,7 +178,7 @@ export const pageQuery = graphql`
     }
 
     posts: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "posts" } } }
+      filter: { fields: { contentType: { eq: "metacat1posts" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
