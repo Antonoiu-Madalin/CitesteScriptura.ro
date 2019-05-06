@@ -56,7 +56,13 @@ export const SinglePostTemplate = ({
 
                 {categories.map((cat, index) => (
 
-                  <Link to={cat.category.split(" ").join("-").toLowerCase().replace("ă","a") + "/"}>
+            /* THIS IS IT. Ia prima parte +/ + a doua parte + din slug url si merge - PENTRU POST CARD ;) */
+            <Link to= {window.location.pathname.split("/")[1] + "/" + window.location.pathname.split("/")[2] + "/"} > 
+            {/* Pana aici*/}
+
+
+
+             
                  
                     <span
                       key={cat.category}

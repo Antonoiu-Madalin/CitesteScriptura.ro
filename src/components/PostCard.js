@@ -39,8 +39,9 @@ const PostCard = ({
       <p className="PostCard--Category">
         {categories.map((cat, index) => (
 
-            /* Aici pui slug pentru blue category */
-        <Link to= {cat.category.split(" ").join("-").toLowerCase().replace("ă","a") + "/"} >
+            /* THIS IS IT. Ia prima parte +/ + a doua parte + din slug url si merge - PENTRU POST CARD ;) */
+              <Link to= {slug.split("/")[1] + "/" + slug.split("/")[2] + "/"} > 
+             {/* Pana aici*/}
 
             <span
               key={cat.category}
