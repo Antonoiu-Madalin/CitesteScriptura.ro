@@ -40,7 +40,7 @@ const PostCard = ({
         {categories.map((cat, index) => (
 
             /* Aici pui slug pentru blue category */
-        <Link to= { slug.split('/', [0]) } >
+        <Link to= {cat.category.split(" ").join("-").toLowerCase().replace("ă","a") + "/"} >
 
             <span
               key={cat.category}
