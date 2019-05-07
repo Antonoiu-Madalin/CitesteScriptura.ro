@@ -180,7 +180,7 @@ a{
 
   .Nav--Links {
     display: none;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
     position: fixed;
     justify-content: center;
@@ -272,11 +272,12 @@ a{
   z-index: 999999;
 }
 
-.globalSearchButton{
-  position: absolute;
+
+.search{
+  float: right;
+  margin-right: 40px;
   text-align: right;
-  right: 0;
-  padding-right: 90px;
+ 
 }
 
 

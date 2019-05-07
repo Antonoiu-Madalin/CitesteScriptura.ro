@@ -68,11 +68,21 @@ color: white;
 border-bottom-color: #E27D5F;
 }
 
+
+
+/* Pentru menu in burger */
 .NavLink.undefined{
   background: none;
   color: grey;
- 
+  font-size: 2rem;
+  
 }
+
+/* Iconita din fata menu in burger */
+.NavLink.undefined svg{
+  padding-top: 7px;
+  }
+
 
 .NavLink.active.undefined{
   border-bottom-color: none;

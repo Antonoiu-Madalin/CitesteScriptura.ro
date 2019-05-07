@@ -27,13 +27,7 @@ export const SinglePostTemplate = ({
       itemType="http://schema.org/BlogPosting"
     >
       <div className="container skinny manyMan">
-        {/* No longer needed 
-        <Link className="SinglePost--InapoiButton" to="/">
-          <ChevronLeft /> înapoi
-        </Link>
-        */}
-        
-     
+
        {/* Aici imi tot da eroare esLint dar nu am alternativa viabila acum // eslint-disable */}
         <a href="javascript:history.back()"> <ArrowLeft/> înapoi</a> 
        

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Location } from '@reach/router'
 import { Link } from 'gatsby'
-import { Menu, X } from 'react-feather'
+import { Menu, X, Mail, Info, Home, Rss, LogIn } from 'react-feather'
 import Logo from './Logo'
 import './Nav.css'
 import BlogSearch from './BlogSearch';
@@ -63,15 +63,15 @@ export class Navigation extends Component {
 
 
           <div className="Nav--Links">
-            <NavLink to="/">Acasă</NavLink>
-            <NavLink to="/despre/" >Despre</NavLink>
-            <NavLink to="/contact/">Contact</NavLink>
+            <NavLink to="/"> <Home className="contactMenu"/>Acasă</NavLink>
+            <NavLink to="/despre/"> <Info className="contactMenu"/>Info</NavLink>
+            <NavLink to="/contact/"> <Mail className="contactMenu"/>Contact</NavLink>
+            <NavLink to="/newsletter/"><Rss className="contactMenu"/>Newsletter</NavLink>
+            <NavLink to="/log-in/"><LogIn className="contactMenu"/>Log In</NavLink>
           </div>
           
-          <div className="globalSearchButton"> 
-             <BlogSearch />
-          </div>
           
+
           {/* Butonul Hamburger */}
           <button
             className="Button-blank Nav--MenuButton"
@@ -80,8 +80,9 @@ export class Navigation extends Component {
             {active ? <X /> : <Menu />}
           </button>
 
-   
-
+          <div className="globalSearchButton"> 
+             <BlogSearch />
+          </div>
 
         </div>
       </nav>
