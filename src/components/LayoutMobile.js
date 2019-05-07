@@ -3,11 +3,11 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import Meta from './Meta'
 
-
-
-
 import 'modern-normalize/modern-normalize.css'
 import './globalStyles.css'
+
+/* eslint-disable */
+
 
 export default ({ children, meta, title }) => {
   return (
@@ -39,6 +39,7 @@ export default ({ children, meta, title }) => {
           }
         }
       `}
+      
       render={data => {
         const { siteTitle, socialMediaCard, googleTrackingId } =
             data.settingsYaml || {},
