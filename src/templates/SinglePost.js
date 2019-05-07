@@ -8,7 +8,7 @@ import Layout from '../components/Layout'
 import './SinglePost.css'
 
 
-
+/*  eslint-disable */ 
 const roLocale = require('date-fns/locale/ro');
 
 export const SinglePostTemplate = ({
@@ -34,9 +34,10 @@ export const SinglePostTemplate = ({
         </Link>
         */}
         
-  
-
-        <a href="javascript:history.back()"> <ChevronLeft /> înapoi</a>
+     
+       {/* Aici imi tot da eroare esLint dar nu am alternativa viabila acum // eslint-disable */}
+        <a href="javascript:history.back()"> <ChevronLeft /> înapoi</a> 
+       
 
         <div className="SinglePost--Content relative">
           

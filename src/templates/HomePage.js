@@ -35,7 +35,7 @@ export const byDate = posts => {
 
 export const byCategory = (posts, title, contentType) => {
 
-  {/* Aici adaugam folderele MetaCategoriilor pentru Toate default */}
+  /* Aici adaugam folderele MetaCategoriilor pentru Toate default */
   const isCategory = contentType === 'postCategories metaCategories' 
   const byCategory = post =>
     post.categories &&
