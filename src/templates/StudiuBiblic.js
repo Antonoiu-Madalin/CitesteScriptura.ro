@@ -110,20 +110,16 @@ export const HomePageTemplate = ({
 
 
           {/* Post categories*/}   
-          {!!metacategoryStudiuBiblic.length && (
-            <section className="section thin">
-            
-                     
-            <div id="ContainerCollapse">
+          <div className="underCategories">
 
-              <div className="container descuvraMe">
-                <PostCategoriesNav enableSearch categories={metacategoryStudiuBiblic} />
-              </div>
+            {!!metacategoryStudiuBiblic.length && (
 
-              </div>
-            </section>
-          )}
+                  <PostCategoriesNav enableSearch categories={metacategoryStudiuBiblic} />
+  
+            )}
 
+          </div>
+          
           {/* Posts themselves*/}
           {!!posts.length && (
             <section className="section aici">

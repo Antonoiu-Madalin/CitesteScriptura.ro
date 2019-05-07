@@ -71,14 +71,6 @@ section.section{
   /* margin-right: 42px; Old, to make + sign appear where it should */
 }
 
-/* The proper Search! */
-.properSearch{ 
-  margin-right: 85px;
-  margin-top: -63px;
-  margin-bottom: 18px;
-  color: #D3E0B5;
-}
-
 .zeIcon{
   width: 21px;
   height: 21px;
@@ -113,10 +105,7 @@ svg.zeIcon:hover{
 
 /* The proper Search! now */
 .properSearch{ 
-  margin-right: 85px;
-  margin-top: -63px;
-  margin-bottom: 18px;
-  color: #D3E0B5;
+  color: red;
 }
 
 .metaCats {

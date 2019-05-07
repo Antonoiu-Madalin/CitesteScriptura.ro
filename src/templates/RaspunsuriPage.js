@@ -79,6 +79,8 @@ export const HomePageTemplate = ({
           
         <main className="Blog">
 
+
+
         <div className="PostMetaCategoriesNav">
         {/* making All posts main default */}
         <ul className="listaMetaCat"> 
@@ -109,21 +111,13 @@ export const HomePageTemplate = ({
 
         </div>
 
-
-          {/* Post categories*/}   
-          {!!metacategoryRaspunsuri.length && (
-            <section className="section thin">
-            
-                     
-            <div id="ContainerCollapse">
-
-              <div className="container descuvraMe">
-                  <PostCategoriesNav enableSearch categories={metacategoryRaspunsuri} />
-              </div>
-              
-              </div>
-            </section>
-          )}
+        <div className="underCategories">
+            {/* Post categories*/}   
+            {!!metacategoryRaspunsuri.length && (
+     
+                    <PostCategoriesNav enableSearch categories={metacategoryRaspunsuri} />
+            )}
+          </div>
 
           {/* Posts themselves*/}
           {!!posts.length && (

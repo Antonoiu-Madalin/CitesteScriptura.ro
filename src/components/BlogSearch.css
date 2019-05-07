@@ -76,23 +76,18 @@ input::-webkit-input-placeholder {
 	color: transparent;
 }
 
-
+/* To edit placement of search button 
 .search{
 	margin-right: 0px;
 	margin-top: -115px;
 	margin-bottom: 20px;
   }
-
+*/
 
 
 /* Google Play Store */
 
 @media (max-width: 720px) {
 
-  .search{
-		margin-right: -95px;
-		margin-top: -75px;
-		margin-bottom: 50px;
-	  }
-	  
+
 }

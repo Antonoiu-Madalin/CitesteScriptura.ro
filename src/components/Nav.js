@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import { Menu, X } from 'react-feather'
 import Logo from './Logo'
 import './Nav.css'
-
+import BlogSearch from './BlogSearch';
 
 export class Navigation extends Component {
   state = {
@@ -55,10 +55,12 @@ export class Navigation extends Component {
             <a href="/" className="logoTextA">
               
                 <p>AlphaStage App0.1</p>
-                   
-              
+                     
             </a>
           </Link>
+
+ 
+
 
           <div className="Nav--Links">
             <NavLink to="/">Acasă</NavLink>
@@ -66,6 +68,7 @@ export class Navigation extends Component {
             <NavLink to="/contact/">Contact</NavLink>
           </div>
           
+
           {/* Butonul Hamburger */}
           <button
             className="Button-blank Nav--MenuButton"
@@ -73,6 +76,12 @@ export class Navigation extends Component {
           >
             {active ? <X /> : <Menu />}
           </button>
+
+          <div className="globalSearchButton"> 
+             <BlogSearch />
+          </div>
+
+
         </div>
       </nav>
 

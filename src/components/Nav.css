@@ -8,6 +8,15 @@
   margin-bottom: 25px;
 }
 
+.search{
+  float: right;
+  right: 0;
+  float: right;
+  position: absolute;
+  padding-right: 15px;
+  top: 3px;
+}
+
 .Nav--Container {
   display: flex;
   align-items: center;

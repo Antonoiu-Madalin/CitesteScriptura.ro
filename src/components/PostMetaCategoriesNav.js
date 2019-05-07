@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import './PostMetaCategoriesNav.css'
-import BlogSearch from './BlogSearch';
 
 
 const activeStyles  = {
@@ -9,15 +8,8 @@ const activeStyles  = {
   background:'#459c98',
 }
 
-const PostCategoriesNav = ({ categories}) => (
+const PostMetaCategoriesNav = ({ categories}) => (
   
-  <div id="collapsibleContainer">
-  
-    {/*The proper search! Do not remove */}
-      <div className="properSearch"> 
-        <BlogSearch />
-      </div>
- 
       <div className="PostMetaCategoriesNav">
         
 
@@ -35,7 +27,7 @@ const PostCategoriesNav = ({ categories}) => (
         ))}
 
       </div>
-      </div>
+  
     
    
 )

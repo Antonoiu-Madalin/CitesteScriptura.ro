@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import './PostCategoriesNav.css'
-import BlogSearch from './BlogSearch';
+
 
 
 const activeStyles  = {
@@ -11,13 +11,8 @@ const activeStyles  = {
 
 const PostCategoriesNav = ({ categories}) => (
   
-  <div id="collapsibleContainer">
   
-    {/*The proper search! Do not remove */}
-      <div className="properSearch"> 
-        <BlogSearch />
-      </div>
-      
+  
       <div className="PostCategoriesNav">
         
       <ul className="categoriileMele">
@@ -45,7 +40,7 @@ const PostCategoriesNav = ({ categories}) => (
 
       </div>
      
-      </div>
+   
     
    
 )
