@@ -3,18 +3,21 @@
   line-height:1;
   margin: 0.5em 0;
   /* border: solid 1px #E07F5D; */
-  display: inline-block; /* Wraps div around the text only */
+  display: inline; /* Wraps div around the text only */
   background: #e7e7e7;
   color: black;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+
+
 
 .NavLinkMetaCategory {
   font-size: 1.6rem;
   line-height:1;
   margin: 0.5em 0;
   /* border: solid 1px #E07F5D; */
-  display: inline-block; /* Wraps div around the text only */
+  display: inline; /* Wraps div around the text only */
   background: #e7e7e7;
   color: black;
   font-family: Georgia, 'Times New Roman', Times, serif;
