@@ -37,7 +37,8 @@ export const byDate = posts => {
 export const byCategory = (posts, title, contentType) => {
 
   /* Aici adaugam folderele MetaCategoriilor pentru Toate default */
-  const isCategory = contentType === 'metacategoryStudiuBiblic' 
+  /* Urmatoarea linie e responsabila cu impartirea efectiva a postarilor pe categorii! */
+  const isCategory = contentType === 'metacategoryRaspunsuri' 
   const byCategory = post =>
     post.categories &&
     post.categories.filter(cat => cat.category === title).length
@@ -51,7 +52,7 @@ export const byCategory = (posts, title, contentType) => {
 export const HomePageTemplate = ({
   title,
   posts = [],
-  metacategoryStudiuBiblic = [],
+  metacategoryRaspunsuri = [],
   enableSearch = true,
   contentType
 }) => (
@@ -101,14 +102,14 @@ export const HomePageTemplate = ({
 
 
           {/* Post categories*/}   
-          {!!metacategoryStudiuBiblic.length && (
+          {!!metacategoryRaspunsuri.length && (
             <section className="section thin">
             
                      
             <div id="ContainerCollapse">
 
               <div className="container descuvraMe">
-                <PostCategoriesNav enableSearch categories={metacategoryStudiuBiblic} />
+                <PostCategoriesNav enableSearch categories={metacategoryRaspunsuri} />
               </div>
 
               </div>
@@ -132,7 +133,7 @@ export const HomePageTemplate = ({
 )
 
 // Export Default RaspunsuriCat for front-end
-const RaspunsuriCat = ({ data: { page, posts, metacategoryStudiuBiblic } }) => (
+const RaspunsuriCat = ({ data: { page, posts, metacategoryRaspunsuri } }) => (
   <Layout
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
@@ -146,7 +147,7 @@ const RaspunsuriCat = ({ data: { page, posts, metacategoryStudiuBiblic } }) => (
         ...post.node.frontmatter,
         ...post.node.fields,
       }))}
-      metacategoryStudiuBiblic={metacategoryStudiuBiblic.edges.map(post => ({
+      metacategoryRaspunsuri={metacategoryRaspunsuri.edges.map(post => ({
         ...post.node,
         ...post.node.frontmatter,
         ...post.node.fields
@@ -201,7 +202,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    metacategoryStudiuBiblic: allMarkdownRemark(
+    metacategoryRaspunsuri: allMarkdownRemark(
       filter: { fields: { contentType: { eq: "metacategoryRaspunsuri" } } }
       sort: { order: ASC, fields: [frontmatter___title] }
     ) {
