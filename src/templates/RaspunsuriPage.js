@@ -79,8 +79,8 @@ export const HomePageTemplate = ({
           
         <main className="Blog">
 
-        <div className="PostCategoriesNav">
-        {/* making Raspunsuri Rapide main default */}
+        <div className="PostMetaCategoriesNav">
+        {/* making All posts main default */}
         
     
           <Link className="NavLinkMetaCategory"  exact="true" to={`/`} activeStyle={activeStyles}>
