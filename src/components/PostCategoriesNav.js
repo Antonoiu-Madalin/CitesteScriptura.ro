@@ -29,7 +29,8 @@ const PostCategoriesNav = ({ categories}) => (
             to={category.slug}
             activeStyle={activeStyles}
           >
-            {category.title}
+          {/* Aici apare titlul fiecarei categorii sub MetaCat*/}
+            {category.title.split("/")[1]} 
           </Link>
         ))}
 

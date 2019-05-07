@@ -37,7 +37,8 @@ export const byDate = posts => {
 export const byCategory = (posts, title, contentType) => {
 
   /* Aici adaugam folderele MetaCategoriilor pentru Toate default */
-  /* Urmatoarea linie e responsabila cu impartirea efectiva a postarilor pe categorii! */
+  /* Urmatoarea linie e responsabila cu impartirea efectiva a postarilor pe categorii!
+  Replace metacategoryRaspunsuri peste tot in pagina daca duplici */
   const isCategory = contentType === 'metacategoryRaspunsuri' 
   const byCategory = post =>
     post.categories &&
@@ -111,7 +112,7 @@ export const HomePageTemplate = ({
               <div className="container descuvraMe">
                 <PostCategoriesNav enableSearch categories={metacategoryRaspunsuri} />
               </div>
-
+              
               </div>
             </section>
           )}
