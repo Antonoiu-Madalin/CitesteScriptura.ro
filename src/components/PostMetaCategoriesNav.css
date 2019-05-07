@@ -96,7 +96,7 @@ border-bottom-color: #E27D5F;
 }
 
 .PostMetaCategoriesNav > * + * {
-  margin-left: 1rem;
+  margin-left: 0rem;
 }
 
 .PostMetaCategoriesNav input[type='text'] {

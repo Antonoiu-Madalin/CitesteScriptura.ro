@@ -68,7 +68,10 @@ export class Navigation extends Component {
             <NavLink to="/contact/">Contact</NavLink>
           </div>
           
-
+          <div className="globalSearchButton"> 
+             <BlogSearch />
+          </div>
+          
           {/* Butonul Hamburger */}
           <button
             className="Button-blank Nav--MenuButton"
@@ -77,9 +80,7 @@ export class Navigation extends Component {
             {active ? <X /> : <Menu />}
           </button>
 
-          <div className="globalSearchButton"> 
-             <BlogSearch />
-          </div>
+   
 
 
         </div>

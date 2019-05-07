@@ -6,6 +6,13 @@ section.section.thin{
   border: 0;
 }
 
+.listaMetaCat{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left:30px;
+  padding-right:30px;
+}  
+
 section.section{
   padding-top: 1rem;
 }

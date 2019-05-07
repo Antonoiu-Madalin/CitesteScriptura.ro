@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import './BlogIndex.css'
-import PostCategoriesNav from '../components/PostCategoriesNav'
 import Layout from '../components/Layout'
 
 
@@ -22,9 +21,6 @@ export const HomePageTemplate = ({
             {/* Post categories*/}            
             <div id="ContainerCollapse">
 
-              <div className="container descuvraMe">
-                <PostCategoriesNav enableSearch categories={postCategories} />
-              </div>
 
               <div className="container Defaultio">
                 <div class="Content ">

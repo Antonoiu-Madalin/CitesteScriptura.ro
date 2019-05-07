@@ -4,7 +4,6 @@ import { Location } from '@reach/router'
 import qs from 'qs'
 import './BlogIndex.css'
 import PostSection from '../components/PostSection'
-import PostCategoriesNav from '../components/PostCategoriesNav'
 import Layout from '../components/Layout'
 
 
@@ -65,15 +64,7 @@ export const BlogIndexTemplate = ({
         <main className="Blog">
           {!!postCategories.length && (
             <section className="section thin">
-            
-            {/* Post categories*/}            
-            <div id="ContainerCollapse">
 
-              <div className="container descuvraMe">
-                <PostCategoriesNav enableSearch categories={postCategories} />
-              </div>
-
-              </div>
             </section>
           )}
 

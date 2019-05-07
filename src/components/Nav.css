@@ -5,17 +5,10 @@
   z-index: 999999;
   /* border-bottom: 1px solid var(--lightGrey); */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
 
-.search{
-  float: right;
-  right: 0;
-  float: right;
-  position: absolute;
-  padding-right: 15px;
-  top: 3px;
-}
+
 
 .Nav--Container {
   display: flex;
@@ -279,15 +272,30 @@ a{
   z-index: 999999;
 }
 
+.globalSearchButton{
+  position: absolute;
+  text-align: right;
+  right: 0;
+  padding-right: 90px;
+}
+
 
 /* This happens for Android Play Store */
 
 @media (max-width: 720px) {
+
+  .globalSearchButton{
+    position: absolute;
+    text-align: right;
+    right: 0;
+    padding-right: 10px;
+  }
+
   .Nav--MenuButton{
-  color:white;
-  margin-left: -255px;
-  float:left;
-  position: relative;
+    color:white;
+    margin-left: -255px;
+    float:left;
+    position: relative;
   }
 
   .logoTextA p{
@@ -297,7 +305,8 @@ a{
     font-weight: 400;
   }
 
-  .Nav--Container {
+
+.Nav--Container {
     display: flex;
     align-items: center;
     height: 3.2rem;

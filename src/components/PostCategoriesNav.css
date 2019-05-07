@@ -88,8 +88,6 @@ border-bottom-color: #E27D5F;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  padding-top: 5px;
-  
 }
 
 .PostCategoriesNav > * + * {
@@ -159,5 +157,6 @@ border-bottom-color: #E27D5F;
       background-color: gainsboro;
       
       }
+
 }
 

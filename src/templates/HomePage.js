@@ -6,7 +6,6 @@ import './BlogIndex.css'
 import PostSection from '../components/PostSection'
 import Layout from '../components/Layout'
 import FaHome from 'react-icons/lib/fa/home';
-import BlogSearch from '../components/BlogSearch';
 
 const activeStyles  = {
   color: 'white',
@@ -106,12 +105,7 @@ export const HomePageTemplate = ({
           </ul> 
           
         </div>
-                {/* Search bonanza*/}
-              <div className="container descuvraMe">
-                <div className="properSearch"> 
-                  <BlogSearch />
-                </div>
-              </div>
+         
 
   
           {/* Posts themselves*/}
