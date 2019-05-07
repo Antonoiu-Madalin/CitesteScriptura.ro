@@ -17,24 +17,34 @@ const PostCategoriesNav = ({ categories}) => (
       <div className="properSearch"> 
         <BlogSearch />
       </div>
- 
+      
       <div className="PostCategoriesNav">
         
-
-        {categories.map((category, index) => (
-          <Link
-            exact="true"
-            className="NavLink"
-            key={category.title + index}
-            to={category.slug}
-            activeStyle={activeStyles}
-          >
-          {/* Aici apare titlul fiecarei categorii sub MetaCat*/}
-            {category.title.split("/")[1]} 
-          </Link>
-        ))}
+      <ul className="categoriileMele">
+       
+          {categories.map((category, index) => (
+             <li>
+                <Link
+                  exact="true"
+                  className="NavLink"
+                  key={category.title + index}
+                  to={category.slug}
+                  activeStyle={activeStyles}
+                >
+                {/* Aici apare titlul fiecarei categorii sub MetaCat*/}
+                
+                
+                  {category.title.split("/")[1]} 
+                
+                
+                </Link>
+            </li>
+          ))}
+          
+        </ul>
 
       </div>
+     
       </div>
     
    

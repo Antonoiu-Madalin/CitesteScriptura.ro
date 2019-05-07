@@ -131,6 +131,11 @@ svg.zeIcon:hover{
   background-color: black;
 }
 
+ul li{
+  display: inline;
+}
+
+
 /* This happens for Android Play Store */
 
 

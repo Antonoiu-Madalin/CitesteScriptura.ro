@@ -81,23 +81,31 @@ export const HomePageTemplate = ({
 
         <div className="PostMetaCategoriesNav">
         {/* making All posts main default */}
-        
-    
-          <Link className="NavLinkMetaCategory"  exact="true" to={`/`} activeStyle={activeStyles}>
-          <FaHome />
-          </Link> 
+        <ul className="listaMetaCat"> 
+          <li>
+              <Link className="NavLinkMetaCategory" exact="true" to={`/`} activeStyle={activeStyles}>
+              <FaHome />
+              </Link> 
+            </li>
 
-          <Link className="NavLinkMetaCategory" exact="true" partiallyActive={true} to={`/studiu-biblic/`} activeStyle={activeStyles}>
-            MetaCat1
-          </Link>
+            <li>
+              <Link className="NavLinkMetaCategory" exact="true" partiallyActive={true} to={`/studiu-biblic/`} activeStyle={activeStyles}>
+                MetaCat1
+              </Link>
+            </li>
 
-          <Link className="NavLinkMetaCategory" exact="true" partiallyActive={true} to={`/raspunsuri-rapide/`} activeStyle={activeStyles}>
-            MetaCat2
-          </Link>
+            <li>
+              <Link className="NavLinkMetaCategory" exact="true" partiallyActive={true} to={`/raspunsuri-rapide/`} activeStyle={activeStyles}>
+                MetaCat2
+              </Link>
+            </li>
 
-          <Link className="NavLinkMetaCategory" exact="true" partiallyActive={true} to={`/versete/`} activeStyle={activeStyles}>
-            MetaCat3
-          </Link>
+            <li>
+              <Link className="NavLinkMetaCategory" exact="true" partiallyActive={true} to={`/versete/`} activeStyle={activeStyles}>
+                MetaCat3
+              </Link>
+            </li>
+          </ul> 
 
         </div>
 
@@ -110,7 +118,7 @@ export const HomePageTemplate = ({
             <div id="ContainerCollapse">
 
               <div className="container descuvraMe">
-                <PostCategoriesNav enableSearch categories={metacategoryRaspunsuri} />
+                  <PostCategoriesNav enableSearch categories={metacategoryRaspunsuri} />
               </div>
               
               </div>
