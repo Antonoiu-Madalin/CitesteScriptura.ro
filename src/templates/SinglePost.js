@@ -62,10 +62,11 @@ export const SinglePostTemplate = ({
 
             /* THIS IS IT. Ia prima parte +/ + a doua parte + din slug url si merge - PENTRU POSTARI ;) 
             <Link to= {window.location.pathname.split("/")[1] + "/" + window.location.pathname.split("/")[2] + "/"} > 
-            
+            <Link to= {cat.category.split(" ").join("-").toLowerCase().replace("ă","a") + "/"} >
             NOT WORKING YET*/
-
-            <Link to= {cat.category} >
+            
+            /* Working now :) */
+            <Link to= {cat.category.split("/")[0].split(" ").join("-").toLowerCase().replace("ă","a")  + "/" + cat.category.split("/")[1].split(" ").join("").toLowerCase().replace("ă","a") + "/" }>
 
                     <span
                       key={cat.category}

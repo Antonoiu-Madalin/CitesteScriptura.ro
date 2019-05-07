@@ -91,7 +91,7 @@ export const HomePageTemplate = ({
             MetaCat1
           </Link>
 
-          <Link className="NavLinkMetaCategory" exact="true" partiallyActive={true} to={`/raspunsuri/`} activeStyle={activeStyles}>
+          <Link className="NavLinkMetaCategory" exact="true" partiallyActive={true} to={`/raspunsuri-rapide/`} activeStyle={activeStyles}>
             MetaCat2
           </Link>
 

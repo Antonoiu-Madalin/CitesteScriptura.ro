@@ -1,7 +1,7 @@
 ---
 template: SinglePost
 title: Question1
-slug: raspunsuri/categorie1/question1
+slug: raspunsuri-rapide/categorie1/question1
 status: Published
 date: '2019-04-11'
 featuredImage: 'https://ucarecdn.com/f540281a-41cf-4bfa-8181-b172e2655fba/-/crop/1632x1777/0,672/-/preview/'

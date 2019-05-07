@@ -1,7 +1,7 @@
 ---
 template: RaspunsuriPage
-slug: /raspunsuri/
-title: Raspunsuri
+slug: /raspunsuri-rapide/
+title: Raspunsuri rapide
 
 meta:
   description: Raspundem la cele mai arzatoare intrebari!

@@ -2,7 +2,7 @@
 template: SinglePost
 title: Question4
 status: Published
-slug: raspunsuri/categorie2/question4
+slug: raspunsuri-rapide/categorie2/question4
 date: '2019-03-11'
 featuredImage: 'https://ucarecdn.com/9f7fcc99-bce6-4fe9-88cf-71614dbb9962/'
 excerpt: Cand au fost ele scrise - sa aflam!
