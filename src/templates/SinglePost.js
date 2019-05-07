@@ -2,13 +2,12 @@ import React, { Fragment } from 'react'
 import _get from 'lodash/get'
 import _format from 'date-fns/format'
 import { Link, graphql } from 'gatsby'
-import { ChevronLeft, ChevronRight } from 'react-feather'
+import { ChevronLeft, ChevronRight, ArrowLeft } from 'react-feather'
 import Content from '../components/Content'
-import Layout from '../components/Layout'
+import Layout from '../components/LayoutMobile'
 import './SinglePost.css'
 
-
-/*  eslint-disable */ 
+/*  eslint-disable  */ 
 const roLocale = require('date-fns/locale/ro');
 
 export const SinglePostTemplate = ({
@@ -36,7 +35,7 @@ export const SinglePostTemplate = ({
         
      
        {/* Aici imi tot da eroare esLint dar nu am alternativa viabila acum // eslint-disable */}
-        <a href="javascript:history.back()"> <ChevronLeft /> înapoi</a> 
+        <a href="javascript:history.back()"> <ArrowLeft/> înapoi</a> 
        
 
         <div className="SinglePost--Content relative">

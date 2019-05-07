@@ -132,10 +132,17 @@ svg.zeIcon:hover{
 }
 
 ul li{
-  display: inline;
+  display: inline-block;
+  
 }
 
 
 /* This happens for Android Play Store */
+@media (max-width: 720px) {
 
+  ul li{
+    display: inline-block;
+    
+  }
+}
 
