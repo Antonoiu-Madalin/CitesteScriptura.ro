@@ -1,7 +1,6 @@
 import React from 'react'
 import { Mail } from 'react-feather'
 import { graphql } from 'gatsby'
-
 import FormSimpleAjax from '../components/FormSimpleAjax'
 import Content from '../components/Content'
 import Layout from '../components/Layout'

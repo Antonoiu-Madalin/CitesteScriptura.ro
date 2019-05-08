@@ -1,12 +1,17 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import { Location } from '@reach/router'
 import qs from 'qs'
 import './BlogIndex.css'
 import PostSection from '../components/PostSection'
 import Layout from '../components/Layout'
+import FaHome from 'react-icons/lib/fa/home';
 
 
+const activeStyles  = {
+  color: 'white',
+  background:'#459c98',
+}
 
 
 /**
@@ -71,9 +76,43 @@ export const HomePageTemplate = ({
           
         <main className="Blog">
 
-          {/* Posts themselves*/}
+        <nav className={`Nav  Nav-active`}>
+          <ul className="Nav--Container container secondNav"> 
+                    
+            <div className="MetaCategories">
+              <li>
+                  <Link className="NavLinkMetaCategory" exact="true" to={`/`} activeStyle={activeStyles}>
+                  <FaHome />
+                  </Link> 
+              </li>
+
+                <li>
+                  <Link className="NavLinkMetaCategory" exact="true" partiallyActive={true} to={`/studiu-biblic/`} activeStyle={activeStyles}>
+                    MetaCat1
+                  </Link>
+                </li>
+
+                <li>
+                  <Link className="NavLinkMetaCategory" exact="true" partiallyActive={true} to={`/raspunsuri-rapide/`} activeStyle={activeStyles}>
+                    MetaCat2
+                  </Link>
+                </li>
+
+                {/*
+                <li>
+                  <Link className="NavLinkMetaCategory" exact="true" partiallyActive={true} to={`/versete/`} activeStyle={activeStyles}>
+                    MetaCat3
+                  </Link>
+                </li>
+                */}
+                
+            </div>
+          </ul> 
+        </nav>
+
           {!!posts.length && (
-            <section className="section aici">
+            /* Posts */
+            <section className="section aici PostsThemselves">
             
               <div className="container">
                 <PostSection posts={filteredPosts} />

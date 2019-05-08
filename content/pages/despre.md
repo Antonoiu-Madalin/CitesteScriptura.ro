@@ -1,5 +1,5 @@
 ---
-template: ContactPage
+template: DefaultPage
 slug: despre
 title: Despre noi
 featuredImage: 'https://ucarecdn.com/fee8e15e-1fab-43c2-bd3f-d9dbf428a9c2/'

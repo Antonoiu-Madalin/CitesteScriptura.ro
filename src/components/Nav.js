@@ -5,12 +5,7 @@ import { Menu, X, Mail, Info, Home, Rss, LogIn } from 'react-feather'
 import Logo from './Logo'
 import './Nav.css'
 import BlogSearch from './BlogSearch';
-import FaHome from 'react-icons/lib/fa/home';
 
-const activeStyles  = {
-  color: 'white',
-  background:'#459c98',
-}
 
 export class Navigation extends Component {
   state = {
@@ -48,7 +43,6 @@ export class Navigation extends Component {
       )
 
     return (
-      <div className="Multiple-Nav">
 
         <nav className={`Nav ${active ? 'Nav-active' : ''}`}>
  
@@ -88,39 +82,7 @@ export class Navigation extends Component {
         </div>
       </nav>
 
-        <nav className={`Nav  ${active ? 'Nav-active' : ''}`}>
-          <ul className="Nav--Container container secondNav"> 
-                    
-            <div className="MetaCategories">
-              <li>
-                  <Link className="NavLinkMetaCategory" exact="true" to={`/`} activeStyle={activeStyles}>
-                  <FaHome />
-                  </Link> 
-              </li>
 
-                <li>
-                  <Link className="NavLinkMetaCategory" exact="true" partiallyActive={true} to={`/studiu-biblic/`} activeStyle={activeStyles}>
-                    MetaCat1
-                  </Link>
-                </li>
-
-                <li>
-                  <Link className="NavLinkMetaCategory" exact="true" partiallyActive={true} to={`/raspunsuri-rapide/`} activeStyle={activeStyles}>
-                    MetaCat2
-                  </Link>
-                </li>
-
-                <li>
-                  <Link className="NavLinkMetaCategory" exact="true" partiallyActive={true} to={`/versete/`} activeStyle={activeStyles}>
-                    MetaCat3
-                  </Link>
-                </li>
-            </div>
-          </ul> 
-        </nav>
-
-      </div>
-    
       
     )
   }
