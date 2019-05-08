@@ -99,3 +99,11 @@ section.section.aici[data-state="null"]{
   }
 }
 
+
+@media (max-width: 720px) {
+
+  .PostSection{
+    margin-top: 0.5rem;
+  }
+
+}

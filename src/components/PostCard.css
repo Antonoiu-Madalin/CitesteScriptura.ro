@@ -98,8 +98,10 @@ a.PostCard:visited{
 span.SinglePost--Meta--Category{
   font-size: 1rem;
 }
+
 .PostCard--Excerpt {
   line-height: 1.55em;
+  
   
 }
 
@@ -130,3 +132,55 @@ span.SinglePost--Meta--Category{
     line-height: 1.7;
   }
 }
+
+
+
+/* Google Play Store only */
+@media (max-width: 720px) {
+
+  .PostSection{
+    margin-top: 0.25rem;
+  }
+
+ a.PostCard {
+    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
+    height: 5.5rem;
+    border-bottom: 1px solid #5f697a;
+    
+  }
+
+  .PostCard--Image.relative{
+    width: 20%;
+    vertical-align: top;
+    display: inline-block;
+    height: 5rem;
+  }
+
+  .PostCard--Content{
+    display: inline-block;
+    width: 79%;
+    height: 5rem;
+  }
+
+  .PostCard--Excerpt {
+    line-height: 1.55em;
+    visibility: hidden;
+  }
+  
+  .estimateReadingTime{
+    visibility: hidden;
+  }
+
+  .avatarPhoto{
+    visibility: hidden;
+  }
+
+  .SinglePost--Meta--Date{
+    visibility: hidden;
+  }
+
+}
+
+
+
