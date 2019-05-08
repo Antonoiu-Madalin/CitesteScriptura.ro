@@ -139,30 +139,51 @@ span.SinglePost--Meta--Category{
 @media (max-width: 720px) {
 
   .PostSection{
-    margin-top: 0.25rem;
+    padding-top: 0.25rem;
+
+  }
+  
+  .SinglePost--Meta--Category{
+    padding-top: 40px;
+    margin-right: -10px;
+    float: right;
+   
   }
 
  a.PostCard {
-    margin-bottom: 0.25rem;
-    margin-top: 0.25rem;
-    height: 5.5rem;
+    padding-bottom: 0.35rem;
+    padding-top: 0.35rem;
+    height: 6.5rem;
     border-bottom: 1px solid #5f697a;
-    
+    margin-bottom: 0.20rem;
   }
 
   .PostCard--Image.relative{
     width: 20%;
     vertical-align: top;
     display: inline-block;
-    height: 5rem;
+    height: 6rem;
   }
 
   .PostCard--Content{
     display: inline-block;
     width: 79%;
-    height: 5rem;
+    height: 6rem;
   }
 
+
+
+  .container {
+    max-width: 1111px;
+    width: 98%;
+    margin: 0 0.25rem;
+  }
+
+
+  .miniPosts{
+    background: black;
+  }
+  
   .PostCard--Excerpt {
     line-height: 1.55em;
     visibility: hidden;

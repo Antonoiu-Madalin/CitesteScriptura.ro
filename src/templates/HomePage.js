@@ -105,16 +105,16 @@ export const HomePageTemplate = ({
                   </Link>
                 </li>
                 */}
-                
+
             </div>
           </ul> 
         </nav>
 
           {!!posts.length && (
             /* Posts */
-            <section className="section aici PostsThemselves">
+            <section className="section aici miniPosts ">
             
-              <div className="container">
+              <div className="container PostsThemselves">
                 <PostSection posts={filteredPosts} />
               </div>
               
