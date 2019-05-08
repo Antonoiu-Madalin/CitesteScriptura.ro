@@ -6,12 +6,8 @@ section.section.thin{
   border: 0;
 }
 
-.listaMetaCat{
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left:30px;
-  padding-right:30px;
-}  
+
+
 
 section.section{
   padding-top: 1rem;
@@ -127,11 +123,11 @@ svg.zeIcon:hover{
   background-color: black;
 }
 
+/* Lista sa fie pe aceeasi linie */
 ul li{
   display: inline-block;
-  
-}
 
+}
 
 /* This happens for Android Play Store */
 @media (max-width: 720px) {
