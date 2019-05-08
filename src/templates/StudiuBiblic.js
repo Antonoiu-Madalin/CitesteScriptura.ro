@@ -112,16 +112,19 @@ export const HomePageTemplate = ({
             </ul> 
           </nav>
 
-          {/* Post categories*/}   
-          <div className="underCategories">
+          {/* Post categories*/} 
+          <nav className={`Nav  Nav-active`}>
+            <ul className="Nav--Container container thirdNav"> 
 
-            {!!metacategoryStudiuBiblic.length && (
-
+              <div className="underCategories ">
+                  
+                {!!metacategoryStudiuBiblic.length && (
                   <PostCategoriesNav enableSearch categories={metacategoryStudiuBiblic} />
-  
-            )}
+                )}
 
-          </div>
+              </div>
+            </ul> 
+          </nav>
           
           
           {!!posts.length && (

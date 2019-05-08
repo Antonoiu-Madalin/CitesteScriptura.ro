@@ -114,16 +114,23 @@ export const HomePageTemplate = ({
             </ul> 
           </nav>
 
-        <div className="underCategories">
-            {/* Post categories*/}   
-            {!!metacategoryRaspunsuri.length && (
-     
-                    <PostCategoriesNav enableSearch categories={metacategoryRaspunsuri} />
-            )}
-          </div>
+          {/* Post categories*/} 
+          <nav className={`Nav  Nav-active`}>
+            <ul className="Nav--Container container thirdNav"> 
+
+              <div className="underCategories ">
+                  
+                {!!metacategoryRaspunsuri.length && (
+                  <PostCategoriesNav enableSearch categories={metacategoryRaspunsuri} />
+                )}
+
+              </div>
+            </ul> 
+          </nav>
 
           {/* Posts themselves*/}
           {!!posts.length && (
+            
             <section className="section aici">
             
               <div className="container">
