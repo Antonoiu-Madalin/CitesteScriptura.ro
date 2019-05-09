@@ -1,3 +1,17 @@
+.CopyWebsiteUrl{
+  right: 0;
+  top: 0;
+  float: right;
+  position: absolute;
+  margin-top: 0.25rem;
+  margin-right: 0.25rem;
+  
+}
+
+.CopyUrlButton{
+  background-color: #F5F5F5;
+}
+
 .manyMan{
   padding-top: 17px;
 }

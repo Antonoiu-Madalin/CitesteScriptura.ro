@@ -2,11 +2,14 @@ import React, { Fragment } from 'react'
 import _get from 'lodash/get'
 import _format from 'date-fns/format'
 import { Link, graphql } from 'gatsby'
-import { ChevronLeft, ChevronRight, ArrowLeft } from 'react-feather'
+import { ChevronLeft, ChevronRight, ArrowLeft, Link2} from 'react-feather'
 import Content from '../components/Content'
 import Layout from '../components/LayoutMobile'
 import './SinglePost.css'
 import { Location } from '@reach/router'
+import { CopyToClipboard } from 'react-copy-to-clipboard'
+
+
 
 /*  eslint-disable  */ 
 const roLocale = require('date-fns/locale/ro');
@@ -17,7 +20,6 @@ export const SinglePostTemplate = ({
   body,
   nextPostURL,
   prevPostURL,
-  location,
   categories = [],
 }) => (
  
@@ -32,18 +34,32 @@ export const SinglePostTemplate = ({
        {/* Aici imi tot da eroare esLint dar nu am alternativa viabila acum // eslint-disable */}
         <a href="javascript:history.back()"> <ArrowLeft/> înapoi</a> 
         
-        {/* Si uite asa iei locatia (URL) location.pathname sau href daca vrei full*/}
+        {/* NO LONGER NEEDED - ClipboardShareURL Si uite asa iei locatia (URL) location.pathname sau href daca vrei full
         <Location>
           {({ location }) => {
             
             return <p>Share me: {location.href}</p>
                 }}
         </Location>
-
+          */}
         <div className="SinglePost--Content relative">
-          
+                  
           <div className="SinglePost--Meta">
           
+          {/* Copy URL to Clipboard */}
+          <Location>
+            {({ location }) => {
+              
+              return  <CopyToClipboard text={location.href}>
+                        <div className="CopyWebsiteUrl">
+                        <button className="CopyUrlButton"><Link2 /></button> 
+                        </div>
+                      </CopyToClipboard>
+                  }}
+          </Location>
+
+
+
             {date && (
               <time
                 className="SinglePost--Meta--DateFx"
