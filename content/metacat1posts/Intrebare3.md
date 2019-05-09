@@ -3,7 +3,7 @@ template: SinglePost
 title: Intrebare3
 slug: studiu-biblic/katz3/intrebare3
 status: Published
-date: '2019-04-11'
+date: '2019-05-09T03:59:00.000Z'
 featuredImage: 'https://ucarecdn.com/f540281a-41cf-4bfa-8181-b172e2655fba/-/crop/1632x1777/0,672/-/preview/'
 categories:
   - category: Studiu biblic/ Katz3
