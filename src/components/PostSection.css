@@ -35,6 +35,7 @@ section.section.aici[data-state="null"]{
 .PostSection{
   margin-top: 18px;
 }
+
 .PostSection--Grid {
   display: flex;
   justify-content: space-between;
@@ -85,7 +86,7 @@ section.section.aici[data-state="null"]{
 @media screen and (max-width: 888px) {
   .PostSection--Grid > * {
     width: 100%;
-    max-width: 50rem;
+    /* max-width: 50rem; */
     margin: 0 auto 4rem;
     display: block;
   }
@@ -105,5 +106,7 @@ section.section.aici[data-state="null"]{
   .PostSection{
     margin-top: 0.5rem;
   }
+
+ 
 
 }
