@@ -6,6 +6,7 @@ import { ChevronLeft, ChevronRight, ArrowLeft } from 'react-feather'
 import Content from '../components/Content'
 import Layout from '../components/LayoutMobile'
 import './SinglePost.css'
+import { Location } from '@reach/router'
 
 /*  eslint-disable  */ 
 const roLocale = require('date-fns/locale/ro');
@@ -30,7 +31,14 @@ export const SinglePostTemplate = ({
 
        {/* Aici imi tot da eroare esLint dar nu am alternativa viabila acum // eslint-disable */}
         <a href="javascript:history.back()"> <ArrowLeft/> înapoi</a> 
-       
+        
+        {/* Si uite asa iei locatia (URL) location.pathname sau href daca vrei full*/}
+        <Location>
+          {({ location }) => {
+            
+            return <p>Share me: {location.href}</p>
+                }}
+        </Location>
 
         <div className="SinglePost--Content relative">
           
