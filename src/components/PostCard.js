@@ -2,13 +2,17 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Image from './Image'
 import './PostCard.css'
-import _format from 'date-fns/format'
+/* import _format from 'date-fns/format' TimeAgo no longer needed */
+import TimeAgo from 'react-timeago'
+import romanianStrings from 'react-timeago/lib/language-strings/ro'
+import buildFormatter from 'react-timeago/lib/formatters/buildFormatter'
+ 
+const formatter = buildFormatter(romanianStrings)
 
-
-
-
-/* Adaugi asta pentru data (1) */
+/* Adaugi asta pentru data (1)  No longer Needed since TimeAgo
 const roLocale = require('date-fns/locale/ro');
+*/
+
 
 const PostCard = ({
   featuredImage,
@@ -67,31 +71,33 @@ const PostCard = ({
           <div className="author-profile-image"> 
             <img className="avatarPhoto" src="https://archive.icann.org/meetings/icann56/cdn.schd.ws/common/img/avatar-empty.png" alt="author"></img> 
           </div>
-           
-          <div className="nameAndDate">
-            {/* <span>Mădălin/span>  <br/> */}
          
-
-            <span>
-                {date && (
-                        <time
-                          className="SinglePost--Meta--Date"
-                          itemProp="dateCreated pubdate datePublished"
-                          date={date}
-                        >
-                        {/* Adaugi asta pentru data (2) -  , { locale: roLocale })  */}
-                          {_format(date, 'Do MMMM, YYYY', { locale: roLocale }) }
-                        </time>
-                  )}
+          <div className="TimeSincePosted">  
+                <TimeAgo date={date} formatter={formatter} />
+            </div> 
+         
+        <div className="nameAndDate">
+            
+                {/* OLD WAY OF SHOWING TIME No longer needed since TimeAgo 
+                <span>
+                    {date && (
+                            <time
+                              className="SinglePost--Meta--Date"
+                              itemProp="dateCreated pubdate datePublished"
+                              date={date}
+                            >
+                            {/* Adaugi asta pentru data (2) -  , { locale: roLocale })  
+                              {_format(date, 'Do MMMM, YYYY', { locale: roLocale }) }
+                            </time>
+                      )}
+                  </span>  */}  
+                  
 
                   {/* Estimated time to read */}        
                 <span className="estimateReadingTime">
                     {readingTime.text}
                 </span>
-                
-            </span>  
-   
-          </div>
+         </div> 
         </div>
       </div>
       </div>

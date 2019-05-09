@@ -45,6 +45,7 @@
   margin-right: 8px;
 }
 
+
 .avatarPhoto{
   width: 30px;
   height: 30px;
@@ -144,34 +145,32 @@ span.SinglePost--Meta--Category{
   }
   
   .SinglePost--Meta--Category{
-    padding-top: 40px;
-    margin-right: -10px;
-    float: right;
    
   }
 
  a.PostCard {
     padding-bottom: 0.35rem;
     padding-top: 0.35rem;
-    height: 6.5rem;
+    height: 10.5rem;
     border-bottom: 1px solid #5f697a;
     margin-bottom: 0.20rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 99%;
   }
 
   .PostCard--Image.relative{
     width: 20%;
     vertical-align: top;
     display: inline-block;
-    height: 6rem;
+    height: 10rem;
   }
 
   .PostCard--Content{
     display: inline-block;
     width: 79%;
-    height: 6rem;
+    height: 10rem;
   }
-
-
 
   .container {
     max-width: 1111px;
@@ -183,23 +182,32 @@ span.SinglePost--Meta--Category{
   .miniPosts{
     background: black;
   }
-  
-  .PostCard--Excerpt {
-    line-height: 1.55em;
-    visibility: hidden;
+
+  .TimeSincePosted{
+    visibility: visible;
+    bottom: 0;
+    right: 5px;
+    position: absolute;
   }
-  
+
+  .post-card-MetaFull{
+    visibility: visible;
+  }
+
   .estimateReadingTime{
-    visibility: hidden;
+    display: none;
   }
 
   .avatarPhoto{
-    visibility: hidden;
+    display: none;
   }
 
-  .SinglePost--Meta--Date{
-    visibility: hidden;
+  .PostCard--Excerpt {
+    line-height: 1.55em;
+    display: none;
   }
+
+ 
 
 }
 
