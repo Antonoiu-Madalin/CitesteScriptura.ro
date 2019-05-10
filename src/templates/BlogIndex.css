@@ -142,8 +142,9 @@ ul li{
     position: fixed;
     bottom: 0;
     width: 100%;
+ 
   }
-  
+
   .SecondNav a  {
     float: left;
     display: block;

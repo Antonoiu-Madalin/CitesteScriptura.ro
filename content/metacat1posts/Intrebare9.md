@@ -1,15 +1,15 @@
 ---
 template: SinglePost
-title: Intrebare2
-slug: studiu-biblic/katz2/intrebare1
+title: Intrebare9
+slug: studiu-biblic/katz3/intrebare9
 status: Published
-date: '2019-05-10T04:00:00.000Z'
+date: '2019-05-09'
 featuredImage: 'https://ucarecdn.com/f540281a-41cf-4bfa-8181-b172e2655fba/-/crop/1632x1777/0,672/-/preview/'
 categories:
-  - category: Studiu biblic/ Katz2
+  - category: Studiu biblic/ Katz1
 meta:
   description: test meta description
   title: test meta title
 ---
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit dsa erer fd f"
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit"

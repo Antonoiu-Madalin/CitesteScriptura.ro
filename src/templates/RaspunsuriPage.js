@@ -96,14 +96,7 @@ export const HomePageTemplate = ({
 
           {/* Posts themselves*/}
           {!!posts.length && (
-            
-            <section className="section aici miniPosts">
-            
-              <div className="container PostsThemselves">
-                <PostSection posts={filteredPosts} />
-              </div>
-              
-            </section>
+            <PostSection posts={filteredPosts} />
           )}
 
               <nav className={`SecondNav stickyNav`}>
@@ -127,12 +120,6 @@ export const HomePageTemplate = ({
                   </li>
                 </ul> 
               </nav>
-
-
-
-
-
-
         </main>
       )
     }}

@@ -4,14 +4,10 @@ section.section{
 }
 
 
-section.section.aici{
-  min-height: 100vh; /* min-height only! careful. This sets post area height to match the screen size */
-  overflow: none;
-  
-}
 
-.Defaultio{
-  min-height: 100vh;
+section.section.aici{
+  height: 95%; /* min-height only! careful. This sets post area height to match the screen size */
+  overflow: none;
 }
 
 
@@ -104,9 +100,16 @@ section.section.aici[data-state="null"]{
 @media (max-width: 720px) {
 
   .PostSection{
-    margin-top: 0.5rem;
+    padding-bottom: 4rem; /*SAU NU am sters 4% height la SecondNav / Aici controlezi postarile sa apara deasupra SecondNav */
+    margin: 0;
+    min-height: 80rem;
+   
   }
+  
 
- 
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
 
 }

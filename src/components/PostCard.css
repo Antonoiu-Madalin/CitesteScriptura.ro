@@ -138,12 +138,14 @@ span.SinglePost--Meta--Category{
 
 /* Google Play Store only */
 @media (max-width: 720px) {
+  
+
 
   .PostSection{
     padding: 0;
     margin: 0;
     border:0;
-    height: 100vm;
+   
   }
   
 
@@ -154,11 +156,7 @@ span.SinglePost--Meta--Category{
 }
 
  a.PostCard {
-    padding-bottom: 0.35rem;
-    padding-top: 0.35rem;
-    height: 10.5rem;
     border-bottom: 1px solid #5f697a;
-    margin-bottom: 0.20rem;
     margin: 0;
     width: 100%;
   }
@@ -173,13 +171,13 @@ span.SinglePost--Meta--Category{
     width: 20%;
     vertical-align: top;
     display: inline-block;
-    height: 10rem;
+    
   }
 
   .PostCard--Content{
     display: inline-block;
     width: 80%;
-    height: 10rem;
+    
   }
 
 

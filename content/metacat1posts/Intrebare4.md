@@ -1,6 +1,6 @@
 ---
 template: SinglePost
-title: Lului
+title: Intrebare4
 slug: studiu-biblic/katz2/intrebare4
 status: Published
 date: '2019-05-09'

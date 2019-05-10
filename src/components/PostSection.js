@@ -8,7 +8,7 @@ class PostSection extends React.Component {
     title: '',
     limit: 12,
     showLoadMore: true,
-    loadMoreTitle: 'Load More',
+    loadMoreTitle: 'Mai multe articole',
     perPageLimit: 12
   }
 
@@ -30,8 +30,6 @@ class PostSection extends React.Component {
       
       <div className="PostSection">
       
-        <div class="not-found">Not Found</div>
- 
         {title && <h2 className="PostSection--Title">{title}</h2>}
         {!!visiblePosts.length && (
           <div className="PostSection--Grid">

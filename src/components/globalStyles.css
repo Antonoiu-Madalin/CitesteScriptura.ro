@@ -34,10 +34,12 @@
 
 /* Maybe not needed but heh */
 .___gatsby{
-  min-height:100%;
-	position:relative;
+  height: 100%;
+  position:relative;
+  overflow: scroll;
 }
 
+::-webkit-scrollbar { display: none; }
 
 html, body {
   max-width: 100%;
@@ -46,15 +48,16 @@ html, body {
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  min-height: 100%;
   background: var(--lightGrey);
   width: 100%;
+ 
+  
 }
 
 
 body {
   font-family: var(--font-system);
-  min-height: 100%;
+ 
   position: relative;
   background: white;
   color: var(--secondary);
@@ -67,6 +70,7 @@ body {
   width: 100%;
   margin: 0;
  padding:0;
+ overflow-y: scroll;
 }
 
 body *, body *:before, body *:after { box-sizing: inherit; }
@@ -94,6 +98,9 @@ h6 {
   margin-bottom: 0.5em;
 
 }
+
+
+
 
 pre {
   background: var(--lightGrey);

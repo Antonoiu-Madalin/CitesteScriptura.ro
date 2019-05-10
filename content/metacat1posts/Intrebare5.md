@@ -1,6 +1,6 @@
 ---
 template: SinglePost
-title: Lofem
+title: Intrebare5
 slug: studiu-biblic/katz3/intrebare5
 status: Published
 date: '2019-05-09'
