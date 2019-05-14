@@ -14,15 +14,6 @@ export class Navigation extends Component {
     currentPath: false
   }
 
-  componentDidMount () {
-    const script = document.createElement("script");
-  
-    script.src = "./";
-    script.async = true;
-  
-    document.body.appendChild(script);
-  }
-
   componentDidMount = () =>
     this.setState({ currentPath: this.props.location.pathname })
 
@@ -53,16 +44,18 @@ export class Navigation extends Component {
 
     return (
 
-  
-
-        <nav className={`Nav wrappersearch ${active ? 'Nav-active' : ''}`}>
-    
-        {/*Remove this to make navbar full screen only 
+        <nav className={`Nav ${active ? 'Nav-active' : ''}`}>
+ 
+        <div className="Nav--Container container"> {/*Remove this to make navbar full screen only */}
           
           <div className="logoMover noselect">
             <Logo />
           </div>
-*/}
+
+          <div  className="logoTextA">
+            <p className="noselect">AlphaStage App0.1</p>         
+          </div>
+         
           <div className="Nav--Links noselect">
             <NavLink to="/"> <Home className="contactMenu"/>Acasă</NavLink>
             <NavLink to="/despre/"> <Info className="contactMenu"/>Info</NavLink>
@@ -71,8 +64,8 @@ export class Navigation extends Component {
             <NavLink to="/log-in/"><LogIn className="contactMenu"/>Log In</NavLink>
           </div>
           
-          <BlogSearch />
-     
+          
+          <div className="buttonsToTheRight">
             {/* Butonul Hamburger */}
             <button
               className="Button-blank Nav--MenuButton"
@@ -81,13 +74,12 @@ export class Navigation extends Component {
               {active ? <X /> : <Menu />}
             </button>
 
-          
-         
+            <div className="globalSearchButton"> 
+              <BlogSearch />
+            </div>
+          </div>
 
-       
-
-
-        
+        </div>
       </nav>
 
 
@@ -95,11 +87,6 @@ export class Navigation extends Component {
     )
   }
 }
-
-
-
-
-
 
 export default ({ subNav }) => (
   <Location>{route => <Navigation subNav={subNav} {...route} />}</Location>

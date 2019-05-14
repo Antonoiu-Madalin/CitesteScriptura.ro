@@ -7,7 +7,6 @@
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.15s ease-in-out;
   overflow: hidden;
- 
 }
 
 
@@ -146,7 +145,6 @@ span.SinglePost--Meta--Category{
     padding: 0;
     margin: 0;
     border:0;
-    padding-top: 15px;
    
   }
   

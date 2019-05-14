@@ -49,8 +49,24 @@ color: grey;
 
 
 
+a{
+  text-decoration: none;
+  position: relative;
+}
 
-
+.logoTextA p{
+  font-size: 130%;
+  padding-left: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+  color: white;
+  width: 100px;
+  line-height: 0.8;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-bottom: 0;
+  z-index: 999999;
+}
 
 
 .NavLink {
@@ -167,11 +183,10 @@ color: grey;
   }
 
   .Nav--MenuButton{
-   z-index: 99999;
-    color:green;
-    position: fixed;
-    left: 0;
-    float: left;
+    z-index: 999999;
+    color:white;
+    float: right;
+    position: relative;
   }
 
   .Logo{
@@ -323,15 +338,20 @@ color: grey;
   }
 
   .Nav--MenuButton{
-    color:green;
-    
-    position: fixed;
+    color:white;
+    float:right;
+    position: relative;
     margin-right: -35px;
-    left: 0l
-
+ 
   }
 
-  
+  .logoTextA p{
+    float: left;
+    width: 250px;
+    font-weight: 400;
+    margin-left: -15px;
+  }
+
 
 .Nav--Container {
     display: flex;
@@ -341,8 +361,7 @@ color: grey;
 
   .Nav {
     background:  black;
-    position: fixed;
-    width: 100%;
+    position: static;
     top: 0;
     z-index: 999999;
     /* border-bottom: 1px solid var(--lightGrey); */
