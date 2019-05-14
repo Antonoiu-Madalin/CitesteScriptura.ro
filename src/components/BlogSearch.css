@@ -1,81 +1,108 @@
+@media (max-width: 720px) {
 
-input {
-	outline: none;
-}
-
-input[type=search] {
-	-webkit-appearance: textfield;
-	-webkit-box-sizing: content-box;
-	font-family: inherit;
-	font-size: 100%;
-}
-
-input::-webkit-search-decoration,
-input::-webkit-search-cancel-button {
-	display: none; 
+  
+	.logoTextA p{
+	  float: left;
+	  width: 250px;
+	  font-weight: 400;
+	  margin-left: -15px;
+	}
+  
 }
 
 
 
-input[type=search] {
-	background: white url(../../static/images/search-icon.png) no-repeat 9px center;
-	border: 0px;
-	width: 50px;
+.logoTextA p{
+	font-size: 130%;
+	padding-left: 5px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	position: relative;
+	color: red;
+	width: 150px;
+	line-height: 0.8;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	margin-bottom: 0;
+	z-index: 999;
+	padding-left: 50px;
+  }
+
+  a{
+	text-decoration: none;
+	position: relative;
+  }
+  
+
+
+#wrappersearch {
+ 
+    padding-left: 2px;
+   /*  background: white; */
+    left: 0;
+    /* border: 1px solid #252525; */
+    display: inline-block; /* shrink to fit */
+    width: 90%;           /* whatever width you like */
 	
-	-webkit-border-radius: 10em;
-	-moz-border-radius: 10em;
-	border-radius: 10em;
+    
+}
+
+#search-form-1 {
+    display: block;
+    margin-bottom: 10px;
+    
+}
+
+
+/** Search Fields **/
+.search-field-1, .search-field-2 {
+    right: 0;
+    z-index: 999999;
+    float: right;
+    display: block;
+    width: 50px;
+    padding: 10px 10px;
+	position: fixed;
+	height: 62px;
+    /* Keeps input text from running over the search button */
+    background-color: #fff;
+    font-size: 12px;
+    color: #ccc;
+    border: 4px solid #f4f4f4;
+    /* CSS3 Box Sizing */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    /* CSS3 Rounded Corners */
+    border-radius: 10px;
+    /* CSS3 Transition (Expanding Effect) */
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
 	
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	transition: all .5s;
-}
 
-input[type=search]:focus {
-	width: 130px;
-	background-color: white;
-	border-color: #D3E0B5;
 	
-	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
-	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
-	box-shadow: 0 0 5px rgba(109,207,246,.5);
+
 }
 
-input:-moz-placeholder {
-	color: #D3E0B5;
-}
-input::-webkit-input-placeholder {
-	color: #D3E0B5;
-}
-
-
-#demo-2 input[type=search] {
-	width: 17px;
-    padding-left: 5px;
-    padding-right: 10px;
-	color: transparent;
-	cursor: pointer;
-	
-}
-#demo-2 input[type=search]:hover {
-	/* background-color: #fff; */
-}
-#demo-2 input[type=search]:focus {
-	width: 65px;
-	padding-left: 32px;
-	color: black;
-	background-color: #fff;
-	cursor: auto;
-	font-weight: 500;
+/** Search Field 1 Focus (Full Width) **/
+.search-field-1:focus, .search-field-1:focus {
+    outline: none;
+    width: 100%;
+   /* full width ALWAYS has to be 100% color: #252525;
+     CSS3 Outer Shadow */
+    -webkit-box-shadow: 0 0 0 10px #999;
+    -moz-box-shadow: 0 0 0 10px #999;
+    box-shadow: 0 0 10px #999;
 }
 
-#demo-2 input:-moz-placeholder {
-	color: transparent;
-}
-#demo-2 input::-webkit-input-placeholder {
-	color: transparent;
-}
+.logoMe{
+	color: white;
+	padding-left: 40px;
 
+}
 
 
 /* Google Play Store */

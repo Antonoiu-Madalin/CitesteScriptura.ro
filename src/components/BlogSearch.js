@@ -3,7 +3,6 @@ import { navigate } from 'gatsby'
 import { Location } from '@reach/router'
 import qs from 'qs'
 import "./BlogSearch.css"
-/* import { FaSearch } from 'react-icons/fa'; */
 
 export default () => {
   return (
@@ -13,29 +12,34 @@ export default () => {
 
         return (
          
-            <div className="search"> 
-              <form id="demo-2">
-              <input
-                type="search" 
-                className="searchBar"
-                value={search.s || ''}
-                placeholder="Cauta..."
-                onChange={e => {
-                  let search = {}
-                  search.s = e.target.value
-                  search = qs.stringify(search)
+            <div id="wrappersearch"> 
+              <form id="search-form-1" className="search-form-1">
+                <input
+                  id="s1"
+                  type="text" 
+                  className="search-field-1"
+                  value={search.s || ''}
+                  placeholder="Cauta..."
+                  onChange={e => {
+                    let search = {}
+                    search.s = e.target.value
+                    search = qs.stringify(search)
 
-                  const url = location.href
-                    .replace(location.origin, '')
-                    .replace(location.search, '')
-                   
-                    navigate(`${url}?${search}`)
-                }}
+                    const url = location.href
+                      .replace(location.origin, '')
+                      .replace(location.search, '')
+                    
+                      navigate(`${url}?${search}`)
+                  }}/>
 
-              />
-             {/* <i className="searchIcon"> < FaSearch /> </i> */}
-              
+           
+             
+
               </form>
+
+            <p className="noselect logoMe">BetaStage App0.05</p>         
+         
+
               </div>
            
         )
