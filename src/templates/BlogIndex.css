@@ -134,40 +134,39 @@ ul li{
 
   .metaIcon{
     display: block;
-    padding-top: 5px;
-    margin-bottom: -18px;
+    margin-top: -13px;
+    margin-bottom: -7px;
+    font-size: 23px;
   }
-  .metaTitle{
-    font-size: 1.7rem;
-  }
+ 
 
   ul li{
     display: inline-block;
   }
 
   .SecondNav {
-    background-color: black;
+    background-color: white;
     overflow: hidden;
     position: absolute; /* or fixed */
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 45px;
+    border-top: 1px solid grey;
  
   }
 
   .SecondNav a  {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #282828;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.4rem;
   }
     
   .SecondNav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #787878;
   }
   
   .SecondNav a.active {

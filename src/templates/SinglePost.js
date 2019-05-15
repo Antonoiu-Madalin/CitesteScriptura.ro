@@ -2,14 +2,21 @@ import React, { Fragment } from 'react'
 import _get from 'lodash/get'
 import _format from 'date-fns/format'
 import { Link, graphql } from 'gatsby'
-import { ChevronLeft, ChevronRight, ArrowLeft, Link2} from 'react-feather'
+import { ChevronLeft, ChevronRight} from 'react-feather'
 import Content from '../components/Content'
 import Layout from '../components/LayoutMobile'
 import './SinglePost.css'
 import { Location } from '@reach/router'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
+import NavNoSearch from '../components/NavNoSearch'
+import IoLink from 'react-icons/lib/io/link';
+import FaHome from 'react-icons/lib/fa/home';
+import FaShareSquareO from 'react-icons/lib/fa/share-square-o';
 
 
+const activeStyles  = {
+  color: '#1E90FF'
+}
 
 /*  eslint-disable  */ 
 const roLocale = require('date-fns/locale/ro');
@@ -24,15 +31,21 @@ export const SinglePostTemplate = ({
 }) => (
  
   <main>
+
+      <nav className="noSearchNav">
+        <NavNoSearch className="NavNoSearchSelect"/>
+      </nav>
+
     <article
       className="SinglePost section light"
       itemScope
       itemType="http://schema.org/BlogPosting"
     >
+    
       <div className="container skinny manyMan">
-
-       {/* Aici imi tot da eroare esLint dar nu am alternativa viabila acum // eslint-disable */}
-        <a href="javascript:history.back()"> <ArrowLeft/> înapoi</a> 
+    
+       {/* NU MAI E NEVOIE  Aici imi tot da eroare esLint dar nu am alternativa viabila acum // eslint-disable 
+        <a className="napoiButton" href="javascript:history.back()"> <ArrowLeft/> înapoi</a> */}
         
         {/* NO LONGER NEEDED - ClipboardShareURL Si uite asa iei locatia (URL) location.pathname sau href daca vrei full
         <Location>
@@ -46,20 +59,6 @@ export const SinglePostTemplate = ({
                   
           <div className="SinglePost--Meta">
           
-          {/* Copy URL to Clipboard */}
-          <Location>
-            {({ location }) => {
-              
-              return  <CopyToClipboard text={location.href}>
-                        <div className="CopyWebsiteUrl">
-                        <button className="CopyUrlButton"><Link2 /></button> 
-                        </div>
-                      </CopyToClipboard>
-                  }}
-          </Location>
-
-
-
             {date && (
               <time
                 className="SinglePost--Meta--DateFx"
@@ -110,6 +109,7 @@ export const SinglePostTemplate = ({
             <Content source={body} />
           </div>
 
+   
           <div className="SinglePost--Pagination">
              
             {prevPostURL && (
@@ -121,7 +121,6 @@ export const SinglePostTemplate = ({
                 Articolul anterior
               </Link>
             )}
-             
 
 
             {nextPostURL && (
@@ -136,6 +135,51 @@ export const SinglePostTemplate = ({
         </div>
       </div>
     </article>
+
+    <nav className={`SecondNav stickyNav`}>
+          <ul className="Nav--Container container secondNav"> 
+            <li>
+                <Link exact="true" to={`/`} activeStyle={activeStyles}>
+                <span className="metaIcon"><FaHome /></span><span className="metaTitle">Acasă</span>
+                </Link> 
+            </li>
+
+            <li tabindex="4">
+              {/* Copy URL to Clipboard */}
+              <Location>
+                {({ location }) => {
+                  
+                  return  <CopyToClipboard text={location.href} style={{cursor:'pointer'}}>
+                            <a className="aFocus" tabindex="2">
+                            <span className="metaIcon noselect" ><FaShareSquareO/></span>
+                            <span className="metaTitle noselect" >Partajeaza</span>
+                            </a>
+                          </CopyToClipboard>
+                      }}
+              </Location>
+            </li>
+
+
+            <li tabindex="1">
+                      {/* Copy URL to Clipboard */}
+          <Location>
+            {({ location }) => {
+              
+              return  <CopyToClipboard text={location.href} style={{cursor:'pointer'}}>
+                        <a className="aFocus" tabindex="2">
+                        <span className="metaIcon noselect" ><IoLink/></span>
+                        <span className="metaTitle noselect" >Copiaza link</span>
+                        </a>
+                      </CopyToClipboard>
+                  }}
+          </Location>
+            </li>
+
+          </ul> 
+        </nav>
+
+
+
   </main>
 )
 

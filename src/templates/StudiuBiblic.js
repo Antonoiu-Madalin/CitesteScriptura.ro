@@ -7,11 +7,11 @@ import PostSection from '../components/PostSection'
 import PostCategoriesNav from '../components/PostCategoriesNav'
 import Layout from '../components/Layout'
 import FaHome from 'react-icons/lib/fa/home';
-
+import FaBook from 'react-icons/lib/fa/book';
+import FaBolt from 'react-icons/lib/fa/bolt';
 
 const activeStyles  = {
-  color: 'white',
-  background:'#459c98',
+  color: '#1E90FF'
 }
 
 
@@ -99,21 +99,23 @@ export const HomePageTemplate = ({
 
          <nav className={`SecondNav stickyNav`}>
                 <ul className="Nav--Container container secondNav"> 
-                  <li>
+                <li>
                       <Link exact="true" to={`/`} activeStyle={activeStyles}>
-                      <FaHome />
+                      <span className="metaIcon"><FaHome /></span><span className="metaTitle">Acasă</span>
                       </Link> 
                   </li>
 
                   <li>
+                    
                     <Link exact="true" partiallyActive={true} to={`/studiu-biblic/`} activeStyle={activeStyles}>
-                      MetaCat1
+                    <span className="metaIcon"><FaBook/></span><span className="metaTitle">MetaCat1</span>
                     </Link>
                   </li>
 
                   <li>
+                    
                     <Link exact="true" partiallyActive={true} to={`/raspunsuri-rapide/`} activeStyle={activeStyles}>
-                      MetaCat2
+                    <span className="metaIcon"><FaBolt/></span> <span className="metaTitle">MetaCat2</span>
                     </Link>
                   </li>
                 </ul> 

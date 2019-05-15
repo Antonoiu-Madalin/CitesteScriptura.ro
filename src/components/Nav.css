@@ -316,7 +316,6 @@ a{
     padding-left: 0px;
   }
 
- 
 
   .globalSearchButton{
     right: 0;
@@ -359,7 +358,7 @@ a{
   }
 
   .Nav {
-    background:  black;
+    background: rgb(30, 144, 255);
     position: static;
     top: 0;
     z-index: 999999;

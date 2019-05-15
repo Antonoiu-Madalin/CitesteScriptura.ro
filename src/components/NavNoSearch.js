@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import { Menu, X, Mail, Info, Home, Rss, LogIn } from 'react-feather'
 import Logo from './Logo'
 import './Nav.css'
-import BlogSearch from './BlogSearch';
+
 
 
 export class Navigation extends Component {
@@ -73,7 +73,7 @@ export class Navigation extends Component {
             <NavLink to="/log-in/"><LogIn className="contactMenu"/>Log In</NavLink>
           </div>
           
-          <BlogSearch />
+          
  
         </div>
       </nav>

@@ -8,6 +8,8 @@ import romanianStrings from 'react-timeago/lib/language-strings/ro'
 import buildFormatter from 'react-timeago/lib/formatters/buildFormatter'
 import { Share2 } from 'react-feather'
 
+
+
 const formatter = buildFormatter(romanianStrings)
 
 /* Adaugi asta pentru data (1)  No longer Needed since TimeAgo
@@ -60,8 +62,6 @@ const PostCard = ({
           </Link>
 
         ))}
-
-
       </p>
 
       {title && <h3 className="PostCard--Title">{title}</h3>}

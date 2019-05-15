@@ -15,7 +15,7 @@ export default () => {
         return (
          
             <div className="search"> 
-              <form id="demo-2">
+              <form id="demo-2" >
               <input
                 type="search" 
                 className="searchBar"

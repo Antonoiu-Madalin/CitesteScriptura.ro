@@ -6,11 +6,11 @@ import './BlogIndex.css'
 import PostSection from '../components/PostSection'
 import Layout from '../components/Layout'
 import FaHome from 'react-icons/lib/fa/home';
-import { BookOpen, HelpCircle } from 'react-feather'
+import FaBook from 'react-icons/lib/fa/book';
+import FaBolt from 'react-icons/lib/fa/bolt';
 
 const activeStyles  = {
-  backgroundColor: '#459c98',
-  color: 'white'
+  color: '#1E90FF'
 }
 
 
@@ -85,21 +85,21 @@ export const HomePageTemplate = ({
                 <ul className="Nav--Container container secondNav"> 
                   <li>
                       <Link exact="true" to={`/`} activeStyle={activeStyles}>
-                      <FaHome />
+                      <span className="metaIcon"><FaHome /></span><span className="metaTitle">Acasă</span>
                       </Link> 
                   </li>
 
                   <li>
                     
                     <Link exact="true" partiallyActive={true} to={`/studiu-biblic/`} activeStyle={activeStyles}>
-                    <span className="metaIcon"><BookOpen/></span><span className="metaTitle">MetaCat1</span>
+                    <span className="metaIcon"><FaBook/></span><span className="metaTitle">MetaCat1</span>
                     </Link>
                   </li>
 
                   <li>
                     
                     <Link exact="true" partiallyActive={true} to={`/raspunsuri-rapide/`} activeStyle={activeStyles}>
-                    <span className="metaIcon"><HelpCircle/></span> <span className="metaTitle">MetaCat2</span>
+                    <span className="metaIcon"><FaBolt/></span> <span className="metaTitle">MetaCat2</span>
                     </Link>
                   </li>
                 </ul> 

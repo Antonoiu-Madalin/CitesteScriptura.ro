@@ -26,6 +26,7 @@
 
 .manyMan{
   padding-top: 17px;
+  
 }
 
 .SinglePost {
@@ -36,6 +37,18 @@
 }
 body{
   height: 100vm;
+}
+
+.noSearchNav{
+  margin-bottom: 35px;
+}
+
+.napoiButton{
+  color:rgb(30, 144, 255);
+}
+
+.searchBar{
+  visibility: none;
 }
 
 .SinglePost--InapoiButton {
@@ -161,13 +174,21 @@ body{
   margin-left: auto;
 }
 
+.copyLink{
+  font-size: 25px;
+  color: green;
+}
+
+.aFocus:focus{
+  color: green;
+}
+
+
 .SinglePost--Meta--Category{
   font-size: 1.4rem;
-  /* nice color border: 1px solid #26A8ED; */
-  background: rgb(69, 156, 152);
   line-height: 1.15;
-  text-transform: uppercase;
-  color: white;
+  
+  color: orangered;
   font-weight: 700;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin:0;
