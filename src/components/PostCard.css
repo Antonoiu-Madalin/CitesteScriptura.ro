@@ -165,10 +165,10 @@ span.SinglePost--Meta--Category{
 
  a.PostCard {
     /* border-bottom: 1px solid #5f697a; */
-    margin: 1%;
     width: 100%;
     height: 9rem;
     margin-bottom: 1.5%;
+    padding: 2%;
 
   }
 
@@ -188,7 +188,7 @@ span.SinglePost--Meta--Category{
 
   .PostCard--Content{
     display: inline-block;
-    width: 76%;
+    width: 75%;
     
   }
 
