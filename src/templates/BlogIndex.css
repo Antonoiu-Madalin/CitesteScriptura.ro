@@ -132,6 +132,15 @@ ul li{
 /* This happens for Android Play Store */
 @media (max-width: 720px) {
 
+  .metaIcon{
+    display: block;
+    padding-top: 5px;
+    margin-bottom: -18px;
+  }
+  .metaTitle{
+    font-size: 1.7rem;
+  }
+
   ul li{
     display: inline-block;
   }
@@ -139,10 +148,10 @@ ul li{
   .SecondNav {
     background-color: black;
     overflow: hidden;
-    position: fixed;
+    position: absolute; /* or fixed */
     bottom: 0;
     width: 100%;
-    height: 56px;
+    height: 50px;
  
   }
 
@@ -165,8 +174,6 @@ ul li{
     background-color: #4CAF50;
     color: white;
   }
-  
-
   
   .stickyNav {
     position: fixed;

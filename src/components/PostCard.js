@@ -6,7 +6,8 @@ import './PostCard.css'
 import TimeAgo from 'react-timeago'
 import romanianStrings from 'react-timeago/lib/language-strings/ro'
 import buildFormatter from 'react-timeago/lib/formatters/buildFormatter'
- 
+import { Share2 } from 'react-feather'
+
 const formatter = buildFormatter(romanianStrings)
 
 /* Adaugi asta pentru data (1)  No longer Needed since TimeAgo
@@ -40,6 +41,7 @@ const PostCard = ({
 
     <div className="PostCard--Content">
       
+      <span className="shareTheWord"><Share2 className="svgCard"/></span>
       <p className="PostCard--Category">
         {categories.map((cat, index) => (
 

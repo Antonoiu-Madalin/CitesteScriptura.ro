@@ -163,13 +163,18 @@ body{
 
 .SinglePost--Meta--Category{
   font-size: 1.4rem;
+  /* nice color border: 1px solid #26A8ED; */
+  background: rgb(69, 156, 152);
   line-height: 1.15;
   text-transform: uppercase;
-  color: #26A8ED;
+  color: white;
   font-weight: 700;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin:0;
+  
+  
 }
+
 
 h1{
   font-weight: 700;

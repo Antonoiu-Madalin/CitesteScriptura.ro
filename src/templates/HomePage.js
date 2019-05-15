@@ -6,7 +6,7 @@ import './BlogIndex.css'
 import PostSection from '../components/PostSection'
 import Layout from '../components/Layout'
 import FaHome from 'react-icons/lib/fa/home';
-
+import { BookOpen, HelpCircle } from 'react-feather'
 
 const activeStyles  = {
   backgroundColor: '#459c98',
@@ -90,14 +90,16 @@ export const HomePageTemplate = ({
                   </li>
 
                   <li>
+                    
                     <Link exact="true" partiallyActive={true} to={`/studiu-biblic/`} activeStyle={activeStyles}>
-                      MetaCat1
+                    <span className="metaIcon"><BookOpen/></span><span className="metaTitle">MetaCat1</span>
                     </Link>
                   </li>
 
                   <li>
+                    
                     <Link exact="true" partiallyActive={true} to={`/raspunsuri-rapide/`} activeStyle={activeStyles}>
-                      MetaCat2
+                    <span className="metaIcon"><HelpCircle/></span> <span className="metaTitle">MetaCat2</span>
                     </Link>
                   </li>
                 </ul> 
