@@ -5,6 +5,7 @@ import qs from 'qs'
 import "./BlogSearch.css"
 /* import { FaSearch } from 'react-icons/fa'; */
 
+
 export default () => {
   return (
     <Location>
@@ -31,8 +32,9 @@ export default () => {
                    
                     navigate(`${url}?${search}`)
                 }}
-
+               
               />
+              
              {/* <i className="searchIcon"> < FaSearch /> </i> */}
               
               </form>

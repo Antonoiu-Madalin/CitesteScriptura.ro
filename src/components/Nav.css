@@ -13,9 +13,6 @@
   margin-left: 1rem;
 }
 
-.Nav .logoTextA{
-  z-index: 999999;
-}
 
 .Nav .Logo {
   margin-right: 3rem;
@@ -319,29 +316,26 @@ a{
     padding-left: 0px;
   }
 
-  .buttonsToTheRight{
-    position: absolute;
-    right: 0;
-    float: right;
-    margin-right: 40px;
-  }
-
+ 
 
   .globalSearchButton{
-    position: absolute;
     right: 0;
     padding-right: 5px; 
+    width: 150px;
   }
+
 
   .search{
     float:right;
+    position: absolute;
+    right: 0;
   }
 
   .Nav--MenuButton{
     color:white;
     float:right;
     position: relative;
-    margin-right: -35px;
+   
  
   }
 
@@ -349,14 +343,18 @@ a{
     float: left;
     width: 250px;
     font-weight: 400;
-    margin-left: -15px;
+    margin-top: 0;
   }
 
+    .hamBurger{
+        width: 50px;
+        padding: 10px;
+    }
 
-.Nav--Container {
+    .Nav--Container {
     display: flex;
     align-items: center;
-    height: 3.2rem;
+    
   }
 
   .Nav {
@@ -364,6 +362,7 @@ a{
     position: static;
     top: 0;
     z-index: 999999;
+    height: 56px;
     /* border-bottom: 1px solid var(--lightGrey); */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
     margin-bottom: 2px;

@@ -46,8 +46,17 @@ export class Navigation extends Component {
 
         <nav className={`Nav ${active ? 'Nav-active' : ''}`}>
  
-        <div className="Nav--Container container"> {/*Remove this to make navbar full screen only */}
-          
+        <div className="Nav--Container"> {/*Remove this to make navbar full screen only */}
+          <div className="hamBurger">
+             {/* Butonul Hamburger */}
+             <button
+              className="Button-blank Nav--MenuButton"
+              onClick={this.handleMenuToggle}
+            >
+              {active ? <X /> : <Menu />}
+            </button>
+          </div>
+
           <div className="logoMover noselect">
             <Logo />
           </div>
@@ -64,21 +73,8 @@ export class Navigation extends Component {
             <NavLink to="/log-in/"><LogIn className="contactMenu"/>Log In</NavLink>
           </div>
           
-          
-          <div className="buttonsToTheRight">
-            {/* Butonul Hamburger */}
-            <button
-              className="Button-blank Nav--MenuButton"
-              onClick={this.handleMenuToggle}
-            >
-              {active ? <X /> : <Menu />}
-            </button>
-
-            <div className="globalSearchButton"> 
-              <BlogSearch />
-            </div>
-          </div>
-
+          <BlogSearch />
+ 
         </div>
       </nav>
 
