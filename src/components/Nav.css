@@ -335,7 +335,7 @@ a{
     color:white;
     float:right;
     position: relative;
-   
+    
  
   }
 
@@ -349,6 +349,7 @@ a{
     .hamBurger{
         width: 50px;
         padding: 10px;
+        margin-left: 8px;
     }
 
     .Nav--Container {

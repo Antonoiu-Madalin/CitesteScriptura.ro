@@ -100,12 +100,15 @@ section.section.aici[data-state="null"]{
 @media (max-width: 720px) {
 
   .PostSection{
-    padding-bottom: 4rem; /*SAU NU am sters 4% height la SecondNav / Aici controlezi postarile sa apara deasupra SecondNav */
+    padding-bottom: 7rem; /* Aici controlezi page- height, intaltime, postarile sa apara deasupra SecondNav */
     margin: 0;
     min-height: 80rem;
    
   }
   
+  .PostSection button{
+    margin-top: 1.5rem;
+  }
 
   ::-webkit-scrollbar {
     width: 0px;
