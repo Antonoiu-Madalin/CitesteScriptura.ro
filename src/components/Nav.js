@@ -62,7 +62,7 @@ export class Navigation extends Component {
           </div>
 
           <div  className="logoTextA">
-            <p className="noselect">BetaRelease 1.0.0.0</p>         
+            <p className="noselect">BetaRelease 1.1.0</p>         
           </div>
          
           <div className="Nav--Links noselect">

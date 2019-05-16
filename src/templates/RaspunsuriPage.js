@@ -81,15 +81,12 @@ export const HomePageTemplate = ({
 
           {/* Post categories*/} 
           <nav>
-            <ul className="Nav--Container container thirdNav"> 
+            <ul className="thirdNav"> 
 
-              <div className="underCategories ">
-                  
                 {!!metacategoryRaspunsuri.length && (
                   <PostCategoriesNav enableSearch categories={metacategoryRaspunsuri} />
                 )}
 
-              </div>
             </ul> 
           </nav>
 

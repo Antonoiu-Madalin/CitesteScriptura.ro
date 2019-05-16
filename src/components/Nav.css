@@ -155,7 +155,7 @@ a{
     margin-bottom: 5px;
     align-items: center;
     display: flex;
-    margin-bottom: 2.5px;
+    /* margin-bottom: 2.5px;*/
   }
   
   .Nav--Container {
@@ -314,6 +314,7 @@ a{
 
   ul{
     padding-left: 0px;
+   
   }
 
 
@@ -365,7 +366,7 @@ a{
     height: 56px;
     /* border-bottom: 1px solid var(--lightGrey); */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
-    margin-bottom: 2px;
+    margin-bottom: 0;
   }
   
   .metaCats{

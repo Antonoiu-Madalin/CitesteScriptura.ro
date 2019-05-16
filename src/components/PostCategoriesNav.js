@@ -13,9 +13,9 @@ const PostCategoriesNav = ({ categories}) => (
   
   
   
-      <div className="PostCategoriesNav">
+      <div className="scrollmenu">
         
-      <ul className="categoriileMele">
+      <ul>
        
           {categories.map((category, index) => (
              <li>

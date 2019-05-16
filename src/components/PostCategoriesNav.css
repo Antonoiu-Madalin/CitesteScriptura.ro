@@ -170,3 +170,25 @@ border-bottom-color: #E27D5F;
 
 }
 
+
+/* Scrollable horizontal menu */
+
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+ 
+}
+
+div.scrollmenu li {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 7px;
+
+  text-decoration: none;
+}
+
+ /* div.scrollmenu li:hover {
+  background-color: #777;
+} */

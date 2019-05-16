@@ -77,17 +77,14 @@ export const HomePageTemplate = ({
           
         <main className="Blog">
 
-          {/* Post categories*/} 
+          {/* Post categories - remove Nav--Container container for full width */} 
           <nav>
-            <ul className="Nav--Container container thirdNav"> 
+            <ul className="thirdNav"> 
 
-              <div className="underCategories ">
-                  
                 {!!metacategoryStudiuBiblic.length && (
                   <PostCategoriesNav enableSearch categories={metacategoryStudiuBiblic} />
                 )}
 
-              </div>
             </ul> 
           </nav>
           
