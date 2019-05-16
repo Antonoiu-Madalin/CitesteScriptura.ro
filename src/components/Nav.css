@@ -349,7 +349,7 @@ a{
     .hamBurger{
         width: 50px;
         padding: 10px;
-        margin-left: 8px;
+        
     }
 
     .Nav--Container {
@@ -363,7 +363,7 @@ a{
     position: static;
     top: 0;
     z-index: 999999;
-    height: 56px;
+    height: 50px;
     /* border-bottom: 1px solid var(--lightGrey); */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
     margin-bottom: 0;
