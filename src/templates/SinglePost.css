@@ -35,6 +35,14 @@
   padding-top: 1rem;
   
 }
+
+p.seeMore{
+  font-size: 1.4rem;
+  margin: 0 auto;
+}
+
+
+
 body{
   height: 100vm;
 }
@@ -117,14 +125,15 @@ body{
 
 .SinglePost--Content {
   background: white;
-   /* padding: 4rem; */
-  padding-top: 20px;
+   /* padding: 4rem; 
+  padding-top: 20px;*/
 }
 
 @media screen and (max-width: 750px) {
-  .SinglePost--Content {
+  
+  /* .SinglePost--Content {
     padding: 4rem 2rem;
-  }
+  } */
 }
 
 .SinglePost--Meta {
@@ -188,7 +197,7 @@ body{
   font-size: 1.4rem;
   line-height: 1.15;
   
-  color: orangered;
+  color: #459c98;
   font-weight: 700;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin:0;

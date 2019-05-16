@@ -205,6 +205,14 @@ blockquote {
   padding: 0;
 }
 
+.container.skinny.manyMan{
+  padding-top: 0;
+}
+
+
+
+
+
 @media (max-width: 600px) {
   .section {
     width: 100%;

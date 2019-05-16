@@ -132,8 +132,33 @@ export const SinglePostTemplate = ({
               </Link>
             )}
           </div>
+
+
         </div>
+        
       </div>
+      <p className="seeMore container">Mai multe articole din categoria: {categories && (
+              <Fragment>
+
+                {categories.map((cat, index) => (
+                /* Working now :) */
+                <Link to= {cat.category.split("/")[0].split(" ").join("-").toLowerCase().replace("ă","a")  + "/" + cat.category.split("/")[1].split(" ").join("").toLowerCase().replace("ă","a") + "/" }>
+
+                        <span
+                          key={cat.category}
+                          className=""
+                        >
+                          {cat.category}
+                          {/* Add a comma on all but last category */}
+                          {index !== categories.length - 1 ? ',' : ''}
+                        </span>
+                  </Link>
+
+                    ))}
+              </Fragment>
+            )}
+      </p>
+      
     </article>
 
     <nav className={`SecondNav stickyNav`}>

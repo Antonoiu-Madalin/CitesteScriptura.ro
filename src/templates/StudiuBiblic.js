@@ -78,7 +78,7 @@ export const HomePageTemplate = ({
         <main className="Blog">
 
           {/* Post categories*/} 
-          <nav className={`Nav  Nav-active`}>
+          <nav>
             <ul className="Nav--Container container thirdNav"> 
 
               <div className="underCategories ">

@@ -67,7 +67,7 @@ a.PostCard:visited{
 .PostCard--Image {
   margin-bottom: 10px;
   width: 100%;
-  height: 15rem;
+  height: 14rem;
 }
 
 
@@ -167,7 +167,7 @@ span.SinglePost--Meta--Category{
     /* border-bottom: 1px solid #5f697a; */
     width: 100%;
     height: 9rem;
-    margin-bottom: 1.5%;
+    margin-bottom: 0;
     padding: 2%;
 
   }
@@ -182,7 +182,7 @@ span.SinglePost--Meta--Category{
     width: 23%;
     vertical-align: top;
     display: inline-block;
-    height: 9rem;
+    height: 7.4rem;
     
   }
 
@@ -205,6 +205,8 @@ span.SinglePost--Meta--Category{
     right: 5px;
     position: absolute;
     font-size: 11px;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
   }
 
 
