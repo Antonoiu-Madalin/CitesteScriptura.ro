@@ -34,7 +34,7 @@
 
 /* Maybe not needed but heh */
 .___gatsby{
-  height: 100%;
+ 
   position:relative;
   overflow: scroll;
 }
@@ -43,6 +43,11 @@
 
 html, body {
   max-width: 100%;
+  min-height: 100vh;
+}
+
+.button{
+  margin-top: 50px;
 }
 
 html {

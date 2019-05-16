@@ -100,14 +100,14 @@ section.section.aici[data-state="null"]{
 @media (max-width: 720px) {
 
   .PostSection{
-    padding-bottom: 6rem; /* Aici controlezi page- height, intaltime, postarile , mai multe articole, acasa, sa apara deasupra SecondNav */
+    padding-bottom: 4.9rem; /* Aici controlezi page- height, intaltime, postarile , mai multe articole, acasa, sa apara deasupra SecondNav */
     margin: 0;
-    min-height: 80rem;
+    
    
   }
   
-  .PostSection button{
-    margin-top: 1.5rem;
+  .PostSection .buttonulMorePosts{
+    margin-top: 0.8rem;
   }
 
   ::-webkit-scrollbar {

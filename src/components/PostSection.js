@@ -8,6 +8,7 @@ class PostSection extends React.Component {
     title: '',
     limit: 12,
     showLoadMore: true,
+    className: 'ButtonulMeu',
     loadMoreTitle: 'Mai multe articole',
     perPageLimit: 12
   }
@@ -40,7 +41,7 @@ class PostSection extends React.Component {
         )}
         {showLoadMore && visiblePosts.length < posts.length && (
           <div className="taCenter">
-            <button className="button" onClick={this.increaseLimit}>
+            <button className="buttonulMorePosts" onClick={this.increaseLimit}>
               {loadMoreTitle}
             </button>
           </div>
