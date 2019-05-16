@@ -102,6 +102,7 @@ section.section.aici[data-state="null"]{
   .PostSection{
     padding-bottom: 4.9rem; /* Aici controlezi page- height, intaltime, postarile , mai multe articole, acasa, sa apara deasupra SecondNav */
     margin: 0;
+    padding-top: 4px;
     
    
   }
