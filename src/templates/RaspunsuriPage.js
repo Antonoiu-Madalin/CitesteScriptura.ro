@@ -108,7 +108,7 @@ export const HomePageTemplate = ({
 
                   <li>
                     
-                    <Link exact="true" partiallyActive={true} to={`/studiu-biblic/`} activeStyle={activeStyles}>
+                    <Link exact="true" partiallyActive={true} to={`/sortare/`} activeStyle={activeStyles}>
                     <span className="metaIcon"><FaBook/></span><span className="metaTitle">MetaCat1</span>
                     </Link>
                   </li>

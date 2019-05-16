@@ -91,7 +91,7 @@ border-bottom-color: #E27D5F;
 .NavLink.undefined:active,
 .NavLink.undefined:hover,
 .NavLink.active.undefined{
-  color: #459c98;
+  color:rgb(30, 144, 255);
 }
 
 .PostCategoriesNav {

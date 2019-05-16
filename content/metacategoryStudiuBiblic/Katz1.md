@@ -1,7 +1,7 @@
 ---
 template: StudiuBiblic
-title: Studiu biblic/ Katz1
-slug: studiu-biblic/katz1
+title: sortare/ Katz1
+slug: sortare/katz1
 subtitle: ''
 featuredImage: 'https://ucarecdn.com/83a3c73d-f234-4086-9fad-cee3a9626230/'
 ---

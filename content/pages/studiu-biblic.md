@@ -1,9 +1,9 @@
 ---
 template: StudiuBiblic
-slug: /studiu-biblic/
-title: Studiu biblic
+slug: /sortare/
+title: sortare
 
 meta:
   description: Studiem scriptura in mod organizat!
-  title: Studiu biblic
+  title: sortare
 ---

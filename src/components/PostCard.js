@@ -6,7 +6,7 @@ import './PostCard.css'
 import TimeAgo from 'react-timeago'
 import romanianStrings from 'react-timeago/lib/language-strings/ro'
 import buildFormatter from 'react-timeago/lib/formatters/buildFormatter'
-import { Share2 } from 'react-feather'
+/* import { Share2 } from 'react-feather' */
 
 
 
@@ -42,8 +42,10 @@ const PostCard = ({
 
 
     <div className="PostCard--Content">
-      
+      {/* Not needed Share directly
       <span className="shareTheWord"><Share2 className="svgCard"/></span>
+      */}
+
       <p className="PostCard--Category">
         {categories.map((cat, index) => (
 
