@@ -5,7 +5,7 @@ import { Menu, X, Mail, Info, Home, Rss, LogIn } from 'react-feather'
 import Logo from './Logo'
 import './Nav.css'
 import BlogSearch from './BlogSearch';
-
+import Headroom from 'react-headroom';
 
 export class Navigation extends Component {
   state = {
@@ -43,7 +43,7 @@ export class Navigation extends Component {
       )
 
     return (
-
+        <Headroom>
         <nav className={`Nav ${active ? 'Nav-active' : ''}`}>
  
         <div className="Nav--Container"> {/*Remove this to make navbar full screen only */}
@@ -77,7 +77,7 @@ export class Navigation extends Component {
  
         </div>
       </nav>
-
+      </Headroom>
 
       
     )

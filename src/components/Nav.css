@@ -346,28 +346,35 @@ a{
     margin-top: 0;
   }
 
-    .hamBurger{
-        width: 50px;
-        padding: 10px;
-        
-    }
+  .hamBurger{
+      width: 50px;
+      padding: 10px;
+      
+  }
 
-    .Nav--Container {
+  .Nav--Container {
     display: flex;
     align-items: center;
-    
   }
 
   .Nav {
     background: rgb(30, 144, 255);
-    position: static;
+   
     top: 0;
+    width: 100%;
+   
     z-index: 999999;
     height: 50px;
     /* border-bottom: 1px solid var(--lightGrey); */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
     margin-bottom: 0;
   }
+
+  .Nav--hidden{
+    top: -50px;
+  }
+
+  
   
   .metaCats{
     display: block;
