@@ -2,7 +2,6 @@ import React, { Fragment } from 'react'
 import _get from 'lodash/get'
 import _format from 'date-fns/format'
 import { Link, graphql } from 'gatsby'
-import { ChevronLeft, ChevronRight} from 'react-feather'
 import Content from '../components/Content'
 import Layout from '../components/LayoutMobile'
 import './SinglePost.css'
@@ -42,7 +41,7 @@ export const SinglePostTemplate = ({
       itemType="http://schema.org/BlogPosting"
     >
     
-      <div className="container skinny manyMan">
+      <div className="degeaba1">
     
        {/* NU MAI E NEVOIE  Aici imi tot da eroare esLint dar nu am alternativa viabila acum // eslint-disable 
         <a className="napoiButton" href="javascript:history.back()"> <ArrowLeft/> înapoi</a> */}
@@ -55,7 +54,7 @@ export const SinglePostTemplate = ({
                 }}
         </Location>
           */}
-        <div className="SinglePost--Content relative">
+        <div className="SinglePost--Content container">
                   
           <div className="SinglePost--Meta">
           
@@ -109,55 +108,10 @@ export const SinglePostTemplate = ({
             <Content source={body} />
           </div>
 
-   
-          <div className="SinglePost--Pagination">
-             
-            {prevPostURL && (
-              <Link
-                className="SinglePost--BackButton"
-                to={prevPostURL}
-              >
-              <ChevronLeft /> 
-                Articolul anterior
-              </Link>
-            )}
-
-
-            {nextPostURL && (
-              <Link
-                className="SinglePost--NextButton"
-                to={nextPostURL}
-              >
-                Articolul următor  <ChevronRight /> 
-              </Link>
-            )}
-          </div>
-
-
         </div>
         
       </div>
-      <p className="seeMore container">Mai multe articole din categoria: {categories && (
-              <Fragment>
 
-                {categories.map((cat, index) => (
-                /* Working now :) */
-                <Link to= {cat.category.split("/")[0].split(" ").join("-").toLowerCase().replace("ă","a")  + "/" + cat.category.split("/")[1].split(" ").join("").toLowerCase().replace("ă","a") + "/" }>
-
-                        <span
-                          key={cat.category}
-                          className=""
-                        >
-                          {cat.category}
-                          {/* Add a comma on all but last category */}
-                          {index !== categories.length - 1 ? ',' : ''}
-                        </span>
-                  </Link>
-
-                    ))}
-              </Fragment>
-            )}
-      </p>
       
     </article>
 
