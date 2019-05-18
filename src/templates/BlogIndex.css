@@ -17,6 +17,7 @@ section.section{
   text-align: right;
 }
 
+
 /* Collapsible starts here */
 
 .Collapsible__contentInner p {
@@ -140,8 +141,13 @@ ul li{
   }
  
 
-  ul li{
+  ul li {
     display: inline-block;
+    
+  }
+
+  span.metaTitle{
+    margin-left: -10px;
   }
 
   .SecondNav {
@@ -185,7 +191,11 @@ ul li{
     padding-top: 60px;
   }
 
-
+  .staticSearchIcon{
+   position:absolute;
+   right: 0;
+   bottom: 37px;
+  }
 
 }
 
