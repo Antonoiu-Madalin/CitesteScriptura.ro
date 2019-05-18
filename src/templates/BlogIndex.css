@@ -150,6 +150,10 @@ ul li{
     margin-left: -10px;
   }
 
+  span.metaIcon{
+    margin-left: -10px;
+  }
+
   .SecondNav {
     background-color: white;
     overflow: hidden;

@@ -10,6 +10,7 @@ import FaBook from 'react-icons/lib/fa/book';
 import FaBolt from 'react-icons/lib/fa/bolt';
 import BlogSearch from '../components/BlogSearch';
 
+
 const activeStyles  = {
   color: '#1E90FF'
 }
@@ -76,6 +77,7 @@ export const HomePageTemplate = ({
      
           
         <main className="Blog">
+
 
           {!!posts.length && (
             /* Posts */

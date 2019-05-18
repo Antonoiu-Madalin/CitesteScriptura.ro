@@ -10,6 +10,7 @@ import FaHome from 'react-icons/lib/fa/home';
 import FaBook from 'react-icons/lib/fa/book';
 import FaBolt from 'react-icons/lib/fa/bolt';
 import BlogSearch from '../components/BlogSearch';
+import Sticky from 'react-stickynode';
 
 const activeStyles  = {
   color: '#1E90FF'
@@ -78,17 +79,18 @@ export const HomePageTemplate = ({
           
         <main className="Blog">
 
-          {/* Post categories - remove Nav--Container container for full width */} 
-          <nav>
-            <ul className="thirdNav"> 
+          <Sticky enabled={true} top={0} innerZ={1}>
+            {/* Post categories*/} 
+            <nav>
+              <ul className="thirdNav"> 
 
-                {!!metacategoryStudiuBiblic.length && (
-                  <PostCategoriesNav enableSearch categories={metacategoryStudiuBiblic} />
-                )}
+                  {!!metacategoryStudiuBiblic.length && (
+                    <PostCategoriesNav enableSearch categories={metacategoryStudiuBiblic} />
+                  )}
 
-            </ul> 
-          </nav>
-          
+              </ul> 
+            </nav>
+          </Sticky>
           
           {!!posts.length && (
             /* Posts themselves*/
