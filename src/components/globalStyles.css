@@ -1,5 +1,5 @@
 :root {
-  --primary: #459C98;
+  --primary: rgb(30, 144, 255);
   --secondary: rgb(21, 23, 26);
   --lightGrey: whitesmoke;
   --midGrey: #cacaca;
@@ -23,7 +23,7 @@
 }
 
 ::selection {
-  background:#459C98;
+  background:rgb(30, 144, 255);
 }
 
 /* Should remove the annoying blue feedback box on mobile */
