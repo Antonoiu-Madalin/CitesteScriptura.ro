@@ -32,7 +32,7 @@ svg.searchBar {
 
 
 input[type=search] {
-	background: rgb(30, 144, 255) url(../../static/images/search.svg) no-repeat 7px center;
+	background: transparent url(../../static/images/search.svg) no-repeat 7px center;
 	border: 0px;
 	width: 50px;
 	-webkit-border-radius: 5em;

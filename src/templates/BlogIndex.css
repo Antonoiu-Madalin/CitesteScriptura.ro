@@ -146,14 +146,7 @@ ul li{
     
   }
 
-  span.metaTitle{
-    margin-left: -10px;
-  }
-
-  span.metaIcon{
-    margin-left: -10px;
-  }
-
+  
   .SecondNav {
     background-color: white;
     overflow: hidden;
@@ -195,11 +188,24 @@ ul li{
     padding-top: 60px;
   }
 
-  .staticSearchIcon{
-   position:absolute;
-   right: 0;
-   bottom: 37px;
+  
+
+  /* Mutam iconitele si titlurile pe bara de jos */
+  span.metaTitle{
+    margin-left: -10px;
   }
 
+  span.metaIcon{
+    margin-left: -10px;
+  }
+
+  .staticSearchIcon{
+    position:absolute;
+    right: 0;
+    bottom: 39px;
+   
+   }
+
+ 
 }
 
