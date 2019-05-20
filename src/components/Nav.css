@@ -5,7 +5,7 @@
   justify-content: center;
   flex-direction: row;
   color:rgba(255, 255, 255, 0.5);
-  z-index: 9;
+ 
   
 }
 
@@ -17,7 +17,7 @@
 .Nav .Logo {
   margin-right: 3rem;
   position: relative;
-  z-index: 999999;
+  
 }
 
 @keyframes Nav--Link {
@@ -62,7 +62,7 @@ a{
   padding-bottom: 15px;
   padding-top: 15px;
   margin-bottom: 0;
-  z-index: 999999;
+ 
 }
 
 
@@ -149,7 +149,6 @@ a{
     background: #459C98;
     position: static;
     top: 0;
-    z-index: 999999;
     /* border-bottom: 1px solid var(--lightGrey); */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
     margin-bottom: 5px;
@@ -165,9 +164,7 @@ a{
   }
 
 
-  .Nav .Logo {
-    z-index: 999999;
-  }
+  
 
   .globalSearchButton{
     float: right;
@@ -180,9 +177,9 @@ a{
   }
 
   .Nav--MenuButton{
-    z-index: 999999;
+    
     color:white;
-    float: right;
+    float: left;
     position: relative;
   }
 
@@ -203,7 +200,7 @@ a{
     padding-top: 15px;
     margin-bottom: 0;
     margin-top: -10px;
-    z-index: 999999;
+  
     float: left;
   }
 
@@ -214,27 +211,6 @@ a{
       float: center;
       right: 0;
       padding-right: 5px; 
-  }
-
-
-  .Nav--Links {
-    display: none;
-    align-items: left;
-    flex-direction: column;
-    position: fixed;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #343a40;
-    animation: Nav--Links 0.2s ease;
-  }
-
-  .Nav--Links > * + * {
-    margin-left: 0;
-    margin-top: 1rem;
-    
   }
 
   .Nav-active .Nav--Links {
@@ -312,6 +288,11 @@ a{
 
 @media (max-width: 720px) {
 
+  .toTheLeft{
+    left:0;
+    float: left;
+  }
+
   ul{
     padding-left: 0px;
    
@@ -344,6 +325,7 @@ a{
     width: 250px;
     font-weight: 400;
     margin-top: 0;
+    margin-left: 50px;
   }
 
   .hamBurger{
@@ -363,7 +345,7 @@ a{
     top: 0;
     width: 100%;
    
-    z-index: 999999;
+  
     height: 50px;
     /* border-bottom: 1px solid var(--lightGrey); */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);

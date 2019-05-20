@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import _get from 'lodash/get'
 import _format from 'date-fns/format'
 import { Link, graphql } from 'gatsby'
 import Content from '../components/Content'
@@ -7,7 +6,7 @@ import Layout from '../components/LayoutMobile'
 import './SinglePost.css'
 import { Location } from '@reach/router'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
-import NavNoSearch from '../components/NavNoSearch'
+import Nav from '../components/Nav'
 import IoLink from 'react-icons/lib/io/link';
 import FaHome from 'react-icons/lib/fa/home';
 import FaShareSquareO from 'react-icons/lib/fa/share-square-o';
@@ -24,15 +23,13 @@ export const SinglePostTemplate = ({
   title,
   date,
   body,
-  nextPostURL,
-  prevPostURL,
   categories = [],
 }) => (
  
   <main>
 
-      <nav className="noSearchNav">
-        <NavNoSearch className="NavNoSearchSelect"/>
+      <nav className="NavInsidePosts">
+        <Nav />
       </nav>
 
     <article
@@ -174,8 +171,6 @@ const SinglePost = ({ data: { post, allPosts } }) => {
         {...post}
         {...post.frontmatter}
         body={post.html}
-        nextPostURL={_get(thisEdge, 'next.fields.slug')}
-        prevPostURL={_get(thisEdge, 'previous.fields.slug')}
       />
     </Layout>
   )

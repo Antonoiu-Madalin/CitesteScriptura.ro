@@ -30,24 +30,24 @@ class PostSection extends React.Component {
     return (
       
       <div className="PostSection">
-      
-        {title && <h2 className="PostSection--Title">{title}</h2>}
-        {!!visiblePosts.length && (
-          <div className="PostSection--Grid">
-            {visiblePosts.map((post, index) => (
-              <PostCard key={post.title + index} {...post} />
-            ))}
+
+          {title && <h2 className="PostSection--Title">{title}</h2>}
+          {!!visiblePosts.length && (
+            <div className="PostSection--Grid">
+              {visiblePosts.map((post, index) => (
+                <PostCard key={post.title + index} {...post} />
+              ))}
+            </div>
+          )}
+          {showLoadMore && visiblePosts.length < posts.length && (
+            <div className="taCenter">
+              <button className="buttonulMorePosts" onClick={this.increaseLimit}>
+                {loadMoreTitle}
+              </button>
+            </div>
+          )}
           </div>
-        )}
-        {showLoadMore && visiblePosts.length < posts.length && (
-          <div className="taCenter">
-            <button className="buttonulMorePosts" onClick={this.increaseLimit}>
-              {loadMoreTitle}
-            </button>
-          </div>
-        )}
-        </div>
-      
+          
     )
   }
 }

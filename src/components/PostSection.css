@@ -4,7 +4,6 @@ section.section{
 }
 
 
-
 section.section.aici{
   height: 95%; /* min-height only! careful. This sets post area height to match the screen size */
   overflow: none;
@@ -26,12 +25,6 @@ section.section.aici[data-state="null"]{
   display:none;
 }
 
-
-
-.PostSection{
-  margin-top: 18px;
-  
-}
 
 .PostSection--Grid {
   display: flex;

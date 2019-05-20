@@ -173,9 +173,12 @@ blockquote {
   right: 0;
   bottom: 0;
 }
+
 .taCenter {
   text-align: center;
+  
 }
+
 .taLeft {
   text-align: left;
 }

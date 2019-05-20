@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import Meta from './Meta'
-import Nav from './Nav'
+import Nav from '../components/Nav'
 
 
 
@@ -75,7 +75,7 @@ export default ({ children, meta, title }) => {
             />
 
 
-            <Nav subNav={subNav} />
+            <Nav/>
             
 
             <Fragment>{children}</Fragment>
