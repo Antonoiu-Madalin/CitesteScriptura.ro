@@ -15,6 +15,7 @@ export class Navigation extends Component {
  
         <div className="Nav--Container"> {/*Remove this to make navbar full screen only */}
 
+
             <App/>
 
 
