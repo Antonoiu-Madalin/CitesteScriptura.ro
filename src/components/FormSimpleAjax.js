@@ -9,9 +9,9 @@ class Form extends React.Component {
     name: 'Contact Form - CitesteScriptura.ro',
     subject: '', // optional subject of the notification email
     action: 'https://briskforms.com/go/1dbf805722e2a4621a602a499894849a',
-    successMessage: 'Mesajul tau a fost trimis cu succes, iti multumim!',
+    successMessage: 'Mesajul tau a fost trimis cu succes, multumim!',
     errorMessage:
-      'Mesajul tau a fost primit cu succes, iti multumim!'
+      'Mesajul tau a fost trimis cu succes, iti multumim!'
   }
 
   state = {

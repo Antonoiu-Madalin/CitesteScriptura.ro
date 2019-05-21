@@ -125,6 +125,12 @@ p.seeMore{
   margin-left: auto;
 }
 
+[tabindex] {
+  outline: none !important;
+}
+
+
+
 .copyLink{
   font-size: 25px;
   color: green;
@@ -132,6 +138,7 @@ p.seeMore{
 
 .aFocus:focus{
   color: green;
+  border: none;
 }
 
 

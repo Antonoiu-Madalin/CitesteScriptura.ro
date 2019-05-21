@@ -2,6 +2,7 @@ import React from 'react'
 import PostCard from '../components/PostCard'
 import './PostSection.css'
 
+/* eslint-disable */ 
 class PostSection extends React.Component {
   static defaultProps = {
     posts: [],
@@ -9,7 +10,7 @@ class PostSection extends React.Component {
     limit: 12,
     showLoadMore: true,
     className: 'ButtonulMeu',
-    loadMoreTitle: 'Mai multe articole',
+    loadMoreTitle: 'Mai multe articole...',
     perPageLimit: 12
   }
 
@@ -40,10 +41,11 @@ class PostSection extends React.Component {
           </div>
         )}
         {showLoadMore && visiblePosts.length < posts.length && (
-          <div className="taCenter">
-            <button className="buttonulMorePosts" onClick={this.increaseLimit}>
+          <div className="taCenter"> 
+                
+            <a className="buttonulMorePosts" onClick={this.increaseLimit}>
               {loadMoreTitle}
-            </button>
+            </a>
           </div>
         )}
         </div>
