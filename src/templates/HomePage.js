@@ -5,11 +5,10 @@ import qs from 'qs'
 import './BlogIndex.css'
 import PostSection from '../components/PostSection'
 import Layout from '../components/Layout'
-import FaHome from 'react-icons/lib/fa/home'
-import FaBook from 'react-icons/lib/fa/book'
-import FaBolt from 'react-icons/lib/fa/bolt'
-import BlogSearch from '../components/BlogSearch'
-import { Mail, Info, Home, Rss, LogIn } from 'react-feather'
+import FaHome from 'react-icons/lib/fa/home';
+import FaBook from 'react-icons/lib/fa/book';
+import FaBolt from 'react-icons/lib/fa/bolt';
+import BlogSearch from '../components/BlogSearch';
 
 
 const activeStyles  = {
@@ -78,32 +77,13 @@ export const HomePageTemplate = ({
      
           
         <main className="Blog">
-      
-        <div className="row">
 
-          
-          <div className="desktopSidebar">
-              <div className="Nav--Links noselect">
-                <h3 className="BlogTitle"> BetaRelease 1.9.0</h3>
-                <div class="line"></div>
-                <h3> Meniu</h3>
-                
-                <Link to="/"> <Home className="contactMenu"/>Acasă</Link>
-                <Link to="/despre/"> <Info className="contactMenu"/>Info</Link>
-                <Link to="/contact/"> <Mail className="contactMenu"/>Contact</Link>
-                <Link to="/newsletter/"><Rss className="contactMenu"/>Newsletter</Link>
-                <Link to="/log-in/"><LogIn className="contactMenu"/>Log In</Link>
-                <div class="line"></div>
-              </div>
-          </div>
 
           {!!posts.length && (
             /* Posts */
                 <PostSection posts={filteredPosts} />
           )}
 
-
-         
               <nav className={`SecondNav stickyNav`}>
                 <ul className="Nav--Container container secondNav"> 
                   <li>
@@ -135,8 +115,6 @@ export const HomePageTemplate = ({
 
                 </ul> 
               </nav>
-
-        </div>
         </main>
       )
     }}

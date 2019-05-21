@@ -6,6 +6,7 @@ import Logo from './Logo'
 import './Nav.css'
 
 
+
 export class Navigation extends Component {
   state = {
     active: false,
@@ -42,7 +43,7 @@ export class Navigation extends Component {
       )
 
     return (
-        
+
         <nav className={`Nav ${active ? 'Nav-active' : ''}`}>
  
         <div className="Nav--Container"> {/*Remove this to make navbar full screen only */}
@@ -76,7 +77,7 @@ export class Navigation extends Component {
  
         </div>
       </nav>
-    
+
 
       
     )
