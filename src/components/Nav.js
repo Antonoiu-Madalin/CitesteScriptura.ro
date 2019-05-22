@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Location } from '@reach/router'
 /* import Logo from './Logo' */
 import './Nav.css'
-import App from "./App"
+
 
 export class Navigation extends Component {
 
@@ -16,7 +16,7 @@ export class Navigation extends Component {
         <div className="Nav--Container"> {/*Remove this to make navbar full screen only */}
 
 
-            <App/>
+           
 
 
             {/*

@@ -101,7 +101,7 @@ section.section.aici[data-state="null"]{
 @media (max-width: 720px) {
 
   .PostSection{
-    padding-bottom: 4.9rem; /* Aici controlezi page- height, intaltime, postarile , mai multe articole, acasa, sa apara deasupra SecondNav */
+    padding-bottom: 5.1rem; /* Aici controlezi page- height, intaltime, postarile , mai multe articole, acasa, sa apara deasupra SecondNav */
     margin: 0;
     padding-top: 4px;
     height: auto;
@@ -118,5 +118,12 @@ section.section.aici[data-state="null"]{
     width: 0px;
     background: transparent;
   }
+
+  .PostSection--Grid {
+   margin-bottom: 10px;
+  }
+  
+
+
 
 }
