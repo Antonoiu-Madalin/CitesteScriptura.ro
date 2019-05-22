@@ -10,6 +10,7 @@
 }
 
 
+
 /* Fixing to the bottom*/
 
 .SinglePost--Meta--Date{
@@ -151,6 +152,7 @@ span.SinglePost--Meta--Category{
   .PostSection{
     padding: 0;
     margin: 0;
+    
     border:0;
     overflow-y: hidden;
   }

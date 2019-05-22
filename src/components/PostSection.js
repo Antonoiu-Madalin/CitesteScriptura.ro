@@ -1,4 +1,5 @@
 
+/*PostSection wrapped inside a Responsive Drawer from Material UI - React */
 import React from 'react'
 import PostCard from '../components/PostCard'
 import './PostSection.css'
@@ -8,8 +9,6 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
-import IconButton from '@material-ui/core/IconButton';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -19,40 +18,52 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
+import { Link } from 'gatsby'
 
-/*PostSection wrapped inside a Responsive Drawer by Material UI */
+/*Icons*/
+import IconButton from '@material-ui/core/IconButton';
+import InboxIcon from '@material-ui/icons/MoveToInbox';
+import HomeIcon from '@material-ui/icons/Home'
+import InfoIcon from '@material-ui/icons/Info'
+
+
+
 /* eslint-disable */
 const drawerWidth = 240;
 
 const styles = theme => ({
+
   root: {
     display: 'flex',
   },
+
   drawer: {
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('lg')]: { /* Dupa large, arata drawerul din stanga */
       width: drawerWidth,
       flexShrink: 0,
     },
   },
+
   appBar: {
     marginLeft: drawerWidth,
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('lg')]: { /* Navbar dimeansiunea large (fullscreen cu drawerul lg) */
       width: `calc(100% - ${drawerWidth}px)`,
     },
   },
+
   menuButton: {
     marginRight: 20,
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('lg')]: { /* Dupa large, ascunde butonul*/
       display: 'none',
     },
   },
+  
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
     width: drawerWidth,
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing.unit * 3,
   },
 });
 
@@ -90,15 +101,29 @@ class ResponsiveDrawer extends React.Component {
     const drawer = (
       <div>
         <div className={classes.toolbar} />
-        <Divider />
-        <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
+        <Divider/>
+        
+          <List>
+
+            {/* Home */}
+            <Link to="/">
+              <ListItem button component="a">
+                <ListItemIcon> <HomeIcon/></ListItemIcon>
+                <ListItemText primary="Acasă" />
+              </ListItem>
+            </Link>
+            
+            {/* Despre */}
+            <Link to="/despre">
+              <ListItem button component="a">
+                <ListItemIcon> <InfoIcon/></ListItemIcon>
+                <ListItemText primary="Despre" />
+              </ListItem>
+            </Link>
+
+
+          </List>
+
         <Divider />
         <List>
           {['All mail', 'Trash', 'Spam'].map((text, index) => (
@@ -120,7 +145,7 @@ class ResponsiveDrawer extends React.Component {
       
       <div className={classes.root}>
         <CssBaseline />
-        <AppBar position="fixed" className={classes.appBar}>
+        <AppBar position="fixed" className={classes.appBar}> {/* position aici schimba sticky :) */}
           <Toolbar>
             <IconButton
               color="inherit"
@@ -131,14 +156,15 @@ class ResponsiveDrawer extends React.Component {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" color="inherit" noWrap>
-              BetaRelease 2.0.0
+              BetaRelease 2.1.0
             </Typography>
           </Toolbar>
         </AppBar>
         <nav className={classes.drawer}>
           {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-          <Hidden smUp implementation="css">
+          <Hidden /*mdUp*/ implementation="css" > {/* Nu stiu inca cum procedeaza asta, dar ia valoarea de jos mai intai */}
             <Drawer
+              
               container={this.props.container}
               variant="temporary"
               anchor={theme.direction === 'rtl' ? 'right' : 'left'}
@@ -151,7 +177,8 @@ class ResponsiveDrawer extends React.Component {
               {drawer}
             </Drawer>
           </Hidden>
-          <Hidden xsDown implementation="css">
+
+          <Hidden mdDown implementation="css"> {/* Dupa md, drawerul din stanga e permanent */}
             <Drawer
               classes={{
                 paper: classes.drawerPaper,
@@ -165,7 +192,7 @@ class ResponsiveDrawer extends React.Component {
         </nav>
         <main className={classes.content}>
               {/* Aici pui partea drapta*/}
-
+              <div className={classes.toolbar} /> {/* Asta pune height in AppBar ca sa-ti dea contentul mai jos */}
             <div className="PostSection">
                 {title && <h2 className="PostSection--Title">{title}</h2>}
                 {!!visiblePosts.length && (

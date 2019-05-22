@@ -177,7 +177,9 @@ blockquote {
   text-align: center;
 }
 
-
+.leftToolbar{
+  width: 500px;
+}
 
 
 
@@ -346,6 +348,5 @@ p:blank {
  
 }
 
-main.ResponsiveDrawer-content-7{
-  padding: 0;
-}
+
+

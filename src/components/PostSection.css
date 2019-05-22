@@ -5,6 +5,7 @@ section.section{
 
 
 
+
 section.section.aici{
   height: 95%; /* min-height only! careful. This sets post area height to match the screen size */
   overflow: none;
@@ -28,10 +29,7 @@ section.section.aici[data-state="null"]{
 
 
 
-.PostSection{
-  margin-top: 18px;
-  
-}
+
 
 .PostSection--Grid {
   display: flex;
@@ -103,8 +101,8 @@ section.section.aici[data-state="null"]{
   .PostSection{
     padding-bottom: 5.1rem; /* Aici controlezi page- height, intaltime, postarile , mai multe articole, acasa, sa apara deasupra SecondNav */
     margin: 0;
-    padding-top: 4px;
     height: auto;
+  
   }
   
   .PostSection .buttonulMorePosts{
