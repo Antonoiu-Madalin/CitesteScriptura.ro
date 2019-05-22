@@ -25,6 +25,7 @@ import IconButton from '@material-ui/core/IconButton';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import HomeIcon from '@material-ui/icons/Home'
 import InfoIcon from '@material-ui/icons/Info'
+import RssFeed from '@material-ui/icons/RssFeed'
 
 
 
@@ -121,6 +122,21 @@ class ResponsiveDrawer extends React.Component {
               </ListItem>
             </Link>
 
+            {/* Contact */}
+            <Link to="/contact">
+              <ListItem button component="a">
+                <ListItemIcon> <MailIcon /> </ListItemIcon>
+                <ListItemText primary="Contact" />
+              </ListItem>
+            </Link>
+
+            {/* Newsletter */}
+            <Link to="/newsletter">
+              <ListItem button component="a">
+                <ListItemIcon> <RssFeed /> </ListItemIcon>
+                <ListItemText primary="Newsletter" />
+              </ListItem>
+            </Link>
 
           </List>
 
@@ -218,20 +234,5 @@ class ResponsiveDrawer extends React.Component {
   }
 }
 
-
-
-
-
-
-      
-
-
-ResponsiveDrawer.propTypes = {
-  classes: PropTypes.object.isRequired,
-  // Injected by the documentation to work in an iframe.
-  // You won't need it on your project.
-  container: PropTypes.object,
-  theme: PropTypes.object.isRequired,
-};
 
 export default withStyles(styles, { withTheme: true })(ResponsiveDrawer);
