@@ -350,3 +350,14 @@ p:blank {
 
 
 
+@media (max-width: 720px) {
+
+.headRoomPS{
+  display: none;
+
+}
+
+
+
+
+}

@@ -1,10 +1,9 @@
 
 /*PostSection wrapped inside a Responsive Drawer from Material UI - React */
 import React from 'react'
-import PostCard from '../components/PostCard'
+import PostCard from './PostCard'
 import './PostSection.css'
 import AppBar from '@material-ui/core/AppBar';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
@@ -18,7 +17,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import { Link } from 'gatsby'
-
+import BlogSearch from './BlogSearch';
 import Headroom from 'react-headroom'
 
 /*Icons*/
@@ -161,10 +160,10 @@ class ResponsiveDrawer extends React.Component {
 
     return (
       
-      <div >
-        <CssBaseline />
+      <div>
+        <div className="headRoomPS">
         <Headroom >    
-          <AppBar position="static" className="appBarMobileHidden" > {/* position aici schimba sticky :) */}
+          <AppBar position="static"> {/* position aici schimba sticky :) */}
             <Toolbar>
               <IconButton
                 color="inherit"
@@ -177,11 +176,13 @@ class ResponsiveDrawer extends React.Component {
               <Typography variant="h6" color="inherit" noWrap>
                 BetaRelease 2.2.0
               </Typography>
+              
+                <BlogSearch />
             
             </Toolbar>
           </AppBar>
         </Headroom>
-
+        </div>
         
         <nav className={classes.drawer}>
           {/* The implementation can be swapped with js to avoid SEO duplication of links. */}

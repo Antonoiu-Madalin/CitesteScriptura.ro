@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 import { Location } from '@reach/router'
 import qs from 'qs'
 import './BlogIndex.css'
-import PostSection from '../components/PostSection'
+import PostSection2 from '../components/PostSection2'
 import PostCategoriesNav from '../components/PostCategoriesNav'
 import Layout from '../components/Layout'
 import FaHome from 'react-icons/lib/fa/home';
@@ -79,23 +79,26 @@ export const HomePageTemplate = ({
           
         <main className="Blog">
 
-          <Sticky enabled={true} bottom={0} innerZ={1}>
-            {/* Post categories*/} 
-            <nav>
-              <ul className="thirdNav"> 
+          <Sticky enabled={true}  innerZ={1}>
+              {/* Post categories*/} 
+              <nav>
+                <ul className="thirdNav"> 
 
-                  {!!metacategoryStudiuBiblic.length && (
-                    <PostCategoriesNav enableSearch categories={metacategoryStudiuBiblic} />
-                  )}
+                    {!!metacategoryStudiuBiblic.length && (
+                      <PostCategoriesNav enableSearch categories={metacategoryStudiuBiblic} />
+                    )}
 
-              </ul> 
-            </nav>
-          </Sticky>
-          
+                </ul> 
+              </nav>
+            </Sticky>
+
+
+          {/* Posts themselves*/}
           {!!posts.length && (
-            /* Posts themselves*/
-            <PostSection posts={filteredPosts} />
+            <PostSection2 posts={filteredPosts} />
           )}
+
+
 
          <nav className={`SecondNav stickyNav`}>
                 <ul className="Nav--Container container secondNav"> 
