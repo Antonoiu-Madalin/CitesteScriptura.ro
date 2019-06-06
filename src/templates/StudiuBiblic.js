@@ -10,7 +10,7 @@ import FaHome from 'react-icons/lib/fa/home';
 import FaBook from 'react-icons/lib/fa/book';
 import FaBolt from 'react-icons/lib/fa/bolt';
 import BlogSearch from '../components/BlogSearch';
-import Sticky from 'react-stickynode';
+
 
 const activeStyles  = {
   color: '#1E90FF'
@@ -79,7 +79,7 @@ export const HomePageTemplate = ({
           
         <main className="Blog">
 
-          <Sticky enabled={true}  innerZ={1}>
+          <div className="stickyBarBro">
               {/* Post categories*/} 
               <nav>
                 <ul className="thirdNav"> 
@@ -90,7 +90,7 @@ export const HomePageTemplate = ({
 
                 </ul> 
               </nav>
-            </Sticky>
+            </div>
 
 
           {/* Posts themselves*/}
