@@ -28,13 +28,14 @@ import RssFeed from '@material-ui/icons/RssFeed'
 
 
 
+
 /* eslint-disable */
 const drawerWidth = 240;
 
 const styles = theme => ({
 
   root: {
-    display: 'flex',
+    display: 'inline',
   },
 
   drawer: {
@@ -160,7 +161,7 @@ class ResponsiveDrawer extends React.Component {
       
       <div className={classes.root}>
         <CssBaseline />
-        <AppBar position="fixed" className={classes.appBar}> {/* position aici schimba sticky :) */}
+        <AppBar position="static" className="navBar" > {/* position aici schimba sticky :) */}
           <Toolbar>
             <IconButton
               color="inherit"
@@ -175,6 +176,9 @@ class ResponsiveDrawer extends React.Component {
             </Typography>
           </Toolbar>
         </AppBar>
+
+
+        
         <nav className={classes.drawer}>
           {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
           <Hidden /*mdUp*/ implementation="css" > {/* Nu stiu inca cum procedeaza asta, dar ia valoarea de jos mai intai */}
@@ -205,9 +209,11 @@ class ResponsiveDrawer extends React.Component {
             </Drawer>
           </Hidden>
         </nav>
-        <main className={classes.content}>
+        
+        
               {/* Aici pui partea drapta*/}
-              <div className={classes.toolbar} /> {/* Asta pune height in AppBar ca sa-ti dea contentul mai jos */}
+               {/*<div className={classes.toolbar} /> Asta pune height in AppBar ca sa-ti dea contentul mai jos */}
+             <div>
             <div className="PostSection">
                 {title && <h2 className="PostSection--Title">{title}</h2>}
                 {!!visiblePosts.length && (
@@ -226,8 +232,10 @@ class ResponsiveDrawer extends React.Component {
                   </div>
                 )}
             </div>
+            </div>
+       
+        
 
-        </main>
       </div>
     );
   }
