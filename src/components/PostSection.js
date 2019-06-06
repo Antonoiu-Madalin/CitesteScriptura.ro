@@ -18,6 +18,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import { Link } from 'gatsby'
+import BlogSearch from '../components/BlogSearch';
+import Headroom from 'react-headroom'
 
 /*Icons*/
 import IconButton from '@material-ui/core/IconButton';
@@ -161,22 +163,26 @@ class ResponsiveDrawer extends React.Component {
       
       <div className={classes.root}>
         <CssBaseline />
-        <AppBar position="static" className="navBar" > {/* position aici schimba sticky :) */}
-          <Toolbar>
-            <IconButton
-              color="inherit"
-              aria-label="Open drawer"
-              onClick={this.handleDrawerToggle}
-              className={classes.menuButton}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Typography variant="h6" color="inherit" noWrap>
-              BetaRelease 2.1.0
-            </Typography>
-          </Toolbar>
-        </AppBar>
-
+        <Headroom>    
+          <AppBar position="static" className="navBar" > {/* position aici schimba sticky :) */}
+            <Toolbar>
+              <IconButton
+                color="inherit"
+                aria-label="Open drawer"
+                onClick={this.handleDrawerToggle}
+                className={classes.menuButton}
+              >
+                <MenuIcon />
+              </IconButton>
+              <Typography variant="h6" color="inherit" noWrap>
+                BetaRelease 2.1.0
+              </Typography>
+              
+                <BlogSearch />
+            
+            </Toolbar>
+          </AppBar>
+        </Headroom>
 
         
         <nav className={classes.drawer}>

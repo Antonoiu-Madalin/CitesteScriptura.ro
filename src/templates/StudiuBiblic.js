@@ -79,7 +79,7 @@ export const HomePageTemplate = ({
           
         <main className="Blog">
 
-          <Sticky enabled={true} top={50} innerZ={1}>
+          <Sticky enabled={true} bottom={0} innerZ={1}>
             {/* Post categories*/} 
             <nav>
               <ul className="thirdNav"> 
@@ -125,13 +125,8 @@ export const HomePageTemplate = ({
                   
                 </li>
 
-
-
-
-
-                </ul> 
-                
-              </nav>
+                </ul>   
+          </nav>
 
         </main>
       )
