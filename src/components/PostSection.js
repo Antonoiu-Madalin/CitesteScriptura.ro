@@ -175,7 +175,7 @@ class ResponsiveDrawer extends React.Component {
                 <MenuIcon />
               </IconButton>
               <Typography variant="h6" color="inherit" noWrap>
-                BetaRelease 2.2.0
+                BetaRelease 2.2.5
               </Typography>
             
             </Toolbar>

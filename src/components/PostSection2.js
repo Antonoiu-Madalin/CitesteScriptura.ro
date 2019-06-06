@@ -174,7 +174,7 @@ class ResponsiveDrawer extends React.Component {
                 <MenuIcon />
               </IconButton>
               <Typography variant="h6" color="inherit" noWrap>
-                BetaRelease 2.2.0
+                BetaRelease 2.2.5
               </Typography>
               
                 <BlogSearch />
@@ -219,7 +219,7 @@ class ResponsiveDrawer extends React.Component {
               {/* Aici pui partea drapta*/}
                {/*<div className={classes.toolbar} /> Asta pune height in AppBar ca sa-ti dea contentul mai jos */}
              <div>
-            <div className="PostSection">
+            <div className="PostSection extraSpaceTop">
                 {title && <h2 className="PostSection--Title">{title}</h2>}
                 {!!visiblePosts.length && (
                   <div className="PostSection--Grid">
