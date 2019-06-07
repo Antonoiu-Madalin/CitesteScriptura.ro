@@ -7,10 +7,10 @@ import Layout from '../components/LayoutMobile'
 import './SinglePost.css'
 import { Location } from '@reach/router'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
-import Nav from '../components/Nav'
 import IoLink from 'react-icons/lib/io/link';
 import FaHome from 'react-icons/lib/fa/home';
 import FaShareSquareO from 'react-icons/lib/fa/share-square-o';
+import SinguraPostare from '../components/SinguraPostare';
 
 
 const activeStyles  = {
@@ -24,16 +24,12 @@ export const SinglePostTemplate = ({
   title,
   date,
   body,
-  nextPostURL,
-  prevPostURL,
   categories = [],
 }) => (
  
   <main>
 
-      <nav className="noSearchNav">
-        <Nav />
-      </nav>
+    <SinguraPostare/>
 
     <article
       className="SinglePost section light"
@@ -110,10 +106,10 @@ export const SinglePostTemplate = ({
 
         </div>
         
-      </div>
-
-      
+      </div>  
     </article>
+
+  
 
     <nav className={`SecondNav stickyNav`}>
           <ul className="Nav--Container container secondNav"> 
