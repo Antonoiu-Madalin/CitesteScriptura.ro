@@ -1,7 +1,7 @@
 ---
 template: DefaultPage
 title: Despre noi
-slug: /despre
+slug: despre
 date: '2019-03-11'
 featuredImage: 'https://ucarecdn.com/f540281a-41cf-4bfa-8181-b172e2655fba/-/crop/1632x1777/0,672/-/preview/'
 excerpt: This is an excerpt of Despre noi
@@ -10,7 +10,7 @@ meta:
   title: test meta title
 ---
 
- Portalul **[CiteșteScriptura.ro](/)** își propune următoarele:
+Portalul **[CiteșteScriptura.ro](/)** își propune următoarele:
 
 * 
   Să ofere un mediu lipsit de influența oricărui cult religios, prin care orice om să crească spiritual. 

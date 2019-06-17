@@ -12,7 +12,6 @@ export default ( ) => (
           eq: "Despre noi"
         }
       }) {
-        rawMarkdownBody
         html
         id
         frontmatter {
