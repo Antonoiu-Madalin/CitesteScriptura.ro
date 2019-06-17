@@ -1,7 +1,9 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+import Content from "../components/Content"
+import "../components/Dsp.css"
 
-export default () => (
+export default ( ) => (
   <StaticQuery
     query={graphql`
     query {
@@ -10,6 +12,8 @@ export default () => (
           eq: "Despre noi"
         }
       }) {
+        rawMarkdownBody
+        html
         id
         frontmatter {
           title
@@ -20,10 +24,13 @@ export default () => (
     `}
     render={data => (
       <header>
-        <h1>{data.markdownRemark.frontmatter.title }</h1>
-        <h2>{data.markdownRemark.frontmatter.subtitle}</h2>
+
+          <Content source={data.markdownRemark.html} />
+    
         {/* To get body, check Content component*/}
       </header>
     )}
+    
   />
-)
+
+) 
