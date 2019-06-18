@@ -56,6 +56,7 @@ export const HomePageTemplate = ({
   enableSearch = true,
   contentType
 }) => (
+  
   <Location>
     {({ location }) => {
       let filteredPosts =

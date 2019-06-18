@@ -1,5 +1,5 @@
 ---
-template: HomePage
+template: IndexDefaultPage
 slug: '/'
 title: Acasa
 
