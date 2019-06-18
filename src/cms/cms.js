@@ -1,3 +1,4 @@
+/*
 import React from 'react'
 import CMS from 'netlify-cms'
 import './cms-utils'
@@ -34,3 +35,4 @@ CMS.registerPreviewTemplate('blog-page', ({ entry }) => (
 CMS.registerPreviewTemplate('posts', ({ entry }) => (
   <SinglePostTemplate {...entry.toJS().data} />
 ))
+*/
