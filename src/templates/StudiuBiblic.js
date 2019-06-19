@@ -78,7 +78,7 @@ export const HomePageTemplate = ({
      
           
         <main className="Blog">
-
+  <p> Haida si numa</p>
           <div className="stickyBarBro">
               {/* Post categories*/} 
               <nav>

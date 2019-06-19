@@ -80,7 +80,7 @@ export const HomePageTemplate = ({
      
           
         <main className="Blog">
-
+         
          <div className="stickyBarBro">
             {/* Post categories*/} 
             <nav>
