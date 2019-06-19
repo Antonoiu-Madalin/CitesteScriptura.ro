@@ -1,4 +1,4 @@
-# Project--Ethan
+# Project--cake
 
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![dependencies](https://david-dm.org/jinksi/netlify-cms-react-starter.svg?style=flat-square)](https://david-dm.org/jinksi/gatsbro)
@@ -99,7 +99,7 @@ For the scheduled content to appear on the website we need to deploy our website
 - check settings and hit the test button
 - Check your Netlify site if there has been triggered a new deploy
 - If that worked hit finish
-- Give your zap a name, example: "Automatic deploy Project--Ethan" and make sure your zap is turned on
+- Give your zap a name, example: "Automatic deploy Project--cake" and make sure your zap is turned on
 
 That's it, you'r now ready to use scheduled content!!
 
@@ -112,7 +112,7 @@ https://hooks.zapier.com/hooks/catch/2881617/ea5exg/
 - Search for webhook by Zapier and select catch hook and continue to next step
 - In most cases leave this field empty and continue
 - Copy the generated url
-- Now go to the [form settings](https://app.netlify.com/sites/project--ethan/settings/forms#outgoing-notifications) in you Netlify project
+- Now go to the [form settings](https://app.netlify.com/sites/project--cake/settings/forms#outgoing-notifications) in you Netlify project
 - Find the form notifications section click the add notification button
 - Select the option `outgoing webhook`
 - Set the event to listen for

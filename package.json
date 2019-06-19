@@ -1,7 +1,7 @@
 {
-  "name": "project--ethan",
-  "HomePage": "https://project-ethan.netlify.com/",
-  "description": "Project Ethan is a starter project meant to serve as a base for creating any kind of website lightening fast, using Gatsby and Netlify CMS.",
+  "name": "project--cake",
+  "HomePage": "https://project-cake.netlify.com/",
+  "description": "Project cake is a starter project meant to serve as a base for creating any kind of website lightening fast, using Gatsby and Netlify CMS.",
   "version": "1.0.0",
   "repository": {
     "type": "git",
