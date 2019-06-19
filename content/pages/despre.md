@@ -26,7 +26,7 @@ Utilizând site-ul nostru te vei bucura de:
 
  **Design receptiv** și optimizat pentru fiecare device, folosind cele mai noi tehnologii.  
 
- **Acces securizat** la informație, conexiune criptată prin HTTPS/ SSL.  
+ **Acces securizat** la informație, conexiune criptată prin HTTPS/ SSL.    
 
  **Comentarii în timp real** pentru fiecare articol de pe site. 
 
