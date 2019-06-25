@@ -31,6 +31,8 @@ import ExpandMore from '@material-ui/icons/ExpandMore';
 import StarBorder from '@material-ui/icons/StarBorder';
 import DraftsIcon from '@material-ui/icons/Drafts';
 import SendIcon from '@material-ui/icons/Send';
+import Book from '@material-ui/icons/Book';
+
 
 
 
@@ -114,7 +116,7 @@ export default function ResponsiveDrawer(props) {
             {/* Despre */}
             <Link to="/studiu-biblic/" className="listItemClear">
               <ListItem button component="a">
-                <ListItemIcon> <InfoIcon/></ListItemIcon>
+                <ListItemIcon> <Book/></ListItemIcon>
                 <ListItemText primary="Studiu biblic" />
               </ListItem>
             </Link>

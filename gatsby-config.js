@@ -128,6 +128,14 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-plugin-preconnect",
+      options: {
+        domains: [
+          "https://uploadcare.com",
+        ]
+      }
+    },
+    {
       resolve: 'gatsby-plugin-nprogress',
       options: {
         // Setting a color is optional.
