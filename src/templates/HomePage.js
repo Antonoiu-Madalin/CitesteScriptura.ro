@@ -77,7 +77,7 @@ export const HomePageTemplate = ({
 
       return (
      
-      <Layout>
+
         <main className="Blog">
 
 
@@ -118,7 +118,7 @@ export const HomePageTemplate = ({
                 </ul> 
               </nav>
         </main>
-      </Layout>
+ 
       )
     }}
   </Location>
