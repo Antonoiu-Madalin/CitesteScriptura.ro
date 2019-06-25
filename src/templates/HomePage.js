@@ -51,6 +51,7 @@ export const byCategory = (posts, title, contentType) => {
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({
   title,
+  slug,
   posts = [],
   postCategories = [],
   enableSearch = true,
@@ -76,7 +77,7 @@ export const HomePageTemplate = ({
 
       return (
      
-          
+      <Layout>
         <main className="Blog">
 
 
@@ -117,9 +118,11 @@ export const HomePageTemplate = ({
                 </ul> 
               </nav>
         </main>
+      </Layout>
       )
     }}
   </Location>
+  
 )
 
 // Export Default HomePage for front-end

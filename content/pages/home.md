@@ -1,6 +1,6 @@
 ---
-template: IndexDefaultPage
-slug: /
+template: HomePage
+slug: 
 title: Acasa
 
 meta:
