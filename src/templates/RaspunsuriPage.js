@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 import { Location } from '@reach/router'
 import qs from 'qs'
 import './BlogIndex.css'
-import PostSection2 from '../components/PostSection2'
+import PostSection from '../components/PostSection'
 import PostCategoriesNav from '../components/PostCategoriesNav'
 import Layout from '../components/Layout'
 import FaHome from 'react-icons/lib/fa/home';
@@ -96,7 +96,7 @@ export const HomePageTemplate = ({
 
           {/* Posts themselves*/}
           {!!posts.length && (
-            <PostSection2 posts={filteredPosts} />
+            <PostSection posts={filteredPosts} />
           )}
 
               <nav className={`SecondNav stickyNav`}>

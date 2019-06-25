@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import Meta from './Meta'
-
+import TemplateWrap from '../templates/TemplateWrap'
 
 
 /* eslint-disable */
@@ -74,9 +74,9 @@ export default ({ children, meta, title }) => {
               {...data.settingsYaml}
             />
             
-
-            <Fragment>{children}</Fragment>
-
+            <TemplateWrap>
+              <Fragment>{children}</Fragment>
+            </TemplateWrap>
           
           </Fragment>
  
