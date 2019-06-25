@@ -1,12 +1,12 @@
 ---
 template: SinglePost
 title: Intrebare1
-slug: sortare/katz1/intrebare1
+slug: studiu-biblic/katz1/intrebare1
 status: Published
 date: '2019-05-09'
 featuredImage: 'https://ucarecdn.com/f540281a-41cf-4bfa-8181-b172e2655fba/-/crop/1632x1777/0,672/-/preview/-/progressive/yes/-/format/auto/-/resize/100x/'
 categories:
-  - category: sortare/ Katz1
+  - category: studiu-biblic/ Katz1
 meta:
   description: test meta description
   title: test meta title

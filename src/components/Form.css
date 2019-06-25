@@ -155,7 +155,6 @@
 
 .Form--Radio {
   border: 1px solid var(--midGrey);
-  overflow: hidden;
   border-radius: var(--borderRadius);
 }
 

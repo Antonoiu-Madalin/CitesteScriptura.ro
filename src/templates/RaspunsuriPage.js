@@ -81,7 +81,7 @@ export const HomePageTemplate = ({
           
         <main className="Blog">
          
-         <div className="stickyBarBro">
+         <div className="stiBro">
             {/* Post categories*/} 
             <nav>
               <ul className="thirdNav"> 
@@ -109,15 +109,15 @@ export const HomePageTemplate = ({
 
                   <li>
                     
-                    <Link exact="true" partiallyActive={true} to={`/sortare/`} activeStyle={activeStyles}>
-                    <span className="metaIcon"><FaBook/></span><span className="metaTitle">MetaCat1</span>
+                    <Link exact="true" partiallyActive={true} to={`/studiu-biblic/`} activeStyle={activeStyles}>
+                    <span className="metaIcon"><FaBook/></span><span className="metaTitle">Studiu biblic</span>
                     </Link>
                   </li>
 
                   <li>
                     
                     <Link exact="true" partiallyActive={true} to={`/raspunsuri-rapide/`} activeStyle={activeStyles}>
-                    <span className="metaIcon"><FaBolt/></span> <span className="metaTitle">MetaCat2</span>
+                    <span className="metaIcon"><FaBolt/></span> <span className="metaTitle">Raspunsuri</span>
                     </Link>
                   </li>
 

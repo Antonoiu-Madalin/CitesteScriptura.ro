@@ -6,13 +6,13 @@ section.section{
 
 section.section.aici{
   height: 95%; /* min-height only! careful. This sets post area height to match the screen size */
-  overflow: none;
+
 }
 
 
 .SinglePost--Content.relative{
   min-height: 100vh;
-  overflow: none;
+
 }
 
 

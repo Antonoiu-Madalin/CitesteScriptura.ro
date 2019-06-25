@@ -1,9 +1,12 @@
 ---
 template: StudiuBiblic
-slug: '/sortare'
-title: sortare
+slug: studiu-biblic
+title: studiu-biblic
 
 meta:
   description: Studiem scriptura in mod organizat!
-  title: sortare
+  title: studiu-biblic
 ---
+
+<!-- slug: raspunsuri-rapide  
+it always must be without '' or // -->

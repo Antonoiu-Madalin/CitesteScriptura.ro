@@ -45,9 +45,8 @@ padding:0;
 
 /* Maybe not needed but heh */
 .___gatsby{
-  overscroll-behavior: none;
   position:relative;
-  overflow: scroll;
+
 }
 
 ::-webkit-scrollbar { display: none; }
@@ -55,9 +54,12 @@ padding:0;
 html, body {
   max-width: 100%;
   min-height: 100vh;
-  overscroll-behavior: none;
+  
 }
 
+.Blog{
+  padding: 10px;
+}
 .button{
   margin-top: 50px;
 }
@@ -87,7 +89,7 @@ body {
   width: 100%;
   margin: 0;
  padding:0;
- overflow-y: scroll;
+
 }
 
 body *, body *:before, body *:after { box-sizing: inherit; }
@@ -373,6 +375,19 @@ p:blank {
  position: fixed;
  top: 0;
  width: 100%;
+}
+
+.___gatsby{
+  overscroll-behavior: none;
+  position:relative;
+}
+
+::-webkit-scrollbar { display: none; }
+
+html, body {
+  max-width: 100%;
+  min-height: 100vh;
+  overscroll-behavior: none;
 }
 
 

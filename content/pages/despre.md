@@ -9,6 +9,8 @@ meta:
   description: test meta description
   title: test meta title
 ---
+<!-- slug: raspunsuri-rapide  
+it always must be without '' or // -->
 
 Portalul **[CiteșteScriptura.ro](/)** își propune următoarele:
 

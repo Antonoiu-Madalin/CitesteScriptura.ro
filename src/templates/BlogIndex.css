@@ -149,7 +149,7 @@ ul li{
 
   .SecondNav {
     background-color: white;
-    overflow: hidden;
+   
     position: absolute; /* or fixed */
     bottom: 0;
     width: 100%;

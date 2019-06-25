@@ -14,3 +14,5 @@ meta:
 
 Trimiteți-ne mesajul dvs. folosind formularul, sau la email:
 
+<!-- slug: raspunsuri-rapide  
+it always must be without '' or // --!>

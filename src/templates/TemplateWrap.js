@@ -112,7 +112,7 @@ export default function ResponsiveDrawer(props) {
             </Link>
             
             {/* Despre */}
-            <Link to="/sortare/" className="listItemClear">
+            <Link to="/studiu-biblic/" className="listItemClear">
               <ListItem button component="a">
                 <ListItemIcon> <InfoIcon/></ListItemIcon>
                 <ListItemText primary="Studiu biblic" />
