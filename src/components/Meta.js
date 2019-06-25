@@ -77,6 +77,8 @@ export default class Meta extends Component {
             `}
           </script>
         )}
+        
+        <html lang="en" />
       </Helmet>
     )
   }

@@ -18,6 +18,7 @@ export default () => {
               <form id="demo-2" >
               <input
                 type="search" 
+                label="SearchBar"
                 className="searchBar"
                 value={search.s || ''}
                 placeholder="Cauta..."
