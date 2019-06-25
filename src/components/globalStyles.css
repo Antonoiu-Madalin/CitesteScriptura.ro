@@ -26,6 +26,17 @@
   background:rgb(30, 144, 255);
 }
 
+main.jss7{
+  padding: 0;
+}
+
+
+main.makeStyles-content-7{
+padding:0;
+}
+
+
+
 /* Should remove the annoying blue feedback box on mobile */
 * { 
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);

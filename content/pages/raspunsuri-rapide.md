@@ -1,6 +1,6 @@
 ---
 template: RaspunsuriPage
-slug: /raspunsuri-rapide/
+slug: /raspunsuri-rapide
 title: Raspunsuri rapide
 
 meta:

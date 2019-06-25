@@ -3,14 +3,13 @@ import _get from 'lodash/get'
 import _format from 'date-fns/format'
 import { Link, graphql } from 'gatsby'
 import Content from '../components/Content'
-import Layout from '../components/LayoutMobile'
+import Layout from '../components/Layout'
 import './SinglePost.css'
 import { Location } from '@reach/router'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import IoLink from 'react-icons/lib/io/link';
 import FaHome from 'react-icons/lib/fa/home';
 import FaShareSquareO from 'react-icons/lib/fa/share-square-o';
-import SinguraPostare from '../components/SinguraPostare';
 
 
 const activeStyles  = {
@@ -26,10 +25,8 @@ export const SinglePostTemplate = ({
   body,
   categories = [],
 }) => (
- 
-  <main>
-
-    <SinguraPostare/>
+<Layout>
+  <main className="PostMainMain">
 
     <article
       className="SinglePost section light"
@@ -152,10 +149,8 @@ export const SinglePostTemplate = ({
 
           </ul> 
         </nav>
-
-
-
   </main>
+  </Layout>
 )
 
 // Export Default SinglePost for front-end

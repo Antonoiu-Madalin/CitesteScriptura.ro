@@ -1,6 +1,6 @@
 ---
 template: StudiuBiblic
-slug: /sortare/
+slug: '/sortare'
 title: sortare
 
 meta:

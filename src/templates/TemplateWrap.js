@@ -94,7 +94,44 @@ export default function ResponsiveDrawer(props) {
     <div>
       <div className={classes.toolbar} />
 
-    
+      <List
+      component="nav"
+      aria-labelledby="nested-list-subheader"
+      subheader={
+        <ListSubheader component="div" id="nested-list-subheader">
+          Meta Categorii
+        </ListSubheader>
+      }
+    >
+            {/* Home */}
+            <Link to="/" className="listItemClear">
+              <ListItem button component="a">
+                <ListItemIcon> <HomeIcon/></ListItemIcon>
+                <ListItemText primary="Toate/ Acasa" />
+              </ListItem>
+            </Link>
+            
+            {/* Despre */}
+            <Link to="/sortare/" className="listItemClear">
+              <ListItem button component="a">
+                <ListItemIcon> <InfoIcon/></ListItemIcon>
+                <ListItemText primary="Studiu biblic" />
+              </ListItem>
+            </Link>
+
+            {/* Contact */}
+            <Link to="/raspunsuri-rapide/" className="listItemClear">
+              <ListItem button component="a">
+                <ListItemIcon> <MailIcon /> </ListItemIcon>
+                <ListItemText primary="Raspunsuri rapide" />
+              </ListItem>
+            </Link>
+
+      </List>
+      <Divider />
+
+
+
        <List
       component="nav"
       aria-labelledby="nested-list-subheader"
@@ -156,10 +193,9 @@ export default function ResponsiveDrawer(props) {
         </ListSubheader>
       }
     >
-      
             {/* Home */}
             <Link to="/" className="listItemClear">
-              <ListItem button component="div">
+              <ListItem button component="a">
                 <ListItemIcon> <HomeIcon/></ListItemIcon>
                 <ListItemText primary="Acasă" />
               </ListItem>
@@ -167,7 +203,7 @@ export default function ResponsiveDrawer(props) {
             
             {/* Despre */}
             <Link to="/" className="listItemClear">
-              <ListItem button component="div">
+              <ListItem button component="a">
                 <ListItemIcon> <InfoIcon/></ListItemIcon>
                 <ListItemText primary="Despre" />
               </ListItem>
@@ -175,7 +211,7 @@ export default function ResponsiveDrawer(props) {
 
             {/* Contact */}
             <Link to="/" className="listItemClear">
-              <ListItem button component="div">
+              <ListItem button component="a">
                 <ListItemIcon> <MailIcon /> </ListItemIcon>
                 <ListItemText primary="Contact" />
               </ListItem>
@@ -183,7 +219,7 @@ export default function ResponsiveDrawer(props) {
 
             {/* Newsletter */}
             <Link to="/" className="listItemClear">
-              <ListItem button component="div">
+              <ListItem button component="a">
                 <ListItemIcon> <RssFeed /> </ListItemIcon>
                 <ListItemText primary="Newsletter" />
               </ListItem>
@@ -191,7 +227,6 @@ export default function ResponsiveDrawer(props) {
 
       </List>
       <Divider />
-
 
     </div>
   );
