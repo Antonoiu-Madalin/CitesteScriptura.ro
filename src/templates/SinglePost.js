@@ -16,7 +16,7 @@ const activeStyles  = {
   color: '#1E90FF'
 }
 
-/*  eslint-disable  */ 
+/*  eslint-disable  */
 const roLocale = require('date-fns/locale/ro');
 
 export const SinglePostTemplate = ({
@@ -25,7 +25,6 @@ export const SinglePostTemplate = ({
   body,
   categories = [],
 }) => (
-<Layout>
   <main className="PostMainMain">
 
     <article
@@ -33,32 +32,33 @@ export const SinglePostTemplate = ({
       itemScope
       itemType="http://schema.org/BlogPosting"
     >
-    
+
       <div className="degeaba1">
-    
-       {/* NU MAI E NEVOIE  Aici imi tot da eroare esLint dar nu am alternativa viabila acum // eslint-disable 
+
+       {/* NU MAI E NEVOIE  Aici imi tot da eroare esLint dar nu am alternativa viabila acum // eslint-disable
         <a className="napoiButton" href="javascript:history.back()"> <ArrowLeft/> înapoi</a> */}
-        
+
         {/* NO LONGER NEEDED - ClipboardShareURL Si uite asa iei locatia (URL) location.pathname sau href daca vrei full
         <Location>
           {({ location }) => {
-            
+
             return <p>Share me: {location.href}</p>
                 }}
         </Location>
           */}
+
         <div className="SinglePost--Content container">
-                  
+
           <div className="SinglePost--Meta">
-          
+
             {date && (
               <time
                 className="SinglePost--Meta--DateFx"
                 itemProp="dateCreated pubdate datePublished"
                 date={date}
               >
-                
-                {_format(date, 'Do MMMM, YYYY', { locale: roLocale })  
+
+                {_format(date, 'Do MMMM, YYYY', { locale: roLocale })
                 }
               </time>
             )}
@@ -68,11 +68,11 @@ export const SinglePostTemplate = ({
 
                 {categories.map((cat, index) => (
 
-            /* THIS IS IT. Ia prima parte +/ + a doua parte + din slug url si merge - PENTRU POSTARI ;) 
-            <Link to= {window.location.pathname.split("/")[1] + "/" + window.location.pathname.split("/")[2] + "/"} > 
+            /* THIS IS IT. Ia prima parte +/ + a doua parte + din slug url si merge - PENTRU POSTARI ;)
+            <Link to= {window.location.pathname.split("/")[1] + "/" + window.location.pathname.split("/")[2] + "/"} >
             <Link to= {cat.category.split(" ").join("-").toLowerCase().replace("ă","a") + "/"} >
             NOT WORKING YET*/
-            
+
             /* Working now :) */
             <Link to= {cat.category.split("/")[0].split(" ").join("-").toLowerCase().replace("ă","a")  + "/" + cat.category.split("/")[1].split(" ").join("").toLowerCase().replace("ă","a") + "/" }>
 
@@ -102,25 +102,25 @@ export const SinglePostTemplate = ({
           </div>
 
         </div>
-        
-      </div>  
+
+      </div>
     </article>
 
-  
+
 
     <nav className={`SecondNav stickyNav`}>
-          <ul className="Nav--Container container secondNav"> 
+          <ul className="Nav--Container container secondNav">
             <li>
                 <Link exact="true" to={`/`} activeStyle={activeStyles}>
                 <span className="metaIcon"><FaHome /></span><span className="metaTitle">Acasă</span>
-                </Link> 
+                </Link>
             </li>
 
             <li tabindex="4">
               {/* Copy URL to Clipboard */}
               <Location>
                 {({ location }) => {
-                  
+
                   return  <CopyToClipboard text={location.href} style={{cursor:'pointer'}}>
                             <a className="aFocus" tabindex="2">
                             <span className="metaIcon noselect" ><FaShareSquareO/></span>
@@ -136,7 +136,7 @@ export const SinglePostTemplate = ({
                       {/* Copy URL to Clipboard */}
           <Location>
             {({ location }) => {
-              
+
               return  <CopyToClipboard text={location.href} style={{cursor:'pointer'}}>
                         <a className="aFocus" tabindex="2">
                         <span className="metaIcon noselect" ><IoLink/></span>
@@ -147,10 +147,10 @@ export const SinglePostTemplate = ({
           </Location>
             </li>
 
-          </ul> 
+          </ul>
         </nav>
   </main>
-  </Layout>
+
 )
 
 // Export Default SinglePost for front-end
