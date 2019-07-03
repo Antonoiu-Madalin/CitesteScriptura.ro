@@ -13,7 +13,7 @@ section.section{
   padding-top: 1rem;
 }
 
-.search{  
+.search{
   text-align: right;
 }
 
@@ -21,35 +21,35 @@ section.section{
 /* Collapsible starts here */
 
 .Collapsible__contentInner p {
- 
+
   font-size: 14px;
-  line-height: 20px; 
+  line-height: 20px;
 }
 
 .Collapsible__contentInner p:last-child {
-  margin-bottom: 0; 
+  margin-bottom: 0;
 }
 
 .Collapsible__trigger { /* asta misca toata bara de trigger */
     /* display: block; */
-   
+
     font-weight: 400;
     text-decoration: none;
     color: blue;
     background: transparent; /*add transparent */
-    color: orangered; 
+    color: orangered;
 }
-  
+
 .Collapsible__trigger:after {
   right: 10px;
   display: block;
   text-align: center;
-  transition: transform 300ms; 
+  transition: transform 300ms;
 }
 
 .Collapsible__trigger.is-open:after {
-  transform: rotateZ(180deg); 
-  margin-bottom: 35px;  
+  transform: rotateZ(180deg);
+  margin-bottom: 35px;
 }
 
 .Collapsible__trigger.is-open::after{
@@ -57,20 +57,20 @@ section.section{
 }
 
 .Collapsible__trigger.is-closed:after {
-  margin-bottom: 35px;  
+  margin-bottom: 35px;
 }
 
 
 .Collapsible__trigger.is-disabled {
   opacity: 0.5;
-  background-color: grey; 
- 
+  background-color: grey;
+
 }
 
 /* this is the Plus icon it , right */
 .Collapsible {
   margin-top: -42px;
-  text-align: right; 
+  text-align: right;
   margin-right:0px;
   /* margin-right: 42px; Old, to make + sign appear where it should */
 }
@@ -94,7 +94,7 @@ section.section{
 /*
   .zeIcon:hover{
   background-color: #fff;
-} 
+}
 
 .Nav--MenuButton svg:hover{
   color: #fff;
@@ -105,16 +105,16 @@ svg.zeIcon:hover{
 
 }
 */
- 
+
 
 /* The proper Search! now */
-.properSearch{ 
+.properSearch{
   color: red;
 }
 
 .metaCats {
   background-color: black;
-  
+
 }
 
 .container::before{
@@ -139,23 +139,23 @@ ul li{
     margin-bottom: -7px;
     font-size: 23px;
   }
- 
+
 
   ul li {
     display: inline-block;
-    
+
   }
 
 
   .SecondNav {
     background-color: white;
-   
+
     position: absolute; /* or fixed */
     bottom: 0;
     width: 100%;
     height: 45px;
     border-top: 1px solid grey;
- 
+
   }
 
   .SecondNav a  {
@@ -169,28 +169,28 @@ ul li{
   }
 
 
-  
+
   /*
   .SecondNav a:hover {
     background-color: #787878;
   }
-  
+
   .SecondNav a.active {
     background-color: #4CAF50;
     color: white;
   } */
-  
+
   .stickyNav {
     position: fixed;
     bottom: 0;
     width: 100%;
   }
-  
+
   .sticky + .content {
     padding-top: 60px;
   }
 
-  
+
 
   /* Mutam iconitele si titlurile pe bara de jos */
   span.metaTitle{
@@ -202,12 +202,12 @@ ul li{
   }
 
   .staticSearchIcon{
-    position:absolute;
+    position:fixed;
     right: 0;
-    bottom: 39px;
-   
+    top: 10px;
+    z-index: 99999;
    }
 
- 
+
 }
 

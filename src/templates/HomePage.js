@@ -38,7 +38,7 @@ export const byDate = posts => {
 export const byCategory = (posts, title, contentType) => {
 
   /* Aici adaugam folderele MetaCategoriilor pentru Toate default */
-  const isCategory = contentType === 'postCategories metaCategories' 
+  const isCategory = contentType === 'postCategories metaCategories'
   const byCategory = post =>
     post.categories &&
     post.categories.filter(cat => cat.category === title).length
@@ -57,7 +57,7 @@ export const HomePageTemplate = ({
   enableSearch = true,
   contentType
 }) => (
-  
+
   <Location>
     {({ location }) => {
       let filteredPosts =
@@ -76,9 +76,12 @@ export const HomePageTemplate = ({
       }
 
       return (
-     
+
 
         <main className="Blog">
+
+        <div className="staticSearchIcon"><BlogSearch/></div>
+
 
 
           {!!posts.length && (
@@ -87,42 +90,38 @@ export const HomePageTemplate = ({
           )}
 
               <nav className={`SecondNav stickyNav`}>
-                <ul className="Nav--Container container secondNav"> 
+                <ul className="Nav--Container container secondNav">
                   <li>
                       <Link exact="true" to={`/`} activeStyle={activeStyles}>
                       <span className="metaIcon"><FaHome /></span><span className="metaTitle">Acasă</span>
-                      </Link> 
+                      </Link>
                   </li>
 
                   <li>
-                    
+
                     <Link exact="true" partiallyActive={true} to={`/studiu-biblic/`} activeStyle={activeStyles}>
                     <span className="metaIcon"><FaBook/></span><span className="metaTitle">Studiu biblic</span>
                     </Link>
                   </li>
 
                   <li>
-                    
+
                     <Link exact="true" partiallyActive={true} to={`/raspunsuri-rapide/`} activeStyle={activeStyles}>
                     <span className="metaIcon"><FaBolt/></span> <span className="metaTitle">Raspunsuri</span>
                     </Link>
                   </li>
 
-                  <li>
-                    
-                      <div className="staticSearchIcon"><BlogSearch/></div> 
-                    
-                  </li>
 
 
-                </ul> 
+
+                </ul>
               </nav>
         </main>
- 
+
       )
     }}
   </Location>
-  
+
 )
 
 // Export Default HomePage for front-end
@@ -195,7 +194,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    
+
     postCategories: allMarkdownRemark(
       filter: { fields: { contentType: { eq: "postCategories" } } }
       sort: { order: ASC, fields: [frontmatter___title] }
