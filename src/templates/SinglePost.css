@@ -5,7 +5,7 @@
   position: absolute;
   margin-top: 0.25rem;
   margin-right: 0.25rem;
-  
+
 }
 
 
@@ -27,14 +27,18 @@
 
 .manyMan{
   padding-top: 17px;
-  
+
 }
 
 .SinglePost {
   background: var(--lightGrey);
-  margin-top: -35px;
-  padding-top: 1rem;
-  
+    margin-top: 0px;
+    border-bottom-width: 0px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+
+
+
 }
 
 p.seeMore{
@@ -67,12 +71,12 @@ p.seeMore{
   margin-bottom: 0;
   margin-top: 4px;
   margin-bottom: -11px;
-   /* padding: 4rem; 
+   /* padding: 4rem;
   padding-top: 20px;*/
 }
 
 @media screen and (max-width: 750px) {
-  
+
   /* .SinglePost--Content {
     padding: 4rem 2rem;
   } */
@@ -145,13 +149,13 @@ p.seeMore{
 .SinglePost--Meta--Category{
   font-size: 1.4rem;
   line-height: 1.15;
-  
+
   color: #459c98;
   font-weight: 700;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin:0;
-  
-  
+
+
 }
 
 
@@ -170,7 +174,7 @@ h2{
 p{
   font-weight: 400;
   line-height: 1.7;
-  font-size: 2rem; 
+  font-size: 2rem;
   font-family: Georgia, 'Times New Roman', Times, serif
 }
 
