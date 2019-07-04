@@ -146,10 +146,13 @@ ul li{
 
   }
 
-
+.secondNav{
+    padding-left: 0;
+}
   .SecondNav {
     background-color: white;
-
+    left: 0;
+    right: 0;
     position: absolute; /* or fixed */
     bottom: 0;
     width: 100%;
@@ -204,8 +207,7 @@ ul li{
   .staticSearchIcon{
     position:fixed;
     right: 0;
-    top: 10px;
-    z-index: 99999;
+    bottom: 7px;
    }
 
 

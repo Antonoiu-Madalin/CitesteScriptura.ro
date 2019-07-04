@@ -50,7 +50,7 @@ const PostCard = ({
         {categories.map((cat, index) => (
 
             /* THIS IS IT. Ia prima parte +/ + a doua parte + din slug url si merge - PENTRU POST CARD ;) */
-              <Link to= {slug.split("/")[1] + "/" + slug.split("/")[2] + "/"} > 
+              <Link to= {slug.split("/")[1] + "/" + slug.split("/")[2] + "/"} >
              {/* Pana aici*/}
 
             <span
@@ -70,19 +70,20 @@ const PostCard = ({
       {excerpt && <div className="PostCard--Excerpt">{excerpt}</div>}
 
       <div className="post-card-MetaFull">
+
         <div className="post-card-avatar">
-          
-          <div className="author-profile-image"> 
-            <img className="avatarPhoto" src="https://archive.icann.org/meetings/icann56/cdn.schd.ws/common/img/avatar-empty.png" alt="author"></img> 
+
+          <div className="author-profile-image">
+            <img className="avatarPhoto" src="https://archive.icann.org/meetings/icann56/cdn.schd.ws/common/img/avatar-empty.png" alt="author"></img>
           </div>
-         
-          <div className="TimeSincePosted">  
-                <TimeAgo date={date} formatter={formatter} />
-            </div> 
-         
-        <div className="nameAndDate">
-            
-                {/* OLD WAY OF SHOWING TIME No longer needed since TimeAgo 
+
+          <div className="TimeSincePosted">
+                <TimeAgo date={date} formatter={formatter} className="postCardTime" />
+            </div>
+
+        {/*<div className="nameAndDate">
+
+                {/* OLD WAY OF SHOWING TIME No longer needed since TimeAgo
                 <span>
                     {date && (
                             <time
@@ -90,18 +91,19 @@ const PostCard = ({
                               itemProp="dateCreated pubdate datePublished"
                               date={date}
                             >
-                            {/* Adaugi asta pentru data (2) -  , { locale: roLocale })  
+                            {/* Adaugi asta pentru data (2) -  , { locale: roLocale })
                               {_format(date, 'Do MMMM, YYYY', { locale: roLocale }) }
                             </time>
                       )}
-                  </span>  */}  
-                  
+                  </span>  */}
 
-                  {/* Estimated time to read */}        
+
+                  {/* Estimated time to read
                 <span className="estimateReadingTime">
                     {readingTime.text}
                 </span>
-         </div> 
+         </div>*/}
+
         </div>
       </div>
       </div>

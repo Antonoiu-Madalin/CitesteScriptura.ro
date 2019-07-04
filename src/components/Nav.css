@@ -4,8 +4,8 @@
   left: 0;
   flex-direction: row;
   color:violet;
-  
-  
+
+
 }
 
 .Nav--Links > * + * {
@@ -16,7 +16,7 @@
 .Nav .Logo {
   margin-right: 3rem;
   position: relative;
-  
+
 }
 
 @keyframes Nav--Link {
@@ -61,7 +61,7 @@ a{
   padding-bottom: 15px;
   padding-top: 15px;
   margin-bottom: 0;
-  
+
 }
 
 
@@ -74,7 +74,7 @@ a{
   text-decoration: none;
   border-bottom: 2px solid;
   border-bottom-color: transparent;
-  
+
 }
 
 .NavLinkMetaCategory {
@@ -87,13 +87,13 @@ a{
   text-decoration: none;
   border-bottom: 2px solid;
   border-bottom-color: transparent;
-  
+
 }
 
 .Nav--Group {
   position: relative;
   cursor: pointer;
-  
+
 }
 
 .Nav--GroupParent {
@@ -143,12 +143,12 @@ a{
 }
 
 @media (max-width: 9900px) {
-  
+
   .Nav {
     background: #459C98;
     position: static;
     top: 0;
-    
+
     /* border-bottom: 1px solid var(--lightGrey); */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
     margin-bottom: 5px;
@@ -156,22 +156,23 @@ a{
     display: flex;
     /* margin-bottom: 2.5px;*/
   }
-  
+
   .Nav--Container {
     display: inline-block;
     align-items: center;
     height: 5rem;
+    padding-left: 0;
   }
 
 
   .Nav .Logo {
-    
+
   }
 
   .globalSearchButton{
     float: right;
     right: 0;
-    padding-right: 5px; 
+    padding-right: 5px;
   }
 
   .search{
@@ -179,7 +180,7 @@ a{
   }
 
   .Nav--MenuButton{
-    
+
     color:white;
     float: right;
     position: relative;
@@ -202,7 +203,7 @@ a{
     padding-top: 15px;
     margin-bottom: 0;
     margin-top: -10px;
-   
+
     float: left;
   }
 
@@ -212,15 +213,15 @@ a{
   .MetaCategories{
       float: center;
       right: 0;
-      padding-right: 5px; 
+      padding-right: 5px;
   }
 
     /* Special */
   .Nav--Links {
-    
-    
-    
-   
+
+
+
+
     align-items: left;
     flex-direction: column;
     animation: Nav--Links 0.2s ease;
@@ -229,7 +230,7 @@ a{
   .Nav--Links > * + * {
     margin-left: 0;
     margin-top: 1rem;
-    
+
   }
 
   .SideMenuContainer{
@@ -250,7 +251,7 @@ a{
   .Nav .NavLink .NavLinkMetaCategory {
     font-size: 2.5rem;
     font-weight: 300;
-   
+
   }
 
   .Nav .NavLink:nth-of-type(2) {
@@ -288,10 +289,10 @@ a{
     width: auto;
   }
 
- 
 
- 
-  
+
+
+
 }
 
 
@@ -316,13 +317,13 @@ a{
 
   ul{
     padding-left: 0px;
-   
+
   }
 
 
   .globalSearchButton{
     right: 0;
-    padding-right: 5px; 
+    padding-right: 5px;
     width: 150px;
   }
 
@@ -337,8 +338,8 @@ a{
     color:white;
     float: left;
     position: relative;
-    
- 
+
+
   }
 
   .logoTextA p{
@@ -353,21 +354,22 @@ a{
       width: 50px;
       padding: 10px;
       margin-left: -7px;
-      
+
   }
 
   .Nav--Container {
     display: flex;
     align-items: center;
+    padding-left: 0;
   }
 
   .Nav {
     background: rgb(30, 144, 255);
-   
+
     top: 0;
     width: 100%;
-   
-    
+
+
     height: 50px;
     /* border-bottom: 1px solid var(--lightGrey); */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
@@ -378,8 +380,8 @@ a{
     top: -50px;
   }
 
-  
-  
+
+
   .metaCats{
     display: block;
   }

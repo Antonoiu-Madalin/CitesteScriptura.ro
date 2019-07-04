@@ -100,14 +100,15 @@ section.section.aici[data-state="null"]{
     padding-bottom: 5.1rem; /* Aici controlezi page- height, intaltime, postarile , mai multe articole, acasa, sa apara deasupra SecondNav */
     margin: 0;
     height: auto;
-  
+
   }
-  
+
   .PostSection .buttonulMorePosts{
     margin-top: 0.8rem;
     border: 1px solid #282828;
-    padding: 3px;
+    padding: 5px;
     color: #282828;
+    font-size: 180%;
   }
 
   ::-webkit-scrollbar {
@@ -118,10 +119,10 @@ section.section.aici[data-state="null"]{
   .PostSection--Grid {
    margin-bottom: 10px;
   }
-  
+
   .extraSpaceTop{
     margin-top: 54px;
   }
-  
+
 
 }

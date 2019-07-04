@@ -80,10 +80,6 @@ export const HomePageTemplate = ({
 
         <main className="Blog">
 
-        <div className="staticSearchIcon"><BlogSearch/></div>
-
-
-
           {!!posts.length && (
             /* Posts */
                 <PostSection posts={filteredPosts} />
@@ -111,7 +107,9 @@ export const HomePageTemplate = ({
                     </Link>
                   </li>
 
-
+                    <li>
+                        <span className="staticSearchIcon"><BlogSearch/></span>
+                     </li>
 
 
                 </ul>
