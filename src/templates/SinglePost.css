@@ -146,15 +146,26 @@ p.seeMore{
 }
 
 
+/*This will move category pos right side meta
+.PostCard--Category{
+    position: absolute;
+    right: 5%;
+
+}*/
+
+/*This will make look to background meta cat */
 .SinglePost--Meta--Category{
   font-size: 1.4rem;
   line-height: 1.15;
-
-  color: #459c98;
+    background: #459c98;
+  color: white;
   font-weight: 700;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin:0;
-
+  padding-left: 2px;
+  padding-right: 2px;
+  right: 0;
+  width: 100%;
 
 }
 
