@@ -41,7 +41,7 @@ export const byCategory = (posts, title, contentType) => {
   /* Aici adaugam folderele MetaCategoriilor pentru Toate default */
   /* Urmatoarea linie e responsabila cu impartirea efectiva a postarilor pe categorii!
   Replace metacategoryRaspunsuri peste tot in pagina daca duplici */
-  const isCategory = contentType === 'metacategoryRaspunsuri' 
+  const isCategory = contentType === 'metacategoryRaspunsuri'
   const byCategory = post =>
     post.categories &&
     post.categories.filter(cat => cat.category === title).length
@@ -77,20 +77,20 @@ export const HomePageTemplate = ({
       }
 
       return (
-     
-          
+
+
         <main className="Blog">
-         
+
          <div className="stiBro">
-            {/* Post categories*/} 
+            {/* Post categories*/}
             <nav>
-              <ul className="thirdNav"> 
+              <ul className="thirdNav">
 
                   {!!metacategoryRaspunsuri.length && (
                     <PostCategoriesNav enableSearch categories={metacategoryRaspunsuri} />
                   )}
 
-              </ul> 
+              </ul>
             </nav>
           </div>
 
@@ -100,36 +100,36 @@ export const HomePageTemplate = ({
           )}
 
               <nav className={`SecondNav stickyNav`}>
-                <ul className="Nav--Container container secondNav"> 
+                <ul className="Nav--Container container secondNav">
                 <li>
                       <Link exact="true" to={`/`} activeStyle={activeStyles}>
                       <span className="metaIcon"><FaHome /></span><span className="metaTitle">Acasă</span>
-                      </Link> 
+                      </Link>
                   </li>
 
                   <li>
-                    
+
                     <Link exact="true" partiallyActive={true} to={`/studiu-biblic/`} activeStyle={activeStyles}>
                     <span className="metaIcon"><FaBook/></span><span className="metaTitle">Studiu biblic</span>
                     </Link>
                   </li>
 
                   <li>
-                    
+
                     <Link exact="true" partiallyActive={true} to={`/raspunsuri-rapide/`} activeStyle={activeStyles}>
                     <span className="metaIcon"><FaBolt/></span> <span className="metaTitle">Raspunsuri</span>
                     </Link>
                   </li>
 
                   <li>
-                    
-                    <div className="staticSearchIcon"><BlogSearch/></div> 
-                  
+
+                    <div className="staticSearchIcon"><BlogSearch/></div>
+
                 </li>
 
 
 
-                </ul> 
+                </ul>
               </nav>
         </main>
       )

@@ -10,13 +10,13 @@ const activeStyles  = {
 }
 
 const PostCategoriesNav = ({ categories}) => (
-  
-  
-  
+
+
+
       <div className="scrollmenu">
-        
+
       <ul>
-       
+
           {categories.map((category, index) => (
              <li>
                 <Link
@@ -27,22 +27,22 @@ const PostCategoriesNav = ({ categories}) => (
                   activeStyle={activeStyles}
                 >
                 {/* Aici apare titlul fiecarei categorii sub MetaCat*/}
-                
-                
-                  {category.title.split("/")[1]} 
-                
-                
+
+
+                  {category.title.split("/")[1]}
+
+
                 </Link>
             </li>
           ))}
-          
+
         </ul>
 
       </div>
-     
-   
-    
-   
+
+
+
+
 )
 
 

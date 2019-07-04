@@ -28,7 +28,7 @@
 .NavLinkMetaCategory:focus {
 
   background-color: #459c98;
- 
+
 }
 a.NavLinkMetaCategory{
   padding-left:5px;
@@ -45,140 +45,25 @@ a.NavLinkMetaCategory:hover{
 .NavLinkMetaCategory.undefined{
     background: none;
     color: grey;
-   
-  } 
 
-  /* 
-.NavLink:hover,
-.NavLink:active,
-.NavLink:focus {
+  }
 
-  background-color: #459c98;
- 
-} */
+
 
 a.NavLink{
-  padding-left:5px;
-  padding-right:5px;
+
   margin-right:1.5px;
   margin-left:1.5px;
 }
-/* 
-a.NavLink:hover{
-color: white;
-border-bottom-color: #E27D5F;
-} */
-
-
-
-/* Pentru menu in burger */
-.NavLink.undefined{
-  background: none;
-  color: grey;
-  font-size: 2rem;
-  
-}
-
-/* Iconita din fata menu in burger */
-.NavLink.undefined svg{
-  padding-top: 7px;
-  }
-
-
-.NavLink.active.undefined{
-  border-bottom-color: none;
-}
-
-.NavLink.undefined:active,
-.NavLink.undefined:hover,
-.NavLink.active.undefined{
-  color:rgb(30, 144, 255);
-}
-
-.PostCategoriesNav {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-.PostCategoriesNav > * + * {
-  margin-left: 1rem;
-}
-
-.PostCategoriesNav input[type='text'] {
-  right: 0;
-  position: absolute;
-  border: 0;
-  padding: 1rem 2rem;
-  border-radius: 2rem;
-  font-size: 1.4rem;
-  color: black;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-}
-
-.PostCategoriesNav input[type='text']:focus {
-  outline: none;
-}
-
-.PostCategoriesNav input[type='text']::placeholder {
-  color: black;
-}
-
-@media (max-width: 600px) {
-  .PostCategoriesNav input[type='text'] {
-    position: relative;
-    
-  }
-
-  .PostCategoriesNav {
-  
-    display: flex;
-  
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  
-  }
-
-  a.NavLink{
-    padding-left:5px;
-    padding-right:5px;
-    margin: 1.5px;
-  }
-
-}
-
-#innerCollapsible{
-  margin: 0 auto;
-}
 
 
 
 
-/* Google Play Store only */
-@media (max-width: 720px) {
-
-  .PostMetaCategoriesNav{
-		background-color: grey; 
-    margin-top: -25px;
-   
-		
-    }
-    
-    .PostCategoriesNav{
-      background-color: gainsboro;
-      
-      }
-
-}
 
 
 /* Scrollable horizontal menu */
 
-div.scrollmenu {
-  background-color: #333;
-  white-space: nowrap;
- 
-}
+
 
 div.scrollmenu li {
   display: inline-block;
@@ -187,7 +72,3 @@ div.scrollmenu li {
   padding: 12px 7px;
   text-decoration: none;
 }
-
- /* div.scrollmenu li:hover {
-  background-color: #777;
-} */
