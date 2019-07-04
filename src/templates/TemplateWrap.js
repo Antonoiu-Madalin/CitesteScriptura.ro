@@ -109,10 +109,10 @@ export default function ResponsiveDrawer(props) {
             <Link to="/" className="listItemClear">
               <ListItem button component="a">
                 <ListItemIcon> <HomeIcon/></ListItemIcon>
-                <ListItemText primary="Toate/ Acasa" />
+                <ListItemText primary="Acasă" />
               </ListItem>
             </Link>
-            
+
             {/* Despre */}
             <Link to="/studiu-biblic/" className="listItemClear">
               <ListItem button component="a">
@@ -144,8 +144,8 @@ export default function ResponsiveDrawer(props) {
       }
     >
 
-      <ListItem button> 
-        <ListItemIcon> 
+      <ListItem button>
+        <ListItemIcon>
           <SendIcon />
         </ListItemIcon>
         <ListItemText primary="Sent mail" />
@@ -185,7 +185,7 @@ export default function ResponsiveDrawer(props) {
       </Collapse>
     </List>
     <Divider />
-     
+
     <List
       component="nav"
       aria-labelledby="nested-list-subheader"
@@ -202,7 +202,7 @@ export default function ResponsiveDrawer(props) {
                 <ListItemText primary="Acasă" />
               </ListItem>
             </Link>
-            
+
             {/* Despre */}
             <Link to="/" className="listItemClear">
               <ListItem button component="a">
@@ -238,7 +238,7 @@ export default function ResponsiveDrawer(props) {
       <CssBaseline />
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
-          
+
           <IconButton
             color="inherit"
             aria-label="Open drawer"
@@ -253,10 +253,10 @@ export default function ResponsiveDrawer(props) {
           </Typography>
         </Toolbar>
       </AppBar>
-      
+
       <nav className={classes.drawer} aria-label="Mailbox folders">
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-        
+
         <Hidden smUp implementation="css">
           <Drawer
             container={container}
@@ -270,7 +270,7 @@ export default function ResponsiveDrawer(props) {
             ModalProps={{
               keepMounted: true, // Better open performance on mobile.
             }}
-          > 
+          >
             {drawer}
           </Drawer>
         </Hidden>
@@ -283,15 +283,15 @@ export default function ResponsiveDrawer(props) {
             variant="permanent"
             open
           >
-            
+
             {drawer}
           </Drawer>
         </Hidden>
       </nav>
-      
+
       <main className={classes.content}>
         <div className={classes.toolbar} />
- 
+
                 {children}
 
       </main>

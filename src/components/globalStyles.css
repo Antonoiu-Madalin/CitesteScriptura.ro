@@ -38,7 +38,7 @@ padding:0;
 
 
 /* Should remove the annoying blue feedback box on mobile */
-* { 
+* {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -moz-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -54,7 +54,7 @@ padding:0;
 html, body {
   max-width: 100%;
   min-height: 100vh;
-  
+
 }
 
 .Blog{
@@ -69,14 +69,14 @@ html {
   font-size: 62.5%;
   background: var(--lightGrey);
   width: 100%;
- 
-  
+
+
 }
 
 
 body {
   font-family: var(--font-system);
- 
+
   position: relative;
   background: white;
   color: var(--secondary);
@@ -211,6 +211,16 @@ blockquote {
 
 /* Layout */
 
+span {
+    text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
 .section {
   width: 100%;
   padding: 5rem 0;
@@ -270,7 +280,7 @@ blockquote {
 /* Buttons */
 
 .Button {
-  background: var(--primary); 
+  background: var(--primary);
   color: white;
   text-transform: uppercase;
   text-decoration: none;
@@ -325,21 +335,21 @@ blockquote {
 }
 
 :-moz-placeholder { /* Firefox 18- */
-  text-align: center;  
+  text-align: center;
   font-weight: 400;
 
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-  text-align: center;  
+  text-align: center;
   font-weight: 400;
 
 }
 
-:-ms-input-placeholder {  
-  text-align: center; 
+:-ms-input-placeholder {
+  text-align: center;
   font-weight: 400;
- 
+
 }
 
 p:blank {
@@ -357,8 +367,8 @@ p:blank {
   margin-bottom: 0;
   margin-top: 0;
   padding-left: 0;
- 
- 
+
+
 }
 
 
