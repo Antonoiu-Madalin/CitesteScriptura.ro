@@ -69,7 +69,13 @@ const PostCard = ({
       {title && <h3 className="PostCard--Title">{title}</h3>}
       {excerpt && <div className="PostCard--Excerpt">{excerpt}</div>}
 
-      <div className="post-card-MetaFull">
+   <div className="TimeSincePosted">
+                <TimeAgo date={date} formatter={formatter} className="postCardTime" />
+            </div>
+
+
+
+     {/* <div className="post-card-MetaFull">
 
         <div className="post-card-avatar">
 
@@ -77,11 +83,8 @@ const PostCard = ({
             <img className="avatarPhoto" src="https://archive.icann.org/meetings/icann56/cdn.schd.ws/common/img/avatar-empty.png" alt="author"></img>
           </div>
 
-          <div className="TimeSincePosted">
-                <TimeAgo date={date} formatter={formatter} className="postCardTime" />
-            </div>
 
-        {/*<div className="nameAndDate">
+        <div className="nameAndDate">
 
                 {/* OLD WAY OF SHOWING TIME No longer needed since TimeAgo
                 <span>
@@ -105,8 +108,8 @@ const PostCard = ({
          </div>*/}
 
         </div>
-      </div>
-      </div>
+
+
   </Link>
 )
 

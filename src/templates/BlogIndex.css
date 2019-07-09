@@ -130,12 +130,16 @@ ul li{
 
 }
 
+
+
+
 /* This happens for Android Play Store */
 @media (max-width: 720px) {
 
+
   .metaIcon{
     display: block;
-    margin-top: -13px;
+    margin-top: -15px;
     margin-bottom: -7px;
     font-size: 23px;
   }
@@ -148,6 +152,8 @@ ul li{
 
 .secondNav{
     padding-left: 0;
+    padding-bottom: 5px;
+
 }
   .SecondNav {
     background-color: white;
@@ -198,6 +204,7 @@ ul li{
   /* Mutam iconitele si titlurile pe bara de jos */
   span.metaTitle{
     margin-left: -10px;
+
   }
 
   span.metaIcon{
