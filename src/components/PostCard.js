@@ -25,14 +25,12 @@ const PostCard = ({
   categories = [],
   className = '',
   date,
-  url = '',
-  time,
-  readingTime,
 }) => (
 
 
 
   <Link to={slug} className={`PostCard ${className}`}>
+
     {featuredImage && (
       <div className="PostCard--Image relative">
         <Image background src={featuredImage} alt={title} />
@@ -46,7 +44,7 @@ const PostCard = ({
       <span className="shareTheWord"><Share2 className="svgCard"/></span>
       */}
 
-      <p className="PostCard--Category">
+    <p className="PostCard--Category">
         {categories.map((cat, index) => (
 
             /* THIS IS IT. Ia prima parte +/ + a doua parte + din slug url si merge - PENTRU POST CARD ;) */
@@ -74,38 +72,6 @@ const PostCard = ({
             </div>
 
 
-
-     {/* <div className="post-card-MetaFull">
-
-        <div className="post-card-avatar">
-
-          <div className="author-profile-image">
-            <img className="avatarPhoto" src="https://archive.icann.org/meetings/icann56/cdn.schd.ws/common/img/avatar-empty.png" alt="author"></img>
-          </div>
-
-
-        <div className="nameAndDate">
-
-                {/* OLD WAY OF SHOWING TIME No longer needed since TimeAgo
-                <span>
-                    {date && (
-                            <time
-                              className="SinglePost--Meta--Date"
-                              itemProp="dateCreated pubdate datePublished"
-                              date={date}
-                            >
-                            {/* Adaugi asta pentru data (2) -  , { locale: roLocale })
-                              {_format(date, 'Do MMMM, YYYY', { locale: roLocale }) }
-                            </time>
-                      )}
-                  </span>  */}
-
-
-                  {/* Estimated time to read
-                <span className="estimateReadingTime">
-                    {readingTime.text}
-                </span>
-         </div>*/}
 
         </div>
 

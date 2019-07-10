@@ -11,9 +11,9 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 
-import PostCard from '../components/PostCard'
+import NewPostCard from '../components/NewPostCard'
 import './PostSection.css'
-
+import Image from './Image'
 
 
 const useStyles = makeStyles(theme => ({
@@ -48,16 +48,13 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 export default function Album(props) {
 
 const classes = useStyles();
-const { posts= [], title= '', showLoadMore= true, loadMoreTitle= 'Mai multe articole',} = props;
+const { posts= [], title= '', featuredImage='', showLoadMore= true, loadMoreTitle= 'Mai multe articole',  } = props;
 const [limit, setLimit] = useState(12);
 const  visiblePosts  = posts.slice(0, limit || posts.length)
-
-
 
   return (
     <React.Fragment>
@@ -77,8 +74,8 @@ const  visiblePosts  = posts.slice(0, limit || posts.length)
                 <Grid item key={post} xs={12} sm={6} md={4}>
 
                         <Card>
-                            <PostCard key={post.title + index} {...post} />
-                            {/*3*/}
+                    <NewPostCard key={post.title + index} {...post} />
+
                         </Card>
 
                     </Grid>
@@ -89,17 +86,6 @@ const  visiblePosts  = posts.slice(0, limit || posts.length)
 
         </Container>
       </main>
-      {/* Footer */}
-      <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Something here to give the footer a purpose!
-        </Typography>
-
-      </footer>
-      {/* End footer */}
     </React.Fragment>
   );
 }
