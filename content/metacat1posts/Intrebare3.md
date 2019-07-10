@@ -4,7 +4,7 @@ title: Intrebare3
 slug: studiu-biblic/katz3/intrebare3
 status: Published
 date: '2019-05-09T03:59:00.000Z'
-featuredImage: 'https://ucarecdn.com/a3573029-7814-4acc-89f8-9b15d9f1a781/photo14340302164110b793f4b4173'
+featuredImage: 'https://ucarecdn.com/f540281a-41cf-4bfa-8181-b172e2655fba/-/crop/1632x1777/0,672/-/preview/-/progressive/yes/-/format/auto/-/resize/100x/'
 categories:
   - category: studiu-biblic/ Katz3
 meta:

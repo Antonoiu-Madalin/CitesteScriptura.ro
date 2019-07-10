@@ -39,10 +39,12 @@ const {
         
       <CardActionArea>
       <Link to={slug} className={`PostCard ${className}`}> 
+
+ 
         <CardMedia
           className={classes.media}
-          image={"https://source.unsplash.com/random"}
-          title="Contemplative Reptile"
+          image={featuredImage}
+          title={title}
         />
 
    
