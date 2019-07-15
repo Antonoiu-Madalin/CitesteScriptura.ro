@@ -4,7 +4,7 @@ title: Intrebare1
 slug: studiu-biblic/katz1/intrebare1
 status: Published
 date: '2019-05-09'
-featuredImage: 'https://ucarecdn.com/f540281a-41cf-4bfa-8181-b172e2655fba/-/crop/1632x1777/0,672/-/preview/-/progressive/yes/-/format/auto/-/resize/100x/'
+featuredImage: 'https://ucarecdn.com/f540281a-41cf-4bfa-8181-b172e2655fba/-/crop/1632x1777/0,672/-/preview/'
 categories:
   - category: studiu-biblic/ Katz1
 meta:
@@ -12,4 +12,4 @@ meta:
   title: test meta title
 ---
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit  consectetur adipiscing elitconsectetur adipiscing elit consectetur adipiscing elit "Lorem ipsum dolor sit amet, consectetur adipiscing elit  consectetur adipiscing elitconsectetur adipiscing elit consectetur adipiscing elit""
