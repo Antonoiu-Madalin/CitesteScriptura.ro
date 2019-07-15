@@ -2,6 +2,7 @@ const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
+const createPaginatedPages = require('gatsby-paginate')
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -42,6 +43,23 @@ exports.createPages = ({ actions, graphql }) => {
       if (!pagesToCreate.length) return console.log(`Skipping ${contentType}`)
 
       console.log(`Creating ${pagesToCreate.length} ${contentType}`)
+
+      // Create blog-list pages
+        const posts = result.data.allMarkdownRemark.edges
+        const postsPerPage = 6
+        const numPages = Math.ceil(posts.length / postsPerPage)
+        Array.from({ length: numPages }).forEach((_, i) => {
+          createPage({
+            path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+            component: path.resolve("./src/templates/blog-list-template.js"),
+            context: {
+              limit: postsPerPage,
+              skip: i * postsPerPage,
+              numPages,
+              currentPage: i +1,
+            },
+          })
+        })
 
       pagesToCreate.forEach((page, index) => {
         const id = page.node.id
