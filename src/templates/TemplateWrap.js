@@ -33,7 +33,9 @@ import DraftsIcon from '@material-ui/icons/Drafts';
 import SendIcon from '@material-ui/icons/Send';
 import Book from '@material-ui/icons/Book';
 
-
+const activeStyles  = {
+  color: 'red',
+}
 
 
 const drawerWidth = 240;
@@ -106,7 +108,7 @@ export default function ResponsiveDrawer(props) {
       }
     >
             {/* Home */}
-            <Link to="/" className="listItemClear">
+            <Link to="/" className="listItemClear" activeStyle={activeStyles} activeStyle={activeStyles}>
               <ListItem button component="a">
                 <ListItemIcon> <HomeIcon/></ListItemIcon>
                 <ListItemText primary="Acasă" />
@@ -114,7 +116,7 @@ export default function ResponsiveDrawer(props) {
             </Link>
 
             {/* Despre */}
-            <Link to="/studiu-biblic/" className="listItemClear">
+            <Link to="/studiu-biblic/" className="listItemClear" activeStyle={activeStyles} activeStyle={activeStyles} partiallyActive={true}>
               <ListItem button component="a">
                 <ListItemIcon> <Book/></ListItemIcon>
                 <ListItemText primary="Studiu biblic" />
@@ -122,10 +124,18 @@ export default function ResponsiveDrawer(props) {
             </Link>
 
             {/* Contact */}
-            <Link to="/raspunsuri-rapide/" className="listItemClear">
+            <Link to="/raspunsuri-rapide/" className="listItemClear" activeStyle={activeStyles} activeStyle={activeStyles} partiallyActive={true}>
               <ListItem button component="a">
                 <ListItemIcon> <MailIcon /> </ListItemIcon>
                 <ListItemText primary="Raspunsuri rapide" />
+              </ListItem>
+            </Link>
+
+            {/* Blog */}
+            <Link to="/blog/" className="listItemClear" activeStyle={activeStyles} activeStyle={activeStyles}>
+              <ListItem button component="a">
+                <ListItemIcon> <RssFeed /> </ListItemIcon>
+                <ListItemText primary="Blog" />
               </ListItem>
             </Link>
 
@@ -196,7 +206,7 @@ export default function ResponsiveDrawer(props) {
       }
     >
             {/* Home */}
-            <Link to="/" className="listItemClear">
+            <Link to="/" className="listItemClear" activeStyle={activeStyles}>
               <ListItem button component="a">
                 <ListItemIcon> <HomeIcon/></ListItemIcon>
                 <ListItemText primary="Acasă" />
@@ -204,7 +214,7 @@ export default function ResponsiveDrawer(props) {
             </Link>
 
             {/* Despre */}
-            <Link to="/" className="listItemClear">
+            <Link to="/" className="listItemClear" activeStyle={activeStyles}>
               <ListItem button component="a">
                 <ListItemIcon> <InfoIcon/></ListItemIcon>
                 <ListItemText primary="Despre" />
@@ -212,7 +222,7 @@ export default function ResponsiveDrawer(props) {
             </Link>
 
             {/* Contact */}
-            <Link to="/" className="listItemClear">
+            <Link to="/" className="listItemClear" activeStyle={activeStyles}>
               <ListItem button component="a">
                 <ListItemIcon> <MailIcon /> </ListItemIcon>
                 <ListItemText primary="Contact" />
@@ -220,12 +230,14 @@ export default function ResponsiveDrawer(props) {
             </Link>
 
             {/* Newsletter */}
-            <Link to="/" className="listItemClear">
+            <Link to="/" className="listItemClear" activeStyle={activeStyles}>
               <ListItem button component="a">
                 <ListItemIcon> <RssFeed /> </ListItemIcon>
                 <ListItemText primary="Newsletter" />
               </ListItem>
             </Link>
+
+
 
       </List>
       <Divider />

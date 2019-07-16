@@ -1,5 +1,11 @@
 # Project--cake
 
+To Do:
+
+- Styled-components
+
+
+
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![dependencies](https://david-dm.org/jinksi/netlify-cms-react-starter.svg?style=flat-square)](https://david-dm.org/jinksi/gatsbro)
 
@@ -10,7 +16,7 @@ An opinionated starter project for creating lightning-fast websites with [Gatsby
 
 ## See also
 
-[Netlify CMS Docs](https://www.netlifycms.org/docs/)  
+[Netlify CMS Docs](https://www.netlifycms.org/docs/)
 [Netlify CMS Repo](https://github.com/netlify/netlify-cms)
 
 ## Get going!

@@ -32,7 +32,7 @@ export default class BlogList extends React.Component {
       )}
 
   {/*Numbering*/}
-{Array.from({ length: numPages }, (_, i) => (
+        {Array.from({ length: numPages }, (_, i) => (
             <div
               key={`pagination-number${i + 1}`}
               style={{
