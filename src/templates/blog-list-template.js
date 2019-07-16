@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/Layout"
+import PostSection from '../components/PostSection'
 
 export default class BlogList extends React.Component {
   render() {
@@ -14,14 +15,23 @@ export default class BlogList extends React.Component {
 
   const posts = this.props.data.allMarkdownRemark.edges
 
+
+
     return (
       <Layout>
 
     {/*Shows title and puts links to them */}
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
+          const featuredImage = node.frontmatter.featuredImage
           return <div><Link to={node.fields.slug}>{title}</Link></div>
         })}
+
+
+              {!!posts && (
+            /* Posts */
+                <PostSection posts={posts}  />
+          )}
 
 
     {/*Previous/Next Pagination */}
@@ -54,7 +64,7 @@ export default class BlogList extends React.Component {
                   background: i + 1 === currentPage ? '#007acc' : '',
                 }}
               >
-                {i + 1}
+                {i+1}
               </Link>
             </div>
           ))}
@@ -72,6 +82,7 @@ export default class BlogList extends React.Component {
   }
 }
 
+
 export const blogListQuery = graphql`
   query blogListQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
@@ -85,8 +96,13 @@ export const blogListQuery = graphql`
           fields {
             slug
           }
-          frontmatter {
-            title
+            frontmatter {
+                title
+                date
+                categories {
+                    category
+                }
+                featuredImage
           }
         }
       }
