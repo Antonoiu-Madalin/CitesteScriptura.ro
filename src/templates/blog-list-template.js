@@ -76,7 +76,6 @@ export default class BlogList extends React.Component {
         </Link>
       )}
 
-
       </Layout>
     )
   }
