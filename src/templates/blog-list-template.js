@@ -31,6 +31,35 @@ export default class BlogList extends React.Component {
         </Link>
       )}
 
+  {/*Numbering*/}
+{Array.from({ length: numPages }, (_, i) => (
+            <div
+              key={`pagination-number${i + 1}`}
+              style={{
+                margin: 0,
+                height: 20,
+                display: 'inline-block',
+                marginTop: 150,
+              }}
+            >
+              <Link
+                to={'/blog'+ `/${i === 0 ? '' : i + 1}`}
+                style={{
+                  paddingLeft: 10,
+                   paddingRight: 10,
+                display: 'inline-block',
+
+                  textDecoration: 'none',
+                  color: i + 1 === currentPage ? '#ffffff' : '',
+                  background: i + 1 === currentPage ? '#007acc' : '',
+                }}
+              >
+                {i + 1}
+              </Link>
+            </div>
+          ))}
+
+
       {!isLast && (
         <Link to={"/blog/"+ nextPage} rel="next">
              <span style={{ marginLeft: '0.8rem' }}>NextPage →</span>

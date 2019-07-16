@@ -51,9 +51,7 @@ export const byCategory = (posts, title, contentType) => {
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({
   title,
-  slug,
   posts = [],
-  postCategories = [],
   enableSearch = true,
   contentType
 }) => (
