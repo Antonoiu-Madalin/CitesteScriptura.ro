@@ -36,32 +36,33 @@ const {
   return (
 
     <Card className={classes.card}>
-        
+
       <CardActionArea>
-      <Link to={slug} className={`PostCard ${className}`}> 
 
- 
-        <CardMedia
-          className={classes.media}
-          image={featuredImage}
-          title={title}
-        />
+        <Link to={slug} className={`PostCard ${className}`}>
 
-   
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-           {title && <h3 >{title}</h3>}
-          </Typography>
+                <CardMedia
+                className={classes.media}
+                image={featuredImage}
+                title={title}
+                />
 
-          <Typography variant="body2" color="textSecondary" component="p">
-            {excerpt && <div>{excerpt}</div>}
-          </Typography>
 
-        </CardContent>
-   
-</Link>
+                <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                {title && <h3 >{title}</h3>}
+                </Typography>
+
+                <Typography variant="body2" color="textSecondary" component="p">
+                    {excerpt && <div>{excerpt}</div>}
+                </Typography>
+
+                </CardContent>
+
+        </Link>
+
       </CardActionArea>
-       
+
       <CardActions>
         <Button size="small" color="primary">
           Share

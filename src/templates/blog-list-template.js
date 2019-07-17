@@ -20,25 +20,22 @@ export default function BlogList (props) {
     return (
       <Layout>
 
-    {/*Shows title and puts links to them */}
+    {/*Posts*/}
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           const featuredImage = node.frontmatter.featuredImage
           const excerpt = node.excerpt
 
           return <div>
-
-        <Link to={node.fields.slug}>
-                <PostCardPaginated featuredImage={node.frontmatter.featuredImage}
+                <PostCardPaginated
+                featuredImage={node.frontmatter.featuredImage}
                 title={node.frontmatter.title}
-                excerpt={node.excerpt} />
-         </Link>
-      </div>
+                excerpt={node.excerpt}
+                slug={node.fields.slug} />
+
+                </div>
 
         })}
-
-
-
 
 
     {/*Previous/Next Pagination */}
@@ -56,7 +53,8 @@ export default function BlogList (props) {
                 margin: 0,
                 height: 20,
                 display: 'inline-block',
-                marginTop: 150,
+                paddingTop: 30,
+                 paddingBottom: 30,
               }}
             >
               <Link
