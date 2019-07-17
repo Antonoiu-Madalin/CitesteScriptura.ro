@@ -53,8 +53,7 @@ export default function Album(props) {
 
 const classes = useStyles();
 const { posts= [], title= '', featuredImage='', showLoadMore= true, loadMoreTitle= 'Mai multe articole',  } = props;
-const [limit, setLimit] = useState(12);
-const  visiblePosts  = posts.slice(0, limit || posts.length)
+
 
   return (
     <React.Fragment>
@@ -63,27 +62,35 @@ const  visiblePosts  = posts.slice(0, limit || posts.length)
       <main>
 
         <Container className={classes.cardGrid} maxWidth="md">
-          {/* End hero unit */}
-          <Grid container spacing={4}>
+            <Grid container spacing={4}>
 
-{/*1..map the posts with node   2. insert post card with the parameters defined  */}
-            {visiblePosts.map((post, index) => (
+            {/*1..map the posts with node   2. insert post card with the parameters defined  */}
 
-                <Grid item key={post} xs={12} sm={6} md={4}>
+                    {/*Posts*/}
+                        {posts.map(({ node, post }) => {
 
-                        <Card>
-                    <NewPostCard key={post.title + index} {...post} />
 
-                        </Card>
+                        return <div>
 
-                    </Grid>
+                            <Grid item key={post} xs={12} sm={6} md={4}>
 
-                        ))}
-                        {showLoadMore && visiblePosts.length < posts.length && ( <div className="taCenter"> <button className="buttonulMorePosts" onClick={() =>{setLimit(limit+6)}}> {loadMoreTitle}</button></div>)}
-          </Grid>
+                                <Card>
+                                    <NewPostCard
+                                    featuredImage={node.frontmatter.featuredImage}
+                                    title={node.frontmatter.title}
+                                    excerpt={node.excerpt}
+                                    slug={node.fields.slug} />
+                                </Card>
 
-        </Container>
-      </main>
+                            </Grid>
+
+                        </div>
+
+                         })}
+
+            </Grid>
+         </Container>
+        </main>
     </React.Fragment>
   );
 }

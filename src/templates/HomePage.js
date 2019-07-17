@@ -80,7 +80,7 @@ export const HomePageTemplate = ({
 
           {!!posts.length && (
             /* Posts */
-                <PostSection posts={filteredPosts} />
+                <PostSection posts={posts} />
           )}
 
               <nav className={`SecondNav stickyNav`}>
@@ -120,7 +120,7 @@ export const HomePageTemplate = ({
 
 )
 
-// Export Default HomePage for front-end
+// Export Default HomePage for front-end, posts: from query gets defined here!
 const HomePage = ({ data: { page, posts, postCategories } }) => (
   <Layout
     meta={page.frontmatter.meta || false}
@@ -130,6 +130,7 @@ const HomePage = ({ data: { page, posts, postCategories } }) => (
       {...page}
       {...page.fields}
       {...page.frontmatter}
+
       posts={posts.edges.map(post => ({
         ...post.node,
         ...post.node.frontmatter,

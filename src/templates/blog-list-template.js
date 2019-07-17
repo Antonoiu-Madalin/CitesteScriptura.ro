@@ -1,7 +1,10 @@
+/*NewPostCard -> PostSectionPaginatedPaginated -> blog-list-template
+// Max Posts per page is defined in gatsby-node  */
+
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/Layout"
-import PostCardPaginated from '../components/PostCardPaginated'
+import PostSectionPaginated from '../components/PostSectionPaginated'
 
 
 export default function BlogList (props) {
@@ -20,24 +23,10 @@ export default function BlogList (props) {
     return (
       <Layout>
 
-    {/*Posts*/}
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          const featuredImage = node.frontmatter.featuredImage
-          const excerpt = node.excerpt
 
-          return <div>
-                <PostCardPaginated
-                featuredImage={node.frontmatter.featuredImage}
-                title={node.frontmatter.title}
-                excerpt={node.excerpt}
-                slug={node.fields.slug} />
+                <PostSectionPaginated posts={posts} />
 
-                </div>
-
-        })}
-
-
+<div>
     {/*Previous/Next Pagination */}
     {!isFirst && (
         <Link to={"/blog/"+ prevPage} rel="prev">
@@ -80,6 +69,8 @@ export default function BlogList (props) {
              <span style={{ marginLeft: '0.8rem' }}>NextPage →</span>
         </Link>
       )}
+
+</div>
 
       </Layout>
     )
