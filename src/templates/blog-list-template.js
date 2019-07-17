@@ -1,19 +1,19 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/Layout"
-import PostSection from '../components/PostSection'
-
-export default class BlogList extends React.Component {
-  render() {
+import NewPostSection from '../components/NewPostSection'
 
 
-  const { currentPage, numPages } = this.props.pageContext
+export default function BlogList (props) {
+
+
+  const { currentPage, numPages } = props.pageContext
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
   const prevPage = currentPage - 1 === 1 ? "/" : (currentPage - 1).toString()
   const nextPage = (currentPage + 1).toString()
 
-  const posts = this.props.data.allMarkdownRemark.edges
+  const posts = props.data.allMarkdownRemark.edges
 
 
 
@@ -30,7 +30,7 @@ export default class BlogList extends React.Component {
 
               {!!posts && (
             /* Posts */
-                <PostSection posts={posts}  />
+                <NewPostSection posts={posts} />
           )}
 
 
@@ -79,7 +79,7 @@ export default class BlogList extends React.Component {
       </Layout>
     )
   }
-}
+
 
 
 export const blogListQuery = graphql`
