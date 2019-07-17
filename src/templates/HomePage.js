@@ -151,60 +151,53 @@ export const pageQuery = graphql`
   ## Use GraphiQL interface (http://localhost:8000/___graphql)
   ## $id is processed via gatsby-node.js
   ## query name must be unique to this file
-  query HomePage($id: String!) {
-    page: markdownRemark(id: { eq: $id }) {
-      ...Meta
-      fields {
-        contentType
-      }
-      frontmatter {
-        title
-        excerpt
-        template
-        subtitle
-        featuredImage
-      }
+query HomePage($id: String!) {
+  page: markdownRemark(id: {eq: $id}) {
+    ...Meta
+    fields {
+      contentType
     }
-
-    posts: allMarkdownRemark(
-      filter: { fields: { contentType: { in: ["metacat1posts", "metacat2posts" ] }  } }
-      sort: { order: DESC, fields: [frontmatter___date] }
-    ) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-            readingTime {
-              text
-            }
-          }
-          frontmatter {
-            title
-            date
-            categories {
-              category
-            }
-            featuredImage
+    frontmatter {
+      title
+      excerpt
+      template
+      subtitle
+      featuredImage
+    }
+  }
+  posts: allMarkdownRemark(filter: {fields: {contentType: {in: ["metacat1posts", "metacat2posts"]}}}, sort: {order: DESC, fields: [frontmatter___date]}) {
+    edges {
+      node {
+        excerpt
+        fields {
+          slug
+          readingTime {
+            text
           }
         }
-      }
-    }
-
-    postCategories: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "postCategories" } } }
-      sort: { order: ASC, fields: [frontmatter___title] }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
+        frontmatter {
+          title
+          date
+          categories {
+            category
           }
-          frontmatter {
-            title
-          }
+          featuredImage
         }
       }
     }
   }
+  postCategories: allMarkdownRemark(filter: {fields: {contentType: {eq: "postCategories"}}}, sort: {order: ASC, fields: [frontmatter___title]}) {
+    edges {
+      node {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+        }
+      }
+    }
+  }
+}
+
 `

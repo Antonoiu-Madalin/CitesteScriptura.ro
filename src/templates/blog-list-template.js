@@ -24,7 +24,10 @@ export default function BlogList (props) {
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           const featuredImage = node.frontmatter.featuredImage
-          return <div><Link to={node.fields.slug}>{title}</Link></div>
+          const excerpt = node.excerpt
+          return <div><Link to={node.fields.slug}>{title}</Link>
+          <Link to={node.fields.slug}>{excerpt}</Link>
+          </div>
         })}
 
 
@@ -83,28 +86,24 @@ export default function BlogList (props) {
 
 
 export const blogListQuery = graphql`
-  query blogListQuery($skip: Int!, $limit: Int!) {
-    allMarkdownRemark(
-    filter: { fields: { contentType: { in: ["metacat1posts", "metacat2posts" ] } } }
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: $limit
-      skip: $skip
-    ) {
-      edges {
-        node {
-          fields {
-            slug
+query blogListQuery($skip: Int!, $limit: Int!) {
+  allMarkdownRemark(filter: {fields: {contentType: {in: ["metacat1posts", "metacat2posts"]}}}, sort: {fields: [frontmatter___date], order: DESC}, limit: $limit, skip: $skip) {
+    edges {
+      node {
+        excerpt(format: PLAIN)
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          date
+          categories {
+            category
           }
-            frontmatter {
-                title
-                date
-                categories {
-                    category
-                }
-                featuredImage
-          }
+          featuredImage
         }
       }
     }
   }
+}
 `
