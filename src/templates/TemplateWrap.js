@@ -132,7 +132,7 @@ export default function ResponsiveDrawer(props) {
             </Link>
 
             {/* Blog */}
-            <Link to="/blog/" className="listItemClear" activeStyle={activeStyles} activeStyle={activeStyles}>
+            <Link to="/blog/" className="listItemClear" activeStyle={activeStyles} activeStyle={activeStyles} partiallyActive={true}>
               <ListItem button component="a">
                 <ListItemIcon> <RssFeed /> </ListItemIcon>
                 <ListItemText primary="Blog" />

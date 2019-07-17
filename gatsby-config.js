@@ -41,13 +41,13 @@ module.exports = {
       // - Change the injection order
       // - Add the plugin
       options: {
-        // stylesProvider: {
-        //   injectFirst: true,
-        // },
+        stylesProvider: {
+        injectFirst: true,
+       },
       },
       // 'gatsby-plugin-styled-components',
     },
-    
+
     { /* adressBar telefon hehe */
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -79,7 +79,7 @@ module.exports = {
       }
     },
 
-    
+
 
     // images
     'gatsby-plugin-sharp',
@@ -93,7 +93,7 @@ module.exports = {
           // go before gatsby-remark-images
           `gatsby-remark-reading-time`,
           'gatsby-remark-relative-images',
-          
+
           {
             resolve: 'gatsby-remark-images',
             options: {

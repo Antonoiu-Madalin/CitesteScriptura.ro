@@ -70,9 +70,7 @@ const { posts= [], title= '', featuredImage='', showLoadMore= true, loadMoreTitl
                         {posts.map(({ node, post }) => {
 
 
-                        return <div>
-
-                            <Grid item key={post} xs={12} sm={6} md={4}>
+                        return  <Grid item key={post} xs={12} sm={6} md={4}>
 
                                 <Card>
                                     <NewPostCard
@@ -84,7 +82,6 @@ const { posts= [], title= '', featuredImage='', showLoadMore= true, loadMoreTitl
 
                             </Grid>
 
-                        </div>
 
                          })}
 
