@@ -29,7 +29,7 @@ export default function BlogList (props) {
 <div>
     {/*Previous/Next Pagination */}
     {!isFirst && (
-        <Link to={"/blog/"+ prevPage} rel="prev">
+        <Link to={"/blog/"+ prevPage+ '/'} rel="prev">
           ← PreviousPage
         </Link>
       )}
