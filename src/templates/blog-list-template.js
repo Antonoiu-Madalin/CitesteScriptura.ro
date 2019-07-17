@@ -47,7 +47,7 @@ export default function BlogList (props) {
               }}
             >
               <Link
-                to={'/blog'+ `/${i === 0 ? '' : i + 1}`}
+                to={'/blog'+ `/${i === 0 ? '' : i + 1}/`}
                 style={{
                   paddingLeft: 10,
                    paddingRight: 10,
@@ -65,7 +65,7 @@ export default function BlogList (props) {
 
 
       {!isLast && (
-        <Link to={"/blog/"+ nextPage} rel="next">
+        <Link to={"/blog/"+ nextPage + '/'} rel="next">
              <span style={{ marginLeft: '0.8rem' }}>NextPage →</span>
         </Link>
       )}
