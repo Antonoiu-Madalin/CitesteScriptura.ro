@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/Layout"
-import NewPostSection from '../components/NewPostSection'
+import PostCardPaginated from '../components/PostCardPaginated'
 
 
 export default function BlogList (props) {
@@ -25,16 +25,20 @@ export default function BlogList (props) {
           const title = node.frontmatter.title || node.fields.slug
           const featuredImage = node.frontmatter.featuredImage
           const excerpt = node.excerpt
-          return <div><Link to={node.fields.slug}>{title}</Link>
-          <Link to={node.fields.slug}>{excerpt}</Link>
-          </div>
+
+          return <div>
+
+        <Link to={node.fields.slug}>
+                <PostCardPaginated featuredImage={node.frontmatter.featuredImage}
+                title={node.frontmatter.title}
+                excerpt={node.excerpt} />
+         </Link>
+      </div>
+
         })}
 
 
-              {!!posts && (
-            /* Posts */
-                <NewPostSection posts={posts} />
-          )}
+
 
 
     {/*Previous/Next Pagination */}
